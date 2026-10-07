@@ -1,0 +1,231 @@
+{
+ "id": "s09_coldharbour_road",
+ "level": {
+  "art": "gallows_bend",
+  "scale": 1.25
+ },
+ "sense": {
+  "road": [
+   [
+    1,
+    9
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    10,
+    10
+   ],
+   [
+    13,
+    10
+   ],
+   [
+    16,
+    10
+   ],
+   [
+    19,
+    10
+   ]
+  ],
+  "ground": [
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    12
+   ],
+   [
+    14,
+    8
+   ]
+  ],
+  "solid": [
+   [
+    3,
+    2
+   ],
+   [
+    16,
+    3
+   ],
+   [
+    17,
+    14
+   ],
+   [
+    4,
+    15
+   ],
+   [
+    18,
+    7
+   ],
+   [
+    0,
+    6
+   ]
+  ],
+  "reach": 1.5,
+  "min_walk": 8,
+  "block": [
+   [
+    8,
+    12,
+    8,
+    8
+   ]
+  ]
+ },
+ "start": [
+  0,
+  9
+ ],
+ "exit": {
+  "edge": "right"
+ },
+ "name": "the Coldharbour road",
+ "chapter": "IX.  The Coldharbour Road",
+ "age": "twenty-one",
+ "tint": "#c4ccd8",
+ "weather": "snow",
+ "start_facing": "right",
+ "derrick": {
+  "form": "man",
+  "level": 8
+ },
+ "give": {
+  "rag": 1
+ },
+ "growth_text": "Derrick, twenty-one. Nothing new. Less of everything.",
+ "props": {
+  "4": {
+   "art": "prop/sons_banner",
+   "at": [
+    13,
+    7
+   ],
+   "examine": "notice"
+  }
+ },
+ "lines": {
+  "a": {
+   "x": 4
+  },
+  "b": {
+   "x": 11
+  },
+  "c": {
+   "x": 17
+  }
+ },
+ "triggers": {
+  "a": "cold",
+  "b": "gibbet",
+  "c": "eyes"
+ },
+ "cast": {
+  "C": {
+   "id": "crow",
+   "at": [
+    11,
+    6
+   ],
+   "solid": false,
+   "facing": "left"
+  },
+  "W": {
+   "id": "wolf_eyes",
+   "cast": "wolf",
+   "at": [
+    18,
+    13
+   ],
+   "hidden": true,
+   "facing": "left",
+   "tint": "#3a3e48"
+  }
+ },
+ "on_enter": "intro",
+ "scripts": {
+  "intro": [
+   {
+    "card": "The Coldharbour Road",
+    "sub": "The winter after.",
+    "hold": 2.4
+   },
+   {
+    "growth": true
+   }
+  ],
+  "cold": [
+   {
+    "caption": "He had not eaten in four days. He had stopped counting those, too. That frightened him more than the hunger did."
+   }
+  ],
+  "gibbet": [
+   {
+    "camera": [
+     12,
+     7
+    ],
+    "time": 1.2
+   },
+   {
+    "caption": "A gallows at the bend in the road. The ropes were empty. The notice nailed to the post was new."
+   },
+   {
+    "run": "notice"
+   },
+   {
+    "sound": "A crow, complaining."
+   },
+   {
+    "hide": "crow"
+   },
+   {
+    "camera": "player",
+    "time": 0.8
+   }
+  ],
+  "notice": [
+   {
+    "caption": "BY WARRANT, AND IN FULL SATISFACTION OF CONTRACT: THE SONS OF ST. JACK.  TERMS HONOURED.  NO FURTHER CLAIMS."
+   },
+   {
+    "caption": "Someone had drawn a coin with a nail through it. Someone had taken care over it."
+   }
+  ],
+  "eyes": [
+   {
+    "show": "wolf_eyes"
+   },
+   {
+    "camera": [
+     17,
+     12
+    ],
+    "time": 0.8
+   },
+   {
+    "caption": "Eyes, in the trees below the road. They kept pace with him, and did not hurry. They didn't need to."
+   },
+   {
+    "hide": "wolf_eyes"
+   },
+   {
+    "camera": "player",
+    "time": 0.8
+   }
+  ]
+ }
+}

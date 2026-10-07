@@ -1,0 +1,667 @@
+{
+ "id": "s02_that_night",
+ "level": {
+  "art": "hamlet_outskirts",
+  "scale": 1.25
+ },
+ "sense": {
+  "road": [
+   [
+    1,
+    9
+   ],
+   [
+    5,
+    10
+   ],
+   [
+    10,
+    9
+   ],
+   [
+    15,
+    10
+   ],
+   [
+    19,
+    10
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    10,
+    6
+   ],
+   [
+    5,
+    13
+   ],
+   [
+    8,
+    16
+   ]
+  ],
+  "ground": [
+   [
+    8,
+    6
+   ],
+   [
+    12,
+    8
+   ],
+   [
+    14,
+    13
+   ],
+   [
+    17,
+    11
+   ],
+   [
+    6,
+    15
+   ]
+  ],
+  "solid": [
+   [
+    5,
+    7
+   ],
+   [
+    9,
+    7
+   ],
+   [
+    1,
+    12
+   ],
+   [
+    7,
+    12
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    10,
+    2
+   ],
+   [
+    1,
+    16
+   ],
+   [
+    17,
+    16
+   ],
+   [
+    14,
+    16
+   ],
+   [
+    16,
+    12
+   ]
+  ],
+  "reach": 2,
+  "min_walk": 8
+ },
+ "start": [
+  5,
+  6
+ ],
+ "exit": {},
+ "name": "Harrowgate",
+ "chapter": "II.  That Night",
+ "age": "nine",
+ "tint": "#2c3150",
+ "weather": "",
+ "start_facing": "down",
+ "derrick": {
+  "form": "child",
+  "level": 1
+ },
+ "props": {
+  "1": {
+   "art": "prop/hatch",
+   "at": [
+    8,
+    17
+   ]
+  }
+ },
+ "lights": [
+  {
+   "id": "torch1",
+   "at": [
+    0,
+    9
+   ],
+   "color": "#ff7a2a",
+   "energy": 0.0,
+   "scale": 2.6,
+   "flicker": true
+  },
+  {
+   "id": "torch2",
+   "at": [
+    0,
+    10
+   ],
+   "color": "#ff7a2a",
+   "energy": 0.0,
+   "scale": 2.6,
+   "flicker": true
+  },
+  {
+   "id": "far",
+   "at": [
+    1,
+    1
+   ],
+   "color": "#ff6a20",
+   "energy": 0.0,
+   "scale": 4.0,
+   "flicker": true
+  },
+  {
+   "id": "next_door",
+   "at": [
+    10,
+    3
+   ],
+   "color": "#ff7020",
+   "energy": 0.0,
+   "scale": 4.5,
+   "flicker": true
+  },
+  {
+   "id": "home",
+   "at": [
+    5,
+    3
+   ],
+   "color": "#ffb060",
+   "energy": 0.55,
+   "scale": 2.2,
+   "flicker": true
+  }
+ ],
+ "fx": [
+  {
+   "kind": "smoke",
+   "at": [
+    1,
+    0
+   ]
+  },
+  {
+   "kind": "smoke",
+   "at": [
+    2,
+    1
+   ]
+  }
+ ],
+ "lines": {
+  "a": {
+   "y": 8
+  },
+  "b": {
+   "y": 13
+  },
+  "c": {
+   "y": 16
+  }
+ },
+ "triggers": {
+  "a": "road",
+  "b": "yard",
+  "c": "cellar"
+ },
+ "cast": {
+  "M": {
+   "id": "mother",
+   "at": [
+    5,
+    5
+   ],
+   "hidden": true
+  },
+  "F": {
+   "id": "father",
+   "at": [
+    5,
+    5
+   ],
+   "hidden": true
+  },
+  "R": {
+   "id": "raider1",
+   "cast": "raider",
+   "at": [
+    0,
+    9
+   ],
+   "hidden": true,
+   "tint": "#161412",
+   "facing": "right"
+  },
+  "S": {
+   "id": "raider2",
+   "cast": "raider",
+   "at": [
+    0,
+    10
+   ],
+   "hidden": true,
+   "tint": "#161412",
+   "facing": "right"
+  },
+  "T": {
+   "id": "raider3",
+   "cast": "raider",
+   "at": [
+    1,
+    8
+   ],
+   "hidden": true,
+   "tint": "#161412",
+   "facing": "right"
+  }
+ },
+ "on_enter": "night",
+ "scripts": {
+  "night": [
+   {
+    "card": "That Night",
+    "sub": "",
+    "hold": 1.6
+   },
+   {
+    "sound": "A dog barking. Then another."
+   },
+   {
+    "wait": 1.8
+   },
+   {
+    "sound": "Then none."
+   },
+   {
+    "wait": 1.4
+   },
+   {
+    "light": "far",
+    "energy": 1.0,
+    "time": 2.5
+   },
+   {
+    "light": "torch1",
+    "energy": 1.2,
+    "time": 2.5
+   },
+   {
+    "light": "torch2",
+    "energy": 1.2,
+    "time": 2.5
+   },
+   {
+    "tint": "#3c2d33",
+    "time": 2.5
+   },
+   {
+    "sound": "Shouting. Far away, and then not far."
+   },
+   {
+    "wait": 0.8
+   },
+   {
+    "shake": 5
+   },
+   {
+    "show": "mother"
+   },
+   {
+    "walk": "mother",
+    "to": [
+     6,
+     6
+    ],
+    "speed": 7
+   },
+   {
+    "face": "mother",
+    "to": "player"
+   },
+   {
+    "talk": [
+     [
+      "mother",
+      "Derrick. Up. Now. Not a word."
+     ]
+    ]
+   },
+   {
+    "show": "father"
+   },
+   {
+    "talk": [
+     [
+      "father",
+      "Maren. The old cellar, by the well."
+     ],
+     [
+      "mother",
+      "Hob—"
+     ],
+     [
+      "father",
+      "The cellar. Go. I'll be behind you."
+     ]
+    ]
+   },
+   {
+    "sound": "Something heavy hits a door, two houses down."
+   },
+   {
+    "shake": 10
+   },
+   {
+    "flash": "#e0701f",
+    "time": 0.3
+   },
+   {
+    "light": "next_door",
+    "energy": 1.5,
+    "time": 1.2
+   },
+   {
+    "walk": "mother",
+    "path": [
+     [
+      6,
+      8
+     ],
+     [
+      5,
+      8
+     ]
+    ],
+    "speed": 6
+   },
+   {
+    "face": "mother",
+    "to": "player"
+   },
+   {
+    "hint": "Follow your mother."
+   }
+  ],
+  "road": [
+   {
+    "camera": [
+     2,
+     9
+    ],
+    "time": 0.8,
+    "wait": false
+   },
+   {
+    "show": "raider1",
+    "wait": false
+   },
+   {
+    "show": "raider2",
+    "wait": false
+   },
+   {
+    "show": "raider3"
+   },
+   {
+    "walk": "raider1",
+    "to": [
+     3,
+     9
+    ],
+    "speed": 1.5,
+    "wait": false,
+    "direct": true
+   },
+   {
+    "walk": "raider2",
+    "to": [
+     2,
+     10
+    ],
+    "speed": 1.5,
+    "wait": false,
+    "direct": true
+   },
+   {
+    "caption": "Men on the road. No colours, no banners. Just torches, and one of them laughing at something."
+   },
+   {
+    "walk": "father",
+    "path": [
+     [
+      5,
+      7
+     ],
+     [
+      4,
+      7
+     ]
+    ],
+    "speed": 5,
+    "direct": true
+   },
+   {
+    "face": "father",
+    "dir": "left"
+   },
+   {
+    "talk": [
+     [
+      "father",
+      "Go on, Maren. Go!"
+     ]
+    ]
+   },
+   {
+    "camera": "player",
+    "time": 0.6
+   },
+   {
+    "walk": "mother",
+    "path": [
+     [
+      5,
+      11
+     ],
+     [
+      5,
+      12
+     ]
+    ],
+    "speed": 7,
+    "wait": false
+   },
+   {
+    "talk": [
+     [
+      "mother",
+      "Derrick. Now."
+     ]
+    ]
+   },
+   {
+    "walk": "father",
+    "to": [
+     3,
+     9
+    ],
+    "speed": 4,
+    "wait": false,
+    "direct": true
+   }
+  ],
+  "yard": [
+   {
+    "walk": "mother",
+    "path": [
+     [
+      5,
+      15
+     ],
+     [
+      7,
+      15
+     ],
+     [
+      7,
+      16
+     ]
+    ],
+    "speed": 7
+   },
+   {
+    "face": "mother",
+    "to": "player"
+   },
+   {
+    "hint": "The cellar hatch is by the well."
+   }
+  ],
+  "cellar": [
+   {
+    "face": "mother",
+    "to": "player"
+   },
+   {
+    "camera": "mother",
+    "time": 0.8,
+    "wait": false
+   },
+   {
+    "zoom": 1.45,
+    "time": 1.6
+   },
+   {
+    "talk": [
+     [
+      "mother",
+      "Down you go. Quick, now."
+     ],
+     [
+      "mother",
+      "You count for me. You count to a thousand, and you don't stop. Not for anything. Not for anyone."
+     ],
+     [
+      "derrick",
+      "Mam—"
+     ],
+     [
+      "mother",
+      "Count."
+     ]
+    ]
+   },
+   {
+    "fade": "out",
+    "time": 0.5
+   },
+   {
+    "slats": true
+   },
+   {
+    "caption": "One.",
+    "hold": 1.2
+   },
+   {
+    "caption": "Two.",
+    "hold": 1.1
+   },
+   {
+    "caption": "Three.",
+    "hold": 1.0
+   },
+   {
+    "sound": "The door gives."
+   },
+   {
+    "slats_shadow": 1.0
+   },
+   {
+    "caption": "Fourteen. Fifteen.",
+    "hold": 1.4
+   },
+   {
+    "sound": "His father's voice. Then not."
+   },
+   {
+    "slats_shadow": 1.6,
+    "dir": "left"
+   },
+   {
+    "caption": "Forty.",
+    "hold": 1.4
+   },
+   {
+    "sound": "Boots. A lot of boots. A man laughing at something."
+   },
+   {
+    "slats_shadow": 0.9
+   },
+   {
+    "slats_shadow": 1.3,
+    "dir": "left"
+   },
+   {
+    "caption": "Two hundred and six.",
+    "hold": 1.6
+   },
+   {
+    "sound": "His mother, saying his name. Once."
+   },
+   {
+    "wait": 1.6
+   },
+   {
+    "caption": "Three hundred.",
+    "hold": 1.6
+   },
+   {
+    "sound": "Fire. The sound fire makes when it has everything it wants."
+   },
+   {
+    "caption": "Six hundred and eleven.",
+    "hold": 1.6
+   },
+   {
+    "caption": "Nine hundred and ninety-nine.",
+    "hold": 1.8
+   },
+   {
+    "caption": "A thousand.",
+    "hold": 2.4
+   },
+   {
+    "wait": 1.4
+   },
+   {
+    "caption": "Nobody told him to stop. So he started again at one."
+   },
+   {
+    "next": true
+   }
+  ]
+ }
+}

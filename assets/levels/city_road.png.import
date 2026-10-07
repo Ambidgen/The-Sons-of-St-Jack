@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://b7s3cjbkujf6j"
+path="res://.godot/imported/city_road.png-390ed40e41ce1e6739fab436fab44ad1.image"
+
+[deps]
+
+source_file="res://assets/levels/city_road.png"
+dest_files=["res://.godot/imported/city_road.png-390ed40e41ce1e6739fab436fab44ad1.image"]
+
+[params]
+

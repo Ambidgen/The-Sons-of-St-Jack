@@ -1,0 +1,410 @@
+{
+ "id": "s07_levy_camp",
+ "level": {
+  "art": "blackwood_camp",
+  "scale": 1.25
+ },
+ "sense": {
+  "road": [
+   [
+    1,
+    9
+   ],
+   [
+    5,
+    10
+   ],
+   [
+    9,
+    9
+   ],
+   [
+    13,
+    10
+   ],
+   [
+    18,
+    9
+   ],
+   [
+    6,
+    6
+   ],
+   [
+    12,
+    14
+   ]
+  ],
+  "ground": [
+   [
+    4,
+    8
+   ],
+   [
+    15,
+    7
+   ],
+   [
+    8,
+    12
+   ]
+  ],
+  "solid": [
+   [
+    4,
+    4
+   ],
+   [
+    7,
+    2
+   ],
+   [
+    12,
+    3
+   ],
+   [
+    3,
+    16
+   ],
+   [
+    8,
+    16
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    19,
+    14
+   ],
+   [
+    12,
+    8
+   ],
+   [
+    12,
+    13
+   ]
+  ],
+  "reach": 1.5,
+  "min_walk": 8,
+  "block": [
+   [
+    0,
+    13,
+    20,
+    7
+   ],
+   [
+    0,
+    0,
+    20,
+    4
+   ]
+  ]
+ },
+ "start": [
+  0,
+  9
+ ],
+ "exit": {
+  "edge": "right"
+ },
+ "name": "the levy camp",
+ "chapter": "VII. The Levy",
+ "age": "twenty",
+ "tint": "#4c5168",
+ "weather": "",
+ "start_facing": "right",
+ "derrick": {
+  "form": "man",
+  "level": 7
+ },
+ "give": {
+  "rag": 1
+ },
+ "growth_text": "Derrick, twenty. A levy spear, and a lord's colours he never learned the name of.",
+ "lights": [
+  {
+   "id": "fire1",
+   "at": [
+    6,
+    6
+   ],
+   "color": "#ff8a3a",
+   "energy": 1.2,
+   "scale": 3.4,
+   "flicker": true
+  },
+  {
+   "id": "fire2",
+   "at": [
+    14,
+    5
+   ],
+   "color": "#ff8a3a",
+   "energy": 1.2,
+   "scale": 3.4,
+   "flicker": true
+  },
+  {
+   "id": "fire3",
+   "at": [
+    13,
+    14
+   ],
+   "color": "#ff6a20",
+   "energy": 0.9,
+   "scale": 3.0,
+   "flicker": true
+  },
+  {
+   "id": "fire4",
+   "at": [
+    6,
+    13
+   ],
+   "color": "#ff6a20",
+   "energy": 0.9,
+   "scale": 3.0,
+   "flicker": true
+  }
+ ],
+ "fx": [
+  {
+   "kind": "embers",
+   "at": [
+    6,
+    6
+   ]
+  },
+  {
+   "kind": "embers",
+   "at": [
+    14,
+    5
+   ]
+  },
+  {
+   "kind": "smoke",
+   "at": [
+    6,
+    5
+   ]
+  },
+  {
+   "kind": "smoke",
+   "at": [
+    14,
+    4
+   ]
+  }
+ ],
+ "lines": {
+  "a": {
+   "x": 6
+  },
+  "b": {
+   "x": 10
+  },
+  "c": {
+   "x": 14
+  }
+ },
+ "triggers": {
+  "a": "spear",
+  "b": "fire",
+  "c": "aldo"
+ },
+ "cast": {
+  "P": {
+   "id": "sergeant",
+   "at": [
+    9,
+    8
+   ],
+   "facing": "left"
+  },
+  "S": {
+   "id": "soldier1",
+   "cast": "soldier",
+   "at": [
+    5,
+    7
+   ],
+   "facing": "right"
+  },
+  "T": {
+   "id": "soldier2",
+   "cast": "soldier",
+   "at": [
+    7,
+    7
+   ],
+   "facing": "left"
+  },
+  "U": {
+   "id": "soldier3",
+   "cast": "soldier_b",
+   "at": [
+    12,
+    5
+   ],
+   "facing": "right"
+  },
+  "A": {
+   "id": "aldo",
+   "at": [
+    15,
+    6
+   ],
+   "facing": "left"
+  },
+  "M": {
+   "id": "soldier4",
+   "cast": "man_at_arms",
+   "at": [
+    17,
+    7
+   ],
+   "facing": "left"
+  }
+ },
+ "on_enter": "intro",
+ "on_exit": "horns",
+ "scripts": {
+  "intro": [
+   {
+    "card": "Wendmere Field",
+    "sub": "Four years on. The night before.",
+    "hold": 2.6
+   },
+   {
+    "growth": true
+   },
+   {
+    "sound": "Two hundred men pretending to sleep. A whetstone, somewhere, that never stops."
+   }
+  ],
+  "spear": [
+   {
+    "face": "sergeant",
+    "to": "player"
+   },
+   {
+    "talk": [
+     [
+      "sergeant",
+      "Name?"
+     ],
+     [
+      "derrick",
+      "Derrick."
+     ],
+     [
+      "sergeant",
+      "From?"
+     ],
+     [
+      "derrick",
+      "...Nowhere."
+     ],
+     [
+      "sergeant",
+      "Good. Nowhere's got no lord to whinge to. Harl's company. Front rank."
+     ],
+     [
+      "sergeant",
+      "That's a spear. The pointy end goes toward the other lot. Any questions?"
+     ],
+     [
+      "derrick",
+      "Which lot is the other lot?"
+     ],
+     [
+      "sergeant",
+      "The ones that aren't us. Next!"
+     ]
+    ]
+   }
+  ],
+  "fire": [
+   {
+    "talk": [
+     [
+      "soldier3",
+      "...I'm telling you. Gauntley. He's riding with the lord's van."
+     ],
+     [
+      "soldier1",
+      "The Gauntley? Out of the songs?"
+     ],
+     [
+      "soldier3",
+      "Saw his horse myself. Big grey thing, eats like a bishop."
+     ]
+    ]
+   },
+   {
+    "act": "player",
+    "do": "cower"
+   },
+   {
+    "wait": 0.6
+   },
+   {
+    "act": "player",
+    "do": "reset"
+   },
+   {
+    "caption": "He could have walked thirty yards and seen him. He did not go to look."
+   }
+  ],
+  "aldo": [
+   {
+    "face": "aldo",
+    "to": "player"
+   },
+   {
+    "talk": [
+     [
+      "aldo",
+      "You. Harrowgate, isn't it? I heard you tell Pike nowhere. That's a lie, but it's a good one."
+     ],
+     [
+      "aldo",
+      "Aldo. Wendmere born. Sit, sit, the fire's not mine."
+     ],
+     [
+      "aldo",
+      "Two daughters. Bess, and little Aldo, who hates it. And a miller who'll have my roof if I don't come home with the purse."
+     ],
+     [
+      "derrick",
+      "Then come home with the purse."
+     ],
+     [
+      "aldo",
+      "Ha! That's the plan. Stick by me tomorrow, Harrowgate. Two's harder to kill than one."
+     ],
+     [
+      "derrick",
+      "...All right."
+     ]
+    ]
+   },
+   {
+    "caption": "He had not said all right to anyone in seven years. It came out strange."
+   }
+  ],
+  "horns": [
+   {
+    "sound": "Horns, before light. Somebody being sick behind a wagon."
+   },
+   {
+    "caption": "The battle at Wendmere lasted until a little after noon."
+   }
+  ]
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "act_one": [
+  "s01_harrowgate",
+  "s02_that_night",
+  "s03_dawn",
+  "s04_ashford",
+  "s05_butchers_steps",
+  "s06_ostry_farm",
+  "s07_levy_camp",
+  "s08_wendmere",
+  "s09_coldharbour_road",
+  "s10_thornwake",
+  "s11_coldharbour",
+  "s12_st_ordrics"
+ ],
+ "turn_mode": "atb",
+ "battle_speed": 1.0,
+ "atb_fill": 0.14,
+ "damage_k": 2.0,
+ "damage_variance": 0.12,
+ "crit_chance": 0.07,
+ "crit_mult": 1.6,
+ "flee_chance": 0.5,
+ "exp_per_level": 999,
+ "show_enemy_hp": true,
+ "default_encounter": "dog",
+ "maim_threshold": 0.4,
+ "heal_mult": 0.5,
+ "wound_max_hp": 0.08,
+ "wound_atk": 0.05,
+ "glitch_threshold": 40,
+ "disable_threshold": 75,
+ "step_time": 0.2,
+ "auto_letterbox": true,
+ "pacing": {
+  "read_chars_per_sec": 17,
+  "line_overhead": 0.7,
+  "sec_per_battle_turn": 2.4,
+  "max_beat_gap_sec": 15
+ },
+ "start": {
+  "party": [
+   "derrick"
+  ],
+  "form": "tot",
+  "gold": 0,
+  "items": {}
+ },
+ "offroad_step": 1.2
+}

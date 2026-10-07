@@ -1,0 +1,642 @@
+{
+ "id": "s03_dawn",
+ "level": {
+  "art": "village_road",
+  "scale": 1.0,
+  "show": "village_burned",
+  "glow": "village_embers"
+ },
+ "sense": {
+  "road": [
+   [
+    2,
+    6
+   ],
+   [
+    6,
+    6
+   ],
+   [
+    10,
+    6
+   ],
+   [
+    18,
+    6
+   ],
+   [
+    30,
+    6
+   ],
+   [
+    40,
+    6
+   ],
+   [
+    50,
+    7
+   ],
+   [
+    56,
+    7
+   ],
+   [
+    64,
+    7
+   ]
+  ],
+  "ground": [
+   [
+    4,
+    5
+   ],
+   [
+    44,
+    8
+   ],
+   [
+    57,
+    5
+   ]
+  ],
+  "reach": 1.5,
+  "min_walk": 8,
+  "block": [
+   [
+    41,
+    9,
+    4,
+    4
+   ],
+   [
+    36,
+    9,
+    1,
+    2
+   ],
+   [
+    50,
+    9,
+    5,
+    4
+   ],
+   [
+    30,
+    2,
+    3,
+    2
+   ]
+  ]
+ },
+ "start": [
+  66,
+  7
+ ],
+ "exit": {
+  "edge": "left"
+ },
+ "name": "Harrowgate",
+ "chapter": "III. Dawn",
+ "age": "nine",
+ "tint": "#a49d94",
+ "weather": "ash",
+ "start_facing": "left",
+ "derrick": {
+  "form": "child",
+  "level": 1
+ },
+ "depth": [
+  {
+   "art": "fore/dawn_fore",
+   "scale": 0.8,
+   "speed": 1.3
+  }
+ ],
+ "mist": [
+  {
+   "y": 0,
+   "h": 260,
+   "speed": 0.6,
+   "alpha": 0.3,
+   "color": "#b8b0a8"
+  }
+ ],
+ "props": {
+  "7": {
+   "art": "prop/shroud",
+   "at": [
+    [
+     56,
+     5
+    ],
+    [
+     57,
+     5
+    ]
+   ]
+  }
+ },
+ "fx": [
+  {
+   "kind": "smoke",
+   "at": [
+    27,
+    1
+   ]
+  },
+  {
+   "kind": "smoke",
+   "at": [
+    35,
+    1
+   ]
+  },
+  {
+   "kind": "smoke",
+   "at": [
+    44,
+    2
+   ]
+  },
+  {
+   "kind": "smoke",
+   "at": [
+    35,
+    9
+   ]
+  },
+  {
+   "kind": "smoke",
+   "at": [
+    40,
+    9
+   ]
+  },
+  {
+   "kind": "smoke",
+   "at": [
+    47,
+    10
+   ]
+  },
+  {
+   "kind": "embers",
+   "at": [
+    36,
+    9
+   ]
+  },
+  {
+   "kind": "embers",
+   "at": [
+    28,
+    2
+   ]
+  }
+ ],
+ "lines": {
+  "a": {
+   "x": 63
+  },
+  "b": {
+   "x": 58
+  },
+  "c": {
+   "x": 36
+  },
+  "d": {
+   "x": 16
+  }
+ },
+ "triggers": {
+  "a": "stick",
+  "b": "shrouds",
+  "c": "gauntley",
+  "d": "cart"
+ },
+ "cast": {
+  "S": {
+   "id": "sword",
+   "at": [
+    62,
+    6
+   ],
+   "solid": false
+  },
+  "R": {
+   "id": "gauntley_rider",
+   "at": [
+    21,
+    6
+   ],
+   "hidden": true
+  },
+  "Q": {
+   "id": "rider",
+   "at": [
+    21,
+    7
+   ],
+   "hidden": true
+  },
+  "G": {
+   "id": "gauntley",
+   "at": [
+    30,
+    6
+   ],
+   "hidden": true
+  },
+  "C": {
+   "id": "crow",
+   "at": [
+    33,
+    4
+   ],
+   "hidden": true,
+   "solid": false
+  }
+ },
+ "on_enter": "dawn",
+ "on_exit": "leave",
+ "scripts": {
+  "dawn": [
+   {
+    "card": "Dawn",
+    "sub": "",
+    "hold": 1.6
+   },
+   {
+    "sound": "Birds. As if nothing had happened."
+   },
+   {
+    "caption": "The hatch was heavier than it had been. Something had fallen across it. It took him most of the morning."
+   }
+  ],
+  "stick": [
+   {
+    "walk": "player",
+    "to": [
+     62,
+     7
+    ],
+    "speed": 3
+   },
+   {
+    "face": "player",
+    "dir": "up"
+   },
+   {
+    "hide": "sword"
+   },
+   {
+    "caption": "His stick. Someone had trodden on it. He picked it up anyway."
+   }
+  ],
+  "shrouds": [
+   {
+    "camera": [
+     56,
+     5
+    ],
+    "time": 1.4
+   },
+   {
+    "wait": 0.8
+   },
+   {
+    "caption": "On the green, where the knight had let him win. Someone had covered them. He did not lift the cloth."
+   },
+   {
+    "caption": "He knew the shoes."
+   }
+  ],
+  "gauntley": [
+   {
+    "sound": "Horses. Coming hard."
+   },
+   {
+    "show": "gauntley_rider",
+    "wait": false
+   },
+   {
+    "show": "rider"
+   },
+   {
+    "camera": [
+     31,
+     6
+    ],
+    "time": 1.2,
+    "wait": false
+   },
+   {
+    "walk": "rider",
+    "to": [
+     29,
+     7
+    ],
+    "speed": 6,
+    "wait": false,
+    "direct": true
+   },
+   {
+    "walk": "gauntley_rider",
+    "to": [
+     30,
+     6
+    ],
+    "speed": 6,
+    "direct": true
+   },
+   {
+    "hide": "gauntley_rider",
+    "wait": false
+   },
+   {
+    "teleport": "gauntley",
+    "to": [
+     30,
+     6
+    ]
+   },
+   {
+    "show": "gauntley"
+   },
+   {
+    "walk": "gauntley",
+    "to": [
+     34,
+     6
+    ],
+    "speed": 3
+   },
+   {
+    "face": "gauntley",
+    "to": "player"
+   },
+   {
+    "camera": [
+     35,
+     6
+    ],
+    "time": 1.0,
+    "wait": false
+   },
+   {
+    "zoom": 1.3,
+    "time": 1.2
+   },
+   {
+    "talk": [
+     [
+      "gauntley",
+      "God's teeth."
+     ],
+     [
+      "gauntley",
+      "...Lad. Lad, look at me. Are you hurt?"
+     ],
+     [
+      "gauntley",
+      "Derrick. It's Derrick, isn't it."
+     ],
+     [
+      "derrick",
+      "..."
+     ],
+     [
+      "gauntley",
+      "Is there anyone— is there anyone else?"
+     ],
+     [
+      "derrick",
+      "..."
+     ],
+     [
+      "gauntley",
+      "No. No, of course not."
+     ],
+     [
+      "rider",
+      "Ser. Tracks on the north road. A lot of horses. Fresh."
+     ],
+     [
+      "gauntley",
+      "Whose?"
+     ],
+     [
+      "rider",
+      "No banners, Ser. Not a scrap of colour on any of them."
+     ],
+     [
+      "gauntley",
+      "Men with no banners."
+     ]
+    ]
+   },
+   {
+    "wait": 0.6
+   },
+   {
+    "talk": [
+     [
+      "gauntley",
+      "Listen to me. The men who did this are still on the road, and I am going to catch them. You stay here. Right here, by the well."
+     ],
+     [
+      "gauntley",
+      "I'll come back for you. I swear it on my name."
+     ],
+     [
+      "derrick",
+      "...Shield up. Chin down."
+     ]
+    ]
+   },
+   {
+    "act": "gauntley",
+    "do": "nod",
+    "wait": true
+   },
+   {
+    "talk": [
+     [
+      "gauntley",
+      "That's it. That's exactly it."
+     ]
+    ]
+   },
+   {
+    "zoom": 1.0,
+    "time": 0.8
+   },
+   {
+    "walk": "gauntley",
+    "to": [
+     30,
+     6
+    ],
+    "speed": 4
+   },
+   {
+    "hide": "gauntley"
+   },
+   {
+    "teleport": "gauntley_rider",
+    "to": [
+     30,
+     6
+    ]
+   },
+   {
+    "show": "gauntley_rider"
+   },
+   {
+    "walk": "gauntley_rider",
+    "to": [
+     18,
+     6
+    ],
+    "speed": 6,
+    "wait": false,
+    "direct": true
+   },
+   {
+    "walk": "rider",
+    "to": [
+     18,
+     7
+    ],
+    "speed": 6,
+    "direct": true
+   },
+   {
+    "hide": "gauntley_rider",
+    "wait": false
+   },
+   {
+    "hide": "rider"
+   },
+   {
+    "walk": "player",
+    "to": [
+     31,
+     6
+    ],
+    "speed": 2
+   },
+   {
+    "face": "player",
+    "dir": "up"
+   },
+   {
+    "pose": "player",
+    "art": "char/derrick_child_sit_field"
+   },
+   {
+    "camera": [
+     31,
+     5
+    ],
+    "time": 1.0,
+    "wait": false
+   },
+   {
+    "zoom": 1.6,
+    "time": 2.0,
+    "wait": true
+   },
+   {
+    "tint": "#b98a64",
+    "time": 2.5,
+    "wait": true
+   },
+   {
+    "caption": "He waited.",
+    "hold": 2.2
+   },
+   {
+    "tint": "#2c3350",
+    "time": 2.5,
+    "wait": true
+   },
+   {
+    "caption": "The first night.",
+    "hold": 2.0
+   },
+   {
+    "tint": "#9c9790",
+    "time": 2.0
+   },
+   {
+    "show": "crow"
+   },
+   {
+    "caption": "The second day. Crows.",
+    "hold": 2.2
+   },
+   {
+    "tint": "#262c44",
+    "time": 2.0,
+    "wait": true
+   },
+   {
+    "weather": "rain"
+   },
+   {
+    "caption": "The second night. Rain.",
+    "hold": 2.2
+   },
+   {
+    "tint": "#a8a39c",
+    "time": 2.0,
+    "wait": true
+   },
+   {
+    "weather": "ash"
+   },
+   {
+    "hide": "crow"
+   },
+   {
+    "caption": "The third day.",
+    "hold": 2.2
+   },
+   {
+    "wait": 1.4
+   },
+   {
+    "caption": "Ser Gauntley did not come back."
+   },
+   {
+    "pose": "player",
+    "art": ""
+   },
+   {
+    "hint": "The road goes west."
+   }
+  ],
+  "cart": [
+   {
+    "camera": [
+     11,
+     8
+    ],
+    "time": 1.2
+   },
+   {
+    "caption": "His father's cart, where his father had left it. The wheel was still off."
+   },
+   {
+    "camera": "player",
+    "time": 0.8
+   }
+  ],
+  "leave": [
+   {
+    "caption": "On the fourth morning, he stopped waiting."
+   }
+  ]
+ }
+}

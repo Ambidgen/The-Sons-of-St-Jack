@@ -1,0 +1,12208 @@
+{
+ "note": "art key basename -> articulated rig sheet; see tools/make_placeholders.py rig_svg",
+ "rigs": {
+  "derrick_child": {
+   "sheet": "rig/derrick_child",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      46
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      46
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      36
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      22.0,
+      38
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      22.0,
+      46.64
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      33.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      42.0,
+      38
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      42.0,
+      46.64
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "derrick_child_field": {
+   "sheet": "rig/derrick_child_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      46
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      46
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      36
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      22.0,
+      38
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      22.0,
+      46.64
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      33.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      42.0,
+      38
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      42.0,
+      46.64
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "derrick_child_sit": {
+   "sheet": "rig/derrick_child_sit",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      58
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      54
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      26,
+      52
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      38,
+      52
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      50
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      54
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      36
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      54
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      22.0,
+      38
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      22.0,
+      47.9
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      33.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      42.0,
+      38
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      42.0,
+      47.9
+     ]
+    ]
+   ],
+   "sit": true,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "derrick_child_sit_field": {
+   "sheet": "rig/derrick_child_sit_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      58
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      54
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      26,
+      52
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      38,
+      52
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      50
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      54
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      36
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      54
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      22.0,
+      38
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      22.0,
+      47.9
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      33.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      42.0,
+      38
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      42.0,
+      47.9
+     ]
+    ]
+   ],
+   "sit": true,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "derrick_youth": {
+   "sheet": "rig/derrick_youth",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      46
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      44
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      44
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      42
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      46
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      30.5
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      46
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      32.5
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      43.87
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      28
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      32.5
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      43.87
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "derrick_youth_field": {
+   "sheet": "rig/derrick_youth_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      46
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      44
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      44
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      42
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      46
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      30.5
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      46
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      32.5
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      43.87
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      28
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      32.5
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      43.87
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "derrick_lad": {
+   "sheet": "rig/derrick_lad",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "derrick_lad_field": {
+   "sheet": "rig/derrick_lad_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "derrick_man": {
+   "sheet": "rig/derrick_man",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "derrick_man_field": {
+   "sheet": "rig/derrick_man_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "derrick_man_sit": {
+   "sheet": "rig/derrick_man_sit",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      58
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      50
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      26,
+      48
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      38,
+      48
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      46
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      50
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      50
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": true,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "derrick_man_sit_field": {
+   "sheet": "rig/derrick_man_sit_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      58
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      50
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      26,
+      48
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      38,
+      48
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      46
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      50
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      50
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": true,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "mother": {
+   "sheet": "rig/mother",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      27,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      37,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      39.54
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      39.54
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "mother_field": {
+   "sheet": "rig/mother_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      27,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      37,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      39.54
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      39.54
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "father": {
+   "sheet": "rig/father",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "father_field": {
+   "sheet": "rig/father_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "gauntley": {
+   "sheet": "rig/gauntley",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "cloak": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "held_l": 6,
+    "head": 7,
+    "arm_r": 8,
+    "held_r": 9
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "gauntley_field": {
+   "sheet": "rig/gauntley_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "cloak": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "held_l": 6,
+    "head": 7,
+    "arm_r": 8,
+    "held_r": 9
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "gauntley_helm": {
+   "sheet": "rig/gauntley_helm",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "cloak": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "held_l": 6,
+    "head": 7,
+    "arm_r": 8,
+    "held_r": 9
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "gauntley_helm_field": {
+   "sheet": "rig/gauntley_helm_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "cloak": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "held_l": 6,
+    "head": 7,
+    "arm_r": 8,
+    "held_r": 9
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "man_at_arms": {
+   "sheet": "rig/man_at_arms",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "man_at_arms_field": {
+   "sheet": "rig/man_at_arms_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "kid_a": {
+   "sheet": "rig/kid_a",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      27,
+      46
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      37,
+      46
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      36
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      22.0,
+      38
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      22.0,
+      45.08
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      33.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      42.0,
+      38
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      42.0,
+      45.08
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "kid_a_field": {
+   "sheet": "rig/kid_a_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      27,
+      46
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      37,
+      46
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      36
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      22.0,
+      38
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      22.0,
+      45.08
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      33.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      42.0,
+      38
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      42.0,
+      45.08
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "kid_b": {
+   "sheet": "rig/kid_b",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      46
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      46
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      36
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      22.0,
+      38
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      22.0,
+      46.64
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      33.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      42.0,
+      38
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      42.0,
+      46.64
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "kid_b_field": {
+   "sheet": "rig/kid_b_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      46
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      46
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      36
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      48
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      22.0,
+      38
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      22.0,
+      46.64
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      33.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      42.0,
+      38
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      42.0,
+      46.64
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "villager": {
+   "sheet": "rig/villager",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "villager_field": {
+   "sheet": "rig/villager_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "villager_f": {
+   "sheet": "rig/villager_f",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      27,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      37,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      39.54
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      39.54
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "villager_f_field": {
+   "sheet": "rig/villager_f_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      27,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      37,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      39.54
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      39.54
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "monk": {
+   "sheet": "rig/monk",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "held_l": 6,
+    "head": 7,
+    "arm_r": 8
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      27,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      37,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      39.54
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      39.54
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "monk_field": {
+   "sheet": "rig/monk_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "held_l": 6,
+    "head": 7,
+    "arm_r": 8
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      27,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      37,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      39.54
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      39.54
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "baker": {
+   "sheet": "rig/baker",
+   "kind": "biped",
+   "s": 2.25,
+   "pad": 16,
+   "cell": [
+    216,
+    216
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      43
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      43
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      41
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      23
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      15.5,
+      25
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      15.5,
+      41.44
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      20.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      48.5,
+      25
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      48.5,
+      41.44
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "baker_field": {
+   "sheet": "rig/baker_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      43
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      43
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      41
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      23
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      15.5,
+      25
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      15.5,
+      41.44
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      20.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      48.5,
+      25
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      48.5,
+      41.44
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "ostry": {
+   "sheet": "rig/ostry",
+   "kind": "biped",
+   "s": 2.25,
+   "pad": 16,
+   "cell": [
+    216,
+    216
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      43
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      43
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      41
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      23
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      15.5,
+      25
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      15.5,
+      41.44
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      20.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      48.5,
+      25
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      48.5,
+      41.44
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "ostry_field": {
+   "sheet": "rig/ostry_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      43
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      43
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      41
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      23
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      15.5,
+      25
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      15.5,
+      41.44
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      20.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      48.5,
+      25
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      48.5,
+      41.44
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "hild": {
+   "sheet": "rig/hild",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "held_l": 6,
+    "head": 7,
+    "arm_r": 8
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      27,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      37,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      39.54
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      39.54
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "hild_field": {
+   "sheet": "rig/hild_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "held_l": 6,
+    "head": 7,
+    "arm_r": 8
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      27,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      37,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      39.54
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      39.54
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "edric": {
+   "sheet": "rig/edric",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "edric_field": {
+   "sheet": "rig/edric_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "wat": {
+   "sheet": "rig/wat",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      46
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      44
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      44
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      42
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      46
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      30.5
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      46
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      32.5
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      43.87
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      28
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      32.5
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      43.87
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "wat_field": {
+   "sheet": "rig/wat_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      46
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      44
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      44
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      42
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      46
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      30.5
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      46
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      32.5
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      43.87
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      28
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      32.5
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      43.87
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "levy": {
+   "sheet": "rig/levy",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "levy_field": {
+   "sheet": "rig/levy_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "looter": {
+   "sheet": "rig/looter",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "looter_field": {
+   "sheet": "rig/looter_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "wick": {
+   "sheet": "rig/wick",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "wick_field": {
+   "sheet": "rig/wick_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "jacob": {
+   "sheet": "rig/jacob",
+   "kind": "biped",
+   "s": 2.25,
+   "pad": 16,
+   "cell": [
+    216,
+    216
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      43
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      43
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      41
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      23
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      15.5,
+      25
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      15.5,
+      41.44
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      20.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      48.5,
+      25
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      48.5,
+      41.44
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "jacob_field": {
+   "sheet": "rig/jacob_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      43
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      43
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      41
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      23
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      15.5,
+      25
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      15.5,
+      41.44
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      20.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      48.5,
+      25
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      48.5,
+      41.44
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "jack": {
+   "sheet": "rig/jack",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "held_l": 6,
+    "head": 7,
+    "arm_r": 8
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      27,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      37,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      19.5
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      21.0,
+      21.5
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      21.0,
+      38.33
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      16.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.0,
+      21.5
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.0,
+      38.33
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "jack_field": {
+   "sheet": "rig/jack_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "held_l": 6,
+    "head": 7,
+    "arm_r": 8
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      27,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      37,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      19.5
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      21.0,
+      21.5
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      21.0,
+      38.33
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      16.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.0,
+      21.5
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.0,
+      38.33
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "jack_kneel": {
+   "sheet": "rig/jack_kneel",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      58
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      50
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      26,
+      48
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      38,
+      48
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      46
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      50
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      19.5
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      50
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      21.0,
+      21.5
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      21.0,
+      37.7
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      16.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.0,
+      21.5
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.0,
+      37.7
+     ]
+    ]
+   ],
+   "sit": true,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "jack_kneel_field": {
+   "sheet": "rig/jack_kneel_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      58
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      50
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      26,
+      48
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      38,
+      48
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      46
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      50
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      19.5
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      50
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      21.0,
+      21.5
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      21.0,
+      37.7
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      16.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.0,
+      21.5
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.0,
+      37.7
+     ]
+    ]
+   ],
+   "sit": true,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "bearded": {
+   "sheet": "rig/bearded",
+   "kind": "biped",
+   "s": 2.25,
+   "pad": 16,
+   "cell": [
+    216,
+    216
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      43
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      43
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      41
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      23
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      15.5,
+      25
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      15.5,
+      41.44
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      20.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      48.5,
+      25
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      48.5,
+      41.44
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "bearded_field": {
+   "sheet": "rig/bearded_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      43
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      43
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      41
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      23
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      15.5,
+      25
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      15.5,
+      41.44
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      20.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      48.5,
+      25
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      48.5,
+      41.44
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "wiry": {
+   "sheet": "rig/wiry",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "wiry_field": {
+   "sheet": "rig/wiry_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "grabber": {
+   "sheet": "rig/grabber",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "grabber_field": {
+   "sheet": "rig/grabber_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "grabber_hurt": {
+   "sheet": "rig/grabber_hurt",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "held_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "grabber_hurt_field": {
+   "sheet": "rig/grabber_hurt_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "held_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "son_a": {
+   "sheet": "rig/son_a",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "son_a_field": {
+   "sheet": "rig/son_a_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "son_b": {
+   "sheet": "rig/son_b",
+   "kind": "biped",
+   "s": 2.25,
+   "pad": 16,
+   "cell": [
+    216,
+    216
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      43
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      43
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      41
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      23
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      15.5,
+      25
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      15.5,
+      41.44
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      20.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      48.5,
+      25
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      48.5,
+      41.44
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "son_b_field": {
+   "sheet": "rig/son_b_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      43
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      43
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      41
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      23
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      15.5,
+      25
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      15.5,
+      41.44
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      20.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      48.5,
+      25
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      48.5,
+      41.44
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "son_c": {
+   "sheet": "rig/son_c",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "son_c_field": {
+   "sheet": "rig/son_c_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "simon": {
+   "sheet": "rig/simon",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "held_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "simon_field": {
+   "sheet": "rig/simon_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "held_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "osric": {
+   "sheet": "rig/osric",
+   "kind": "biped",
+   "s": 2.25,
+   "pad": 16,
+   "cell": [
+    216,
+    216
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      43
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      43
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      41
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      23
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      15.5,
+      25
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      15.5,
+      41.44
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      20.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      48.5,
+      25
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      48.5,
+      41.44
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "osric_field": {
+   "sheet": "rig/osric_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      43
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      43
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      41
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      23
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      45
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      15.5,
+      25
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      15.5,
+      41.44
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      20.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      48.5,
+      25
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      48.5,
+      41.44
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "nora": {
+   "sheet": "rig/nora",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "held_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "nora_field": {
+   "sheet": "rig/nora_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "held_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      20.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      20.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      43.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      43.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "daryl": {
+   "sheet": "rig/daryl",
+   "kind": "biped",
+   "s": 1.75,
+   "pad": 16,
+   "cell": [
+    168,
+    168
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "daryl_field": {
+   "sheet": "rig/daryl_field",
+   "kind": "biped",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6,
+    "held_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      59
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      28,
+      42
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      36,
+      42
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      32,
+      40
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "cloak",
+     "upper",
+     [
+      32,
+      25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      32,
+      44
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      18.5,
+      27
+     ]
+    ],
+    [
+     "held_l",
+     "arm_l",
+     [
+      18.5,
+      41.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      32,
+      22.3
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      45.5,
+      27
+     ]
+    ],
+    [
+     "held_r",
+     "arm_r",
+     [
+      45.5,
+      41.1
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     3
+    ],
+    "cloak": [
+     2,
+     3
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ]
+   }
+  },
+  "gauntley_mounted_field": {
+   "sheet": "rig/gauntley_mounted_field",
+   "kind": "horse",
+   "s": 1.333333,
+   "pad": 18,
+   "cell": [
+    176,
+    155
+   ],
+   "frame": [
+    96,
+    80
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_hf": 1,
+    "leg_hn": 2,
+    "leg_ff": 3,
+    "leg_fn": 4,
+    "tail": 5,
+    "torso": 6,
+    "head": 7,
+    "rider_cloak": 8,
+    "rider_torso": 9,
+    "rider_arm_l": 10,
+    "rider_held_l": 11,
+    "rider_head": 12,
+    "rider_arm_r": 13,
+    "rider_held_r": 14,
+    "rider_leg": 15
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      46,
+      76
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      48,
+      40
+     ]
+    ],
+    [
+     "leg_hf",
+     "body",
+     [
+      30.3,
+      47
+     ]
+    ],
+    [
+     "leg_hn",
+     "body",
+     [
+      40.3,
+      47
+     ]
+    ],
+    [
+     "leg_ff",
+     "body",
+     [
+      64.3,
+      47
+     ]
+    ],
+    [
+     "leg_fn",
+     "body",
+     [
+      72.3,
+      47
+     ]
+    ],
+    [
+     "tail",
+     "body",
+     [
+      24,
+      35
+     ]
+    ],
+    [
+     "torso",
+     "body",
+     [
+      48,
+      40
+     ]
+    ],
+    [
+     "head",
+     "body",
+     [
+      70,
+      33
+     ]
+    ],
+    [
+     "rider",
+     "body",
+     [
+      52.8,
+      31.6
+     ]
+    ],
+    [
+     "rider_cloak",
+     "rider",
+     [
+      52.8,
+      14.5
+     ]
+    ],
+    [
+     "rider_torso",
+     "rider",
+     [
+      52.8,
+      31.6
+     ]
+    ],
+    [
+     "rider_arm_l",
+     "rider",
+     [
+      40.65,
+      16.3
+     ]
+    ],
+    [
+     "rider_held_l",
+     "rider_arm_l",
+     [
+      40.65,
+      28.99
+     ]
+    ],
+    [
+     "rider_head",
+     "rider",
+     [
+      52.8,
+      12.07
+     ]
+    ],
+    [
+     "rider_arm_r",
+     "rider",
+     [
+      64.95,
+      16.3
+     ]
+    ],
+    [
+     "rider_held_r",
+     "rider_arm_r",
+     [
+      64.95,
+      28.99
+     ]
+    ],
+    [
+     "rider_leg",
+     "rider",
+     [
+      46,
+      31
+     ]
+    ]
+   ]
+  },
+  "knight_mounted_field": {
+   "sheet": "rig/knight_mounted_field",
+   "kind": "horse",
+   "s": 1.333333,
+   "pad": 18,
+   "cell": [
+    176,
+    155
+   ],
+   "frame": [
+    96,
+    80
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_hf": 1,
+    "leg_hn": 2,
+    "leg_ff": 3,
+    "leg_fn": 4,
+    "tail": 5,
+    "torso": 6,
+    "head": 7,
+    "rider_torso": 8,
+    "rider_arm_l": 9,
+    "rider_head": 10,
+    "rider_arm_r": 11,
+    "rider_held_r": 12,
+    "rider_leg": 13
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      46,
+      76
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      48,
+      40
+     ]
+    ],
+    [
+     "leg_hf",
+     "body",
+     [
+      30.3,
+      47
+     ]
+    ],
+    [
+     "leg_hn",
+     "body",
+     [
+      40.3,
+      47
+     ]
+    ],
+    [
+     "leg_ff",
+     "body",
+     [
+      64.3,
+      47
+     ]
+    ],
+    [
+     "leg_fn",
+     "body",
+     [
+      72.3,
+      47
+     ]
+    ],
+    [
+     "tail",
+     "body",
+     [
+      24,
+      35
+     ]
+    ],
+    [
+     "torso",
+     "body",
+     [
+      48,
+      40
+     ]
+    ],
+    [
+     "head",
+     "body",
+     [
+      70,
+      33
+     ]
+    ],
+    [
+     "rider",
+     "body",
+     [
+      52.8,
+      31.6
+     ]
+    ],
+    [
+     "rider_torso",
+     "rider",
+     [
+      52.8,
+      31.6
+     ]
+    ],
+    [
+     "rider_arm_l",
+     "rider",
+     [
+      40.65,
+      16.3
+     ]
+    ],
+    [
+     "rider_head",
+     "rider",
+     [
+      52.8,
+      12.07
+     ]
+    ],
+    [
+     "rider_arm_r",
+     "rider",
+     [
+      64.95,
+      16.3
+     ]
+    ],
+    [
+     "rider_held_r",
+     "rider_arm_r",
+     [
+      64.95,
+      28.99
+     ]
+    ],
+    [
+     "rider_leg",
+     "rider",
+     [
+      46,
+      31
+     ]
+    ]
+   ]
+  },
+  "horse": {
+   "sheet": "rig/horse",
+   "kind": "horse",
+   "s": 1.333333,
+   "pad": 18,
+   "cell": [
+    176,
+    155
+   ],
+   "frame": [
+    96,
+    80
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_hf": 1,
+    "leg_hn": 2,
+    "leg_ff": 3,
+    "leg_fn": 4,
+    "tail": 5,
+    "torso": 6,
+    "head": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      46,
+      76
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      48,
+      40
+     ]
+    ],
+    [
+     "leg_hf",
+     "body",
+     [
+      30.3,
+      47
+     ]
+    ],
+    [
+     "leg_hn",
+     "body",
+     [
+      40.3,
+      47
+     ]
+    ],
+    [
+     "leg_ff",
+     "body",
+     [
+      64.3,
+      47
+     ]
+    ],
+    [
+     "leg_fn",
+     "body",
+     [
+      72.3,
+      47
+     ]
+    ],
+    [
+     "tail",
+     "body",
+     [
+      24,
+      35
+     ]
+    ],
+    [
+     "torso",
+     "body",
+     [
+      48,
+      40
+     ]
+    ],
+    [
+     "head",
+     "body",
+     [
+      70,
+      33
+     ]
+    ]
+   ]
+  },
+  "dog": {
+   "sheet": "rig/dog",
+   "kind": "hound",
+   "s": 2.0,
+   "pad": 16,
+   "cell": [
+    192,
+    192
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_hf": 1,
+    "leg_hn": 2,
+    "leg_ff": 3,
+    "leg_fn": 4,
+    "tail": 5,
+    "torso": 6,
+    "head": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      58
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      36
+     ]
+    ],
+    [
+     "leg_hf",
+     "body",
+     [
+      17.7,
+      41
+     ]
+    ],
+    [
+     "leg_hn",
+     "body",
+     [
+      23.7,
+      41
+     ]
+    ],
+    [
+     "leg_ff",
+     "body",
+     [
+      43.7,
+      41
+     ]
+    ],
+    [
+     "leg_fn",
+     "body",
+     [
+      49.7,
+      41
+     ]
+    ],
+    [
+     "tail",
+     "body",
+     [
+      13,
+      32
+     ]
+    ],
+    [
+     "torso",
+     "body",
+     [
+      32,
+      36
+     ]
+    ],
+    [
+     "head",
+     "body",
+     [
+      50,
+      31
+     ]
+    ]
+   ]
+  },
+  "dog_field": {
+   "sheet": "rig/dog_field",
+   "kind": "hound",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_hf": 1,
+    "leg_hn": 2,
+    "leg_ff": 3,
+    "leg_fn": 4,
+    "tail": 5,
+    "torso": 6,
+    "head": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      58
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      36
+     ]
+    ],
+    [
+     "leg_hf",
+     "body",
+     [
+      17.7,
+      41
+     ]
+    ],
+    [
+     "leg_hn",
+     "body",
+     [
+      23.7,
+      41
+     ]
+    ],
+    [
+     "leg_ff",
+     "body",
+     [
+      43.7,
+      41
+     ]
+    ],
+    [
+     "leg_fn",
+     "body",
+     [
+      49.7,
+      41
+     ]
+    ],
+    [
+     "tail",
+     "body",
+     [
+      13,
+      32
+     ]
+    ],
+    [
+     "torso",
+     "body",
+     [
+      32,
+      36
+     ]
+    ],
+    [
+     "head",
+     "body",
+     [
+      50,
+      31
+     ]
+    ]
+   ]
+  },
+  "wolf": {
+   "sheet": "rig/wolf",
+   "kind": "hound",
+   "s": 2.5,
+   "pad": 16,
+   "cell": [
+    240,
+    240
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_hf": 1,
+    "leg_hn": 2,
+    "leg_ff": 3,
+    "leg_fn": 4,
+    "tail": 5,
+    "torso": 6,
+    "head": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      58
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      36
+     ]
+    ],
+    [
+     "leg_hf",
+     "body",
+     [
+      17.7,
+      41
+     ]
+    ],
+    [
+     "leg_hn",
+     "body",
+     [
+      23.7,
+      41
+     ]
+    ],
+    [
+     "leg_ff",
+     "body",
+     [
+      43.7,
+      41
+     ]
+    ],
+    [
+     "leg_fn",
+     "body",
+     [
+      49.7,
+      41
+     ]
+    ],
+    [
+     "tail",
+     "body",
+     [
+      13,
+      32
+     ]
+    ],
+    [
+     "torso",
+     "body",
+     [
+      32,
+      36
+     ]
+    ],
+    [
+     "head",
+     "body",
+     [
+      50,
+      31
+     ]
+    ]
+   ]
+  },
+  "wolf_field": {
+   "sheet": "rig/wolf_field",
+   "kind": "hound",
+   "s": 1.125,
+   "pad": 16,
+   "cell": [
+    108,
+    108
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_hf": 1,
+    "leg_hn": 2,
+    "leg_ff": 3,
+    "leg_fn": 4,
+    "tail": 5,
+    "torso": 6,
+    "head": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      58
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      32,
+      36
+     ]
+    ],
+    [
+     "leg_hf",
+     "body",
+     [
+      17.7,
+      41
+     ]
+    ],
+    [
+     "leg_hn",
+     "body",
+     [
+      23.7,
+      41
+     ]
+    ],
+    [
+     "leg_ff",
+     "body",
+     [
+      43.7,
+      41
+     ]
+    ],
+    [
+     "leg_fn",
+     "body",
+     [
+      49.7,
+      41
+     ]
+    ],
+    [
+     "tail",
+     "body",
+     [
+      13,
+      32
+     ]
+    ],
+    [
+     "torso",
+     "body",
+     [
+      32,
+      36
+     ]
+    ],
+    [
+     "head",
+     "body",
+     [
+      50,
+      31
+     ]
+    ]
+   ]
+  },
+  "crow": {
+   "sheet": "rig/crow",
+   "kind": "bird",
+   "s": 1.0,
+   "pad": 16,
+   "cell": [
+    96,
+    96
+   ],
+   "frame": [
+    64,
+    64
+   ],
+   "cells": {
+    "shadow": 0,
+    "torso": 1,
+    "legs": 2
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      32,
+      52
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      30,
+      44
+     ]
+    ],
+    [
+     "torso",
+     "body",
+     [
+      30,
+      44
+     ]
+    ],
+    [
+     "legs",
+     "",
+     [
+      30,
+      44
+     ]
+    ]
+   ]
+  }
+ }
+}

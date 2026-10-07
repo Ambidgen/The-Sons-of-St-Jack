@@ -1,0 +1,8 @@
+{
+  "guard":      {"name": "Braced", "icon": "guard", "turns": 1, "damage_taken": 0.5},
+  "bleeding":   {"name": "Bleeding", "icon": "bleed", "turns": 4, "dot": 0.05},
+  "dazed":      {"name": "Reeling", "icon": "dazed", "turns": 1, "skip_turn": true},
+  "fear":       {"name": "Afraid", "icon": "fear", "turns": 2, "mods": {"atk": 0.75}},
+  "last_stand": {"name": "Last Stand", "icon": "last_stand", "turns": 3, "mods": {"atk": 1.5, "def": 0.75}},
+  "maimed":     {"name": "Maimed", "icon": "maimed", "turns": 999, "permanent": true, "mods": {"atk": 0.9}}
+}

@@ -1,0 +1,893 @@
+{
+ "id": "s12_st_ordrics",
+ "level": {
+  "art": "st_ordrics_ward",
+  "scale": 1.5
+ },
+ "sense": {
+  "road": [
+   [
+    12,
+    22
+   ],
+   [
+    10,
+    20
+   ],
+   [
+    14,
+    20
+   ],
+   [
+    14,
+    16
+   ],
+   [
+    15,
+    12
+   ],
+   [
+    18,
+    12
+   ],
+   [
+    12,
+    8
+   ],
+   [
+    12,
+    5
+   ],
+   [
+    11,
+    2
+   ]
+  ],
+  "solid": [
+   [
+    8,
+    5
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    15,
+    16
+   ],
+   [
+    20,
+    8
+   ],
+   [
+    10,
+    16
+   ]
+  ],
+  "reach": 1,
+  "min_walk": 7
+ },
+ "start": [
+  12,
+  23
+ ],
+ "exit": {},
+ "name": "Coldharbour",
+ "chapter": "XII. St. Ordric's Ward",
+ "age": "twenty-one",
+ "tint": "#3a3446",
+ "weather": "ash",
+ "start_facing": "up",
+ "derrick": {
+  "form": "man",
+  "level": 9
+ },
+ "lights": [
+  {
+   "id": "fire1",
+   "at": [
+    17,
+    19
+   ],
+   "color": "#ff7a2a",
+   "energy": 1.2,
+   "scale": 4.0,
+   "flicker": true
+  },
+  {
+   "id": "fire2",
+   "at": [
+    20,
+    11
+   ],
+   "color": "#ff7a2a",
+   "energy": 1.1,
+   "scale": 4.0,
+   "flicker": true
+  },
+  {
+   "id": "mouth",
+   "at": [
+    12,
+    6
+   ],
+   "color": "#ff8a3a",
+   "energy": 0.6,
+   "scale": 3.0,
+   "flicker": true
+  },
+  {
+   "id": "lantern",
+   "at": [
+    11,
+    3
+   ],
+   "color": "#ffb060",
+   "energy": 0.0,
+   "scale": 2.6,
+   "flicker": true
+  }
+ ],
+ "fx": [
+  {
+   "kind": "embers",
+   "at": [
+    17,
+    18
+   ]
+  },
+  {
+   "kind": "smoke",
+   "at": [
+    17,
+    17
+   ]
+  },
+  {
+   "kind": "embers",
+   "at": [
+    21,
+    10
+   ]
+  }
+ ],
+ "lines": {
+  "a": {
+   "y": 19
+  },
+  "b": {
+   "y": 15
+  },
+  "c": {
+   "y": 12
+  }
+ },
+ "triggers": {
+  "a": "sacks",
+  "b": "hide",
+  "c": "cornered"
+ },
+ "cast": {
+  "F": {
+   "id": "forager1",
+   "cast": "forager",
+   "at": [
+    20,
+    20
+   ],
+   "hidden": true,
+   "facing": "left"
+  },
+  "G": {
+   "id": "forager2",
+   "cast": "son_c",
+   "at": [
+    21,
+    20
+   ],
+   "hidden": true,
+   "facing": "left"
+  },
+  "B": {
+   "id": "bearded",
+   "at": [
+    21,
+    12
+   ],
+   "hidden": true,
+   "facing": "left"
+  },
+  "W": {
+   "id": "wiry",
+   "at": [
+    14,
+    17
+   ],
+   "hidden": true,
+   "facing": "up"
+  },
+  "R": {
+   "id": "grabber",
+   "at": [
+    14,
+    18
+   ],
+   "hidden": true,
+   "facing": "up"
+  },
+  "Y": {
+   "id": "bloody",
+   "at": [
+    12,
+    3
+   ],
+   "hidden": true,
+   "facing": "left"
+  },
+  "T": {
+   "id": "tall_man",
+   "at": [
+    11,
+    4
+   ],
+   "hidden": true
+  },
+  "a1": {
+   "id": "man1",
+   "cast": "son_a",
+   "at": [
+    11,
+    5
+   ],
+   "hidden": true,
+   "facing": "right"
+  },
+  "a2": {
+   "id": "man2",
+   "cast": "son_b",
+   "at": [
+    13,
+    5
+   ],
+   "hidden": true,
+   "facing": "left"
+  },
+  "a3": {
+   "id": "man3",
+   "cast": "son_c",
+   "at": [
+    12,
+    6
+   ],
+   "hidden": true
+  },
+  "a4": {
+   "id": "man4",
+   "cast": "son_a",
+   "at": [
+    13,
+    6
+   ],
+   "hidden": true,
+   "facing": "left"
+  },
+  "a5": {
+   "id": "man5",
+   "cast": "son_b",
+   "at": [
+    12,
+    7
+   ],
+   "hidden": true,
+   "facing": "right"
+  }
+ },
+ "on_enter": "intro",
+ "scripts": {
+  "intro": [
+   {
+    "card": "St. Ordric's Ward",
+    "sub": "",
+    "hold": 1.8
+   },
+   {
+    "sound": "Fewer bells here. Closer fires. Somebody, a long way off, still screaming."
+   }
+  ],
+  "sacks": [
+   {
+    "show": "forager1",
+    "wait": false
+   },
+   {
+    "show": "forager2"
+   },
+   {
+    "camera": [
+     18,
+     20
+    ],
+    "time": 1.0
+   },
+   {
+    "caption": "Two more of them, at the end of the lane, sharing a sack between them like a loaf."
+   },
+   {
+    "walk": "forager1",
+    "to": [
+     21,
+     23
+    ],
+    "speed": 3,
+    "wait": false,
+    "direct": true
+   },
+   {
+    "walk": "forager2",
+    "to": [
+     21,
+     23
+    ],
+    "speed": 3,
+    "direct": true
+   },
+   {
+    "hide": "forager1",
+    "wait": false
+   },
+   {
+    "hide": "forager2"
+   },
+   {
+    "camera": "player",
+    "time": 0.8
+   }
+  ],
+  "hide": [
+   {
+    "caption": "He kept to the narrow ways, where the fire hadn't reached and the foragers hadn't bothered. Yet."
+   }
+  ],
+  "cornered": [
+   {
+    "sound": "Boots behind him. Then in front of him."
+   },
+   {
+    "show": "bearded",
+    "wait": false
+   },
+   {
+    "show": "wiry",
+    "wait": false
+   },
+   {
+    "show": "grabber"
+   },
+   {
+    "emote": "wiry",
+    "text": "!"
+   },
+   {
+    "walk": "player",
+    "path": [
+     [
+      12,
+      12
+     ],
+     [
+      12,
+      2
+     ],
+     [
+      11,
+      2
+     ]
+    ],
+    "speed": 6,
+    "direct": true
+   },
+   {
+    "face": "player",
+    "dir": "down"
+   },
+   {
+    "camera": [
+     11.5,
+     2.6
+    ],
+    "time": 0.8,
+    "wait": false
+   },
+   {
+    "caption": "A dead end. A wall of rotten planks, and nothing behind it but more city.",
+    "hold": 2.6
+   },
+   {
+    "walk": "bearded",
+    "path": [
+     [
+      12,
+      12
+     ],
+     [
+      12,
+      4
+     ]
+    ],
+    "speed": 4,
+    "wait": false,
+    "direct": true
+   },
+   {
+    "walk": "wiry",
+    "path": [
+     [
+      14,
+      12
+     ],
+     [
+      12,
+      12
+     ],
+     [
+      12,
+      3
+     ]
+    ],
+    "speed": 4,
+    "wait": false,
+    "direct": true
+   },
+   {
+    "walk": "grabber",
+    "path": [
+     [
+      14,
+      12
+     ],
+     [
+      12,
+      12
+     ],
+     [
+      12,
+      5
+     ],
+     [
+      11,
+      5
+     ],
+     [
+      11,
+      3
+     ]
+    ],
+    "speed": 4,
+    "direct": true
+   },
+   {
+    "show": "man1",
+    "wait": false
+   },
+   {
+    "show": "man2",
+    "wait": false
+   },
+   {
+    "show": "man3",
+    "wait": false
+   },
+   {
+    "show": "man4",
+    "wait": false
+   },
+   {
+    "show": "man5"
+   },
+   {
+    "light": "lantern",
+    "energy": 1.0,
+    "time": 1.0
+   },
+   {
+    "zoom": 1.5,
+    "time": 1.4
+   },
+   {
+    "act": "player",
+    "do": "guard"
+   },
+   {
+    "caption": "The men gathered around him, eyes cold and unblinking. He shrank back into the rotting wooden wall behind him, his knife pointed, shaking at no one in particular."
+   },
+   {
+    "talk": [
+     [
+      "derrick",
+      "get away from me."
+     ]
+    ]
+   },
+   {
+    "caption": "Derrick managed to breathe without stuttering."
+   },
+   {
+    "caption": "The big bearded man to his front just smiled, something strange in his teeth."
+   },
+   {
+    "act": "bearded",
+    "do": "raise"
+   },
+   {
+    "talk": [
+     [
+      "bearded",
+      "Now now. Let's put the knife away lad. There's no need for any kind of trouble here."
+     ]
+    ]
+   },
+   {
+    "hint": "One move. Make it count."
+   },
+   {
+    "battle": "alley",
+    "then": []
+   },
+   {
+    "caption": "Derrick's head hit the wall. It took a full second for him to realize someone was punching it. Then everything ju-",
+    "hold": 3.6
+   },
+   {
+    "wait": 1.8
+   },
+   {
+    "caption": "What?",
+    "hold": 1.4,
+    "center": true
+   },
+   {
+    "caption": "Where is…What's going on?",
+    "hold": 1.8,
+    "center": true
+   },
+   {
+    "caption": "What's going on?",
+    "hold": 1.4,
+    "center": true
+   },
+   {
+    "caption": "I'm dreaming right now.",
+    "hold": 1.8,
+    "center": true
+   },
+   {
+    "caption": "Am I drea-",
+    "hold": 0.6,
+    "center": true
+   },
+   {
+    "flash": "#e9dfc7",
+    "time": 0.6
+   },
+   {
+    "shake": 16
+   },
+   {
+    "caption": "The oddly normal feeling of his right pinky being snapped in half brought his eyes wide open before the pain even registered.",
+    "center": true
+   },
+   {
+    "wound": "Right pinky, snapped in half (Coldharbour)"
+   },
+   {
+    "hide": "grabber",
+    "wait": false
+   },
+   {
+    "teleport": "bearded",
+    "to": [
+     13,
+     4
+    ]
+   },
+   {
+    "teleport": "wiry",
+    "to": [
+     10,
+     4
+    ]
+   },
+   {
+    "show": "bloody",
+    "wait": false
+   },
+   {
+    "show": "tall_man",
+    "wait": false
+   },
+   {
+    "pose": "player",
+    "art": "char/derrick_man_sit_field"
+   },
+   {
+    "camera": [
+     11.5,
+     3.2
+    ],
+    "time": 0.0
+   },
+   {
+    "zoom": 1.75,
+    "time": 0.1
+   },
+   {
+    "light": "lantern",
+    "energy": 0.5,
+    "time": 0.1
+   },
+   {
+    "caption": "He screamed so suddenly he didn't have time to control it. Once it started, it didn't stop until they shoved the rag in his mouth. His eyes welled up in tears as he struggled to breathe.",
+    "center": true
+   },
+   {
+    "fade": "in",
+    "time": 1.6
+   },
+   {
+    "caption": "A tall, thin man stooped over in front of him."
+   },
+   {
+    "act": "tall_man",
+    "do": "raise"
+   },
+   {
+    "talk": [
+     [
+      "tall_man",
+      "The Sons of St. Jack bless this city for this forage."
+     ]
+    ]
+   },
+   {
+    "act": "tall_man",
+    "do": "reset"
+   },
+   {
+    "caption": "What?",
+    "hold": 1.4
+   },
+   {
+    "face": "bloody",
+    "dir": "left"
+   },
+   {
+    "act": "bloody",
+    "do": "point"
+   },
+   {
+    "talk": [
+     [
+      "bloody",
+      "Dead man!"
+     ]
+    ]
+   },
+   {
+    "caption": "The man he headbutted stood to the tall man's right, pointing at him and demanding the right to cut his throat. He snarled, his left hand clutching a makeshift bandage to his mouth, soaked all the way through and dripping with blood."
+   },
+   {
+    "act": "bloody",
+    "do": "point"
+   },
+   {
+    "talk": [
+     [
+      "bloody",
+      "He's a dead man!"
+     ]
+    ]
+   },
+   {
+    "caption": "The tall man smiled.",
+    "hold": 2.0
+   },
+   {
+    "talk": [
+     [
+      "tall_man",
+      "I'd like to speak to him."
+     ]
+    ]
+   },
+   {
+    "zoom": 1.25,
+    "time": 2.4,
+    "wait": false
+   },
+   {
+    "light": "lantern",
+    "energy": 1.1,
+    "time": 2.4
+   },
+   {
+    "caption": "The alleyway around him gradually came into focus. There must have been at least ten men, blades in hand. The man behind him pulled the rag out of his mouth and gave the back of his head a quick shove for good measure. The group made space around them."
+   },
+   {
+    "zoom": 1.6,
+    "time": 1.6,
+    "wait": false
+   },
+   {
+    "caption": "He looked up at the tall man and into his eyes."
+   },
+   {
+    "caption": "What stared back at him was something warm.",
+    "hold": 2.4
+   },
+   {
+    "talk": [
+     [
+      "tall_man",
+      "What's your name, dead man?"
+     ]
+    ]
+   },
+   {
+    "caption": "He felt his stomach drop.",
+    "hold": 2.0
+   },
+   {
+    "pose": "tall_man",
+    "art": "char/jack_kneel_field"
+   },
+   {
+    "zoom": 1.9,
+    "time": 1.4,
+    "wait": false
+   },
+   {
+    "caption": "The tall man knelt down until they were face to face, looking him in the eye and smiling apologetically."
+   },
+   {
+    "talk": [
+     [
+      "tall_man",
+      "What's your name, dead man?"
+     ],
+     [
+      "derrick",
+      "…Derrick."
+     ],
+     [
+      "tall_man",
+      "Anyone to ransom you to Derrick? You don't much look it, but it's polite to ask."
+     ],
+     [
+      "derrick",
+      "…"
+     ]
+    ]
+   },
+   {
+    "act": "player",
+    "do": "shake"
+   },
+   {
+    "caption": "He shook his head after thinking about it."
+   },
+   {
+    "talk": [
+     [
+      "tall_man",
+      "Our bylaws technically demand I take your head for harming one our men. Of course, we still need to have a proper trial. Any chance you'll be a peach and plead guilty?"
+     ]
+    ]
+   },
+   {
+    "caption": "Derrick didn't know what that meant, but felt he should maybe say no. Something in the tall man's eyes made him think he should."
+   },
+   {
+    "prompt": [
+     "",
+     "Something else in them made him think it might not matter."
+    ],
+    "choice": [
+     {
+      "text": "Shake your head.",
+      "defiant": true,
+      "then": [
+       {
+        "add": "defiance",
+        "n": 1
+       }
+      ]
+     },
+     {
+      "text": "Nod.",
+      "then": [
+       {
+        "add": "complicity",
+        "n": 1
+       },
+       {
+        "caption": "He meant to nod. His head shook instead."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "act": "player",
+    "do": "shake"
+   },
+   {
+    "caption": "He gave a short, quick shake of his head."
+   },
+   {
+    "pose": "tall_man",
+    "art": ""
+   },
+   {
+    "zoom": 1.5,
+    "time": 1.0,
+    "wait": false
+   },
+   {
+    "caption": "The Tall Man gave a strangely disappointed smile.",
+    "hold": 2.4
+   },
+   {
+    "talk": [
+     [
+      "tall_man",
+      "Bloody hate trials, I do. No justice in em."
+     ]
+    ]
+   },
+   {
+    "face": "tall_man",
+    "dir": "down"
+   },
+   {
+    "caption": "The Tall Man turned around to face the men behind him.",
+    "hold": 2.4
+   },
+   {
+    "talk": [
+     [
+      "tall_man",
+      "Fetch the dogs."
+     ]
+    ]
+   },
+   {
+    "fade": "out",
+    "time": 0.12
+   },
+   {
+    "set": "trial_by_dogs"
+   },
+   {
+    "wait": 1.2
+   },
+   {
+    "sound": "Dogs, somewhere close, starting to bark."
+   },
+   {
+    "wait": 2.0
+   },
+   {
+    "title_drop": "The Sons of St. Jack",
+    "sub": "End of Act One"
+   },
+   {
+    "end_act": true
+   }
+  ]
+ }
+}

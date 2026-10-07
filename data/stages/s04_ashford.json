@@ -1,0 +1,420 @@
+{
+ "id": "s04_ashford",
+ "level": {
+  "art": "mirewatch_gate",
+  "scale": 1.25
+ },
+ "sense": {
+  "road": [
+   [
+    4,
+    18
+   ],
+   [
+    5,
+    17
+   ],
+   [
+    7,
+    16
+   ],
+   [
+    9,
+    16
+   ],
+   [
+    9,
+    12
+   ],
+   [
+    10,
+    12
+   ],
+   [
+    9,
+    8
+   ],
+   [
+    10,
+    8
+   ],
+   [
+    10,
+    6
+   ],
+   [
+    10,
+    3
+   ],
+   [
+    9,
+    1
+   ],
+   [
+    14,
+    2
+   ],
+   [
+    4,
+    2
+   ]
+  ],
+  "ground": [
+   [
+    7,
+    9
+   ],
+   [
+    12,
+    9
+   ],
+   [
+    13,
+    2
+   ]
+  ],
+  "solid": [
+   [
+    3,
+    5
+   ],
+   [
+    16,
+    5
+   ],
+   [
+    6,
+    12
+   ],
+   [
+    13,
+    11
+   ],
+   [
+    2,
+    17
+   ],
+   [
+    13,
+    17
+   ],
+   [
+    6,
+    0
+   ]
+  ],
+  "reach": 1.5,
+  "min_walk": 8,
+  "block": [
+   [
+    0,
+    4,
+    9,
+    3
+   ],
+   [
+    11,
+    4,
+    9,
+    3
+   ],
+   [
+    0,
+    0,
+    7,
+    4
+   ],
+   [
+    13,
+    0,
+    7,
+    4
+   ],
+   [
+    0,
+    15,
+    5,
+    5
+   ],
+   [
+    13,
+    15,
+    7,
+    5
+   ],
+   [
+    0,
+    7,
+    3,
+    3
+   ],
+   [
+    16,
+    7,
+    4,
+    9
+   ],
+   [
+    0,
+    10,
+    6,
+    5
+   ]
+  ],
+  "keep": [
+   [
+    9,
+    4,
+    2,
+    3
+   ]
+  ]
+ },
+ "start": [
+  9,
+  19
+ ],
+ "exit": {
+  "edge": "top"
+ },
+ "name": "Ashford",
+ "chapter": "IV.  Ashford",
+ "age": "thirteen",
+ "tint": "#76808f",
+ "weather": "rain",
+ "start_facing": "up",
+ "derrick": {
+  "form": "youth",
+  "level": 3
+ },
+ "give": {
+  "rag": 1
+ },
+ "growth_text": "Derrick, thirteen. Hunger has taught him to fight dirty.",
+ "lights": [
+  {
+   "id": "l0",
+   "at": [
+    8,
+    3
+   ],
+   "color": "#ff9a48",
+   "energy": 0.7,
+   "scale": 1.6,
+   "flicker": true
+  },
+  {
+   "id": "l1",
+   "at": [
+    11,
+    3
+   ],
+   "color": "#ff9a48",
+   "energy": 0.7,
+   "scale": 1.6,
+   "flicker": true
+  },
+  {
+   "id": "l2",
+   "at": [
+    8,
+    7
+   ],
+   "color": "#ff9a48",
+   "energy": 0.7,
+   "scale": 1.6,
+   "flicker": true
+  },
+  {
+   "id": "l3",
+   "at": [
+    11,
+    7
+   ],
+   "color": "#ff9a48",
+   "energy": 0.7,
+   "scale": 1.6,
+   "flicker": true
+  },
+  {
+   "id": "l4",
+   "at": [
+    8,
+    9
+   ],
+   "color": "#ff9a48",
+   "energy": 0.7,
+   "scale": 1.6,
+   "flicker": true
+  },
+  {
+   "id": "l5",
+   "at": [
+    11,
+    9
+   ],
+   "color": "#ff9a48",
+   "energy": 0.7,
+   "scale": 1.6,
+   "flicker": true
+  },
+  {
+   "id": "l6",
+   "at": [
+    8,
+    14
+   ],
+   "color": "#ff9a48",
+   "energy": 0.7,
+   "scale": 1.6,
+   "flicker": true
+  },
+  {
+   "id": "l7",
+   "at": [
+    11,
+    14
+   ],
+   "color": "#ff9a48",
+   "energy": 0.7,
+   "scale": 1.6,
+   "flicker": true
+  },
+  {
+   "id": "window",
+   "at": [
+    13,
+    0
+   ],
+   "color": "#ffb060",
+   "energy": 1.0,
+   "scale": 2.6,
+   "flicker": true
+  }
+ ],
+ "lines": {
+  "a": {
+   "y": 15
+  },
+  "b": {
+   "y": 9
+  },
+  "c": {
+   "y": 3
+  }
+ },
+ "triggers": {
+  "a": "marsh",
+  "b": "alms",
+  "c": "window"
+ },
+ "cast": {
+  "B": {
+   "id": "monk",
+   "at": [
+    11,
+    8
+   ],
+   "facing": "left"
+  }
+ },
+ "on_enter": "intro",
+ "scripts": {
+  "intro": [
+   {
+    "card": "Ashford",
+    "sub": "Four winters later.",
+    "hold": 2.4
+   },
+   {
+    "growth": true
+   },
+   {
+    "sound": "Rain on black water. Frogs. Somewhere past the wall, a bell for vespers."
+   }
+  ],
+  "marsh": [
+   {
+    "caption": "He had walked for four winters. He had worn out three pairs of shoes, and then stopped needing them."
+   }
+  ],
+  "alms": [
+   {
+    "walk": "player",
+    "to": [
+     10,
+     8
+    ],
+    "speed": 3
+   },
+   {
+    "face": "player",
+    "dir": "right"
+   },
+   {
+    "face": "monk",
+    "to": "player"
+   },
+   {
+    "talk": [
+     [
+      "derrick",
+      "Please, Brother."
+     ],
+     [
+      "monk",
+      "Alms are for the parish's own, boy. Which parish are you?"
+     ],
+     [
+      "derrick",
+      "Harrowgate."
+     ],
+     [
+      "monk",
+      "There's no Harrowgate."
+     ],
+     [
+      "monk",
+      "...Not any more. Move along."
+     ]
+    ]
+   },
+   {
+    "caption": "He had stopped counting the days. He had not stopped counting."
+   },
+   {
+    "sound": "A cart, rumbling for the gate. The Brother turns to shout at the carter."
+   },
+   {
+    "face": "monk",
+    "dir": "down"
+   },
+   {
+    "hint": "The gate is open behind the cart."
+   }
+  ],
+  "window": [
+   {
+    "camera": [
+     13,
+     0
+    ],
+    "time": 1.2
+   },
+   {
+    "wait": 0.4
+   },
+   {
+    "caption": "Through the glass: a family at table. A father tearing bread. A boy about his age, laughing at nothing."
+   },
+   {
+    "caption": "Three loaves. He counted.",
+    "hold": 2.4
+   },
+   {
+    "camera": "player",
+    "time": 0.8
+   }
+  ]
+ }
+}

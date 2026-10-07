@@ -1,0 +1,332 @@
+{
+ "id": "s10_thornwake",
+ "level": {
+  "art": "thornwake",
+  "scale": 1.25
+ },
+ "sense": {
+  "road": [
+   [
+    1,
+    9
+   ],
+   [
+    4,
+    10
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    10,
+    10
+   ],
+   [
+    15,
+    9
+   ],
+   [
+    18,
+    10
+   ],
+   [
+    6,
+    6
+   ]
+  ],
+  "ground": [
+   [
+    7,
+    12
+   ],
+   [
+    9,
+    5
+   ]
+  ],
+  "solid": [
+   [
+    2,
+    2
+   ],
+   [
+    2,
+    16
+   ],
+   [
+    16,
+    15
+   ],
+   [
+    17,
+    3
+   ],
+   [
+    12,
+    5
+   ],
+   [
+    12,
+    15
+   ],
+   [
+    10,
+    7
+   ]
+  ],
+  "reach": 1.5,
+  "min_walk": 8,
+  "keep_road": [
+   [
+    11,
+    10,
+    4,
+    1
+   ]
+  ],
+  "block": [
+   [
+    0,
+    12,
+    12,
+    8
+   ],
+   [
+    0,
+    0,
+    12,
+    5
+   ]
+  ]
+ },
+ "start": [
+  0,
+  9
+ ],
+ "exit": {
+  "edge": "right"
+ },
+ "name": "the Thornwake",
+ "chapter": "X.   The Thornwake",
+ "age": "twenty-one",
+ "tint": "#8a93a8",
+ "weather": "snow",
+ "start_facing": "right",
+ "derrick": {
+  "form": "man",
+  "level": 8
+ },
+ "lights": [
+  {
+   "id": "campglow",
+   "at": [
+    19,
+    10
+   ],
+   "color": "#ff7a2a",
+   "energy": 0.0,
+   "scale": 6.0,
+   "flicker": true
+  }
+ ],
+ "lines": {
+  "a": {
+   "x": 5
+  },
+  "b": {
+   "x": 11
+  },
+  "c": {
+   "x": 16
+  }
+ },
+ "triggers": {
+  "a": "wolves",
+  "b": "brook",
+  "c": "collapse"
+ },
+ "cast": {
+  "W": {
+   "id": "wolf1",
+   "cast": "wolf",
+   "at": [
+    8,
+    6
+   ],
+   "hidden": true,
+   "facing": "left"
+  },
+  "X": {
+   "id": "wolf2",
+   "cast": "wolf",
+   "at": [
+    9,
+    12
+   ],
+   "hidden": true,
+   "facing": "left"
+  }
+ },
+ "on_enter": "intro",
+ "scripts": {
+  "intro": [
+   {
+    "card": "The Thornwake",
+    "sub": "",
+    "hold": 1.8
+   },
+   {
+    "sound": "Snow on thorns. Water, somewhere ahead, loud and black."
+   }
+  ],
+  "wolves": [
+   {
+    "sound": "Nothing. The wood went quiet all at once."
+   },
+   {
+    "wait": 1.0
+   },
+   {
+    "face": "player",
+    "dir": "right"
+   },
+   {
+    "show": "wolf1",
+    "wait": false
+   },
+   {
+    "show": "wolf2"
+   },
+   {
+    "camera": [
+     7,
+     9
+    ],
+    "time": 0.7,
+    "wait": false
+   },
+   {
+    "walk": "wolf1",
+    "to": [
+     7,
+     9
+    ],
+    "speed": 3,
+    "wait": false,
+    "direct": true
+   },
+   {
+    "walk": "wolf2",
+    "to": [
+     8,
+     10
+    ],
+    "speed": 3,
+    "direct": true
+   },
+   {
+    "caption": "They had followed him from the gallows. They were as hungry as he was, and there were two of them."
+   },
+   {
+    "battle": "wolves",
+    "win": [
+     {
+      "fall": "wolf1"
+     },
+     {
+      "fall": "wolf2"
+     },
+     {
+      "caption": "He ate what he could. It was not enough. It was more than he'd had."
+     }
+    ]
+   }
+  ],
+  "brook": [
+   {
+    "caption": "He crossed on the fallen tree, the way you cross anything: without looking down."
+   }
+  ],
+  "collapse": [
+   {
+    "walk": "player",
+    "to": [
+     17,
+     10
+    ],
+    "speed": 1.2
+   },
+   {
+    "fall": "player"
+   },
+   {
+    "shake": 3
+   },
+   {
+    "zoom": 1.4,
+    "time": 2.0,
+    "wait": false
+   },
+   {
+    "tint": "#4a5468",
+    "time": 2.5,
+    "wait": true
+   },
+   {
+    "caption": "He sat down in the snow, which is the one thing you are never supposed to do."
+   },
+   {
+    "wait": 1.4
+   },
+   {
+    "zoom": 1.0,
+    "time": 1.5,
+    "wait": false
+   },
+   {
+    "light": "campglow",
+    "energy": 1.2,
+    "time": 2.5
+   },
+   {
+    "camera": [
+     19,
+     9
+    ],
+    "time": 2.2
+   },
+   {
+    "sound": "Bells. Far off, and ringing too fast."
+   },
+   {
+    "wait": 1.2
+   },
+   {
+    "sound": "Smoke on the wind. A city, burning."
+   },
+   {
+    "wait": 1.8
+   },
+   {
+    "camera": "player",
+    "time": 1.2
+   },
+   {
+    "rise": "player"
+   },
+   {
+    "caption": "He got up.",
+    "hold": 2.0
+   },
+   {
+    "caption": "A burning city meant doors left open.",
+    "hold": 2.4
+   },
+   {
+    "tint": "#8a93a8",
+    "time": 1.5
+   }
+  ]
+ }
+}

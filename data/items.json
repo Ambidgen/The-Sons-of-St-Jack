@@ -1,0 +1,6 @@
+{
+  "rag":   {"name": "Strip of Rag", "icon": "rag", "kind": "heal", "amount": 10, "cure": ["bleeding"], "target": "ally", "price": 1,
+            "desc": "Bind the wound. Stops bleeding; heals almost nothing."},
+  "bread": {"name": "Heel of Bread", "icon": "bread", "kind": "heal", "amount": 40, "target": "ally", "price": 1,
+            "desc": "Stale and hard. Restores a little HP (all healing is halved)."}
+}

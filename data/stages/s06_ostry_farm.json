@@ -1,0 +1,471 @@
+{
+ "id": "s06_ostry_farm",
+ "level": {
+  "art": "sunk_furrows",
+  "scale": 1.25
+ },
+ "sense": {
+  "road": [
+   [
+    1,
+    18
+   ],
+   [
+    3,
+    16
+   ],
+   [
+    5,
+    14
+   ],
+   [
+    7,
+    12
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    11,
+    8
+   ],
+   [
+    13,
+    7
+   ]
+  ],
+  "ground": [
+   [
+    16,
+    9
+   ]
+  ],
+  "solid": [
+   [
+    2,
+    8
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    10,
+    15
+   ],
+   [
+    16,
+    3
+   ],
+   [
+    12,
+    13
+   ]
+  ],
+  "reach": 1.5,
+  "water_y": 0.3,
+  "min_walk": 8
+ },
+ "start": [
+  1,
+  19
+ ],
+ "exit": {
+  "cells": [
+   [
+    13,
+    6
+   ],
+   [
+    14,
+    7
+   ]
+  ]
+ },
+ "name": "the Ostry farm",
+ "chapter": "VI.  The Ostry Farm",
+ "age": "sixteen",
+ "tint": "#f2dcb0",
+ "weather": "",
+ "start_facing": "up",
+ "derrick": {
+  "form": "lad",
+  "level": 5
+ },
+ "give": {
+  "rag": 1
+ },
+ "growth_text": "Derrick, sixteen. He has grown into his hands.",
+ "lines": {
+  "a": {
+   "y": 16
+  },
+  "b": {
+   "y": 12
+  },
+  "c": {
+   "y": 8
+  }
+ },
+ "triggers": {
+  "a": "hire",
+  "b": "hild",
+  "c": "accused"
+ },
+ "cast": {
+  "O": {
+   "id": "ostry",
+   "at": [
+    3,
+    15
+   ],
+   "facing": "right"
+  },
+  "H": {
+   "id": "hild",
+   "at": [
+    5,
+    10
+   ],
+   "facing": "right"
+  },
+  "E": {
+   "id": "edric",
+   "at": [
+    12,
+    7
+   ],
+   "facing": "left",
+   "steps_aside": true
+  },
+  "W": {
+   "id": "wat",
+   "at": [
+    13,
+    8
+   ],
+   "facing": "left",
+   "steps_aside": true
+  },
+  "L": {
+   "id": "ostry_late",
+   "cast": "ostry",
+   "at": [
+    14,
+    6
+   ],
+   "hidden": true,
+   "facing": "left"
+  }
+ },
+ "on_enter": "intro",
+ "on_exit": "leave",
+ "scripts": {
+  "intro": [
+   {
+    "card": "The Ostry Farm",
+    "sub": "Three years on. Harvest, and the river up over the low fields.",
+    "hold": 2.6
+   },
+   {
+    "growth": true
+   },
+   {
+    "sound": "Scythes. Water in the ditches. Somebody whistling the same four notes, over and over."
+   }
+  ],
+  "hire": [
+   {
+    "face": "ostry",
+    "to": "player"
+   },
+   {
+    "talk": [
+     [
+      "ostry",
+      "You the one from the hiring fair?"
+     ],
+     [
+      "derrick",
+      "Yes."
+     ],
+     [
+      "ostry",
+      "You're thin."
+     ],
+     [
+      "derrick",
+      "I'm strong."
+     ],
+     [
+      "ostry",
+      "You'd better be. Penny a day and whatever's in the pot. You sleep in the mill. You don't come in the house."
+     ],
+     [
+      "derrick",
+      "Yes, sir."
+     ]
+    ]
+   },
+   {
+    "hide": "ostry"
+   }
+  ],
+  "hild": [
+   {
+    "walk": "player",
+    "to": [
+     6,
+     11
+    ],
+    "speed": 3
+   },
+   {
+    "face": "player",
+    "dir": "left"
+   },
+   {
+    "face": "hild",
+    "to": "player"
+   },
+   {
+    "talk": [
+     [
+      "hild",
+      "Here. Eat. You're all elbows."
+     ],
+     [
+      "derrick",
+      "Thank you."
+     ],
+     [
+      "hild",
+      "Ha. Manners. Where'd you get those?"
+     ],
+     [
+      "derrick",
+      "My mam."
+     ],
+     [
+      "hild",
+      "...Well. She did right by you."
+     ]
+    ]
+   },
+   {
+    "fade": "out",
+    "time": 1.0
+   },
+   {
+    "caption": "The harvest took eleven days. He counted every one.",
+    "center": true
+   },
+   {
+    "caption": "On the sixth, the youngest boy showed him how to tie a sheaf properly.",
+    "center": true
+   },
+   {
+    "caption": "On the ninth, she let him eat at the table.",
+    "center": true
+   },
+   {
+    "caption": "He didn't say anything. He was afraid that if he said anything, it would stop.",
+    "center": true
+   },
+   {
+    "tint": "#ecc9a0",
+    "time": 0.1
+   },
+   {
+    "fade": "in",
+    "time": 1.2
+   }
+  ],
+  "accused": [
+   {
+    "camera": [
+     12,
+     7
+    ],
+    "time": 0.8
+   },
+   {
+    "talk": [
+     [
+      "edric",
+      "Da's knife is gone. The good one, with the horn handle."
+     ],
+     [
+      "wat",
+      "It was on the block this morning. Now it's not."
+     ]
+    ]
+   },
+   {
+    "prompt": [
+     "edric",
+     "Turn out your pack."
+    ],
+    "choice": [
+     {
+      "text": "\"I didn't take it.\"",
+      "then": [
+       {
+        "talk": [
+         [
+          "edric",
+          "Course you'd say that."
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Turn out the pack.",
+      "then": [
+       {
+        "caption": "He turned it out. A shirt. The stick. Half a heel of bread. No knife."
+       },
+       {
+        "talk": [
+         [
+          "wat",
+          "He's hidden it, then. Or sold it."
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "talk": [
+     [
+      "edric",
+      "We took you in. We fed you."
+     ],
+     [
+      "derrick",
+      "I worked."
+     ]
+    ]
+   },
+   {
+    "battle": "ostry",
+    "win": [
+     {
+      "caption": "He won.",
+      "hold": 1.8
+     },
+     {
+      "caption": "It changed nothing."
+     }
+    ],
+    "lose": [
+     {
+      "fall": "player"
+     },
+     {
+      "caption": "He lost.",
+      "hold": 1.8
+     },
+     {
+      "caption": "It changed nothing."
+     },
+     {
+      "rise": "player"
+     }
+    ]
+   },
+   {
+    "show": "ostry_late"
+   },
+   {
+    "walk": "ostry_late",
+    "to": [
+     13,
+     6
+    ],
+    "speed": 3
+   },
+   {
+    "talk": [
+     [
+      "ostry_late",
+      "I don't care who hit who. Get your things."
+     ],
+     [
+      "ostry_late",
+      "Eleven days. There's your pennies. We're square."
+     ],
+     [
+      "derrick",
+      "I didn't take it."
+     ],
+     [
+      "ostry_late",
+      "Then you've nothing to worry about, have you. Go on."
+     ]
+    ]
+   },
+   {
+    "camera": "hild",
+    "time": 1.4
+   },
+   {
+    "caption": "She watched from the field's edge. She didn't say anything either."
+   },
+   {
+    "walk": "edric",
+    "to": [
+     6,
+     12
+    ],
+    "speed": 3,
+    "wait": false
+   },
+   {
+    "walk": "wat",
+    "to": [
+     7,
+     12
+    ],
+    "speed": 3,
+    "wait": false
+   },
+   {
+    "walk": "ostry_late",
+    "to": [
+     8,
+     11
+    ],
+    "speed": 3
+   },
+   {
+    "face": "edric",
+    "dir": "up"
+   },
+   {
+    "face": "wat",
+    "dir": "up"
+   },
+   {
+    "face": "ostry_late",
+    "dir": "up"
+   },
+   {
+    "camera": "player",
+    "time": 0.8
+   },
+   {
+    "hint": "The causeway goes on, over the floods."
+   }
+  ],
+  "leave": [
+   {
+    "caption": "The knife turned up in the spring, under the woodpile. Nobody ever told him."
+   }
+  ]
+ }
+}

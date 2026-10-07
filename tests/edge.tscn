@@ -1,0 +1,8 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://tests/edge.gd" id="1_edge"]
+
+[node name="EdgeHost" type="Node"]
+
+[node name="Edge" type="Node" parent="."]
+script = ExtResource("1_edge")

@@ -1,0 +1,335 @@
+{
+ "id": "s05_butchers_steps",
+ "level": {
+  "art": "butchers_steps",
+  "scale": 1.25
+ },
+ "sense": {
+  "road": [
+   [
+    3,
+    18
+   ],
+   [
+    3,
+    12
+   ],
+   [
+    5,
+    10
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    10,
+    17
+   ],
+   [
+    12,
+    8
+   ],
+   [
+    15,
+    4
+   ],
+   [
+    16,
+    12
+   ],
+   [
+    15,
+    17
+   ]
+  ],
+  "solid": [
+   [
+    7,
+    14
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    9,
+    2
+   ],
+   [
+    18,
+    6
+   ]
+  ],
+  "reach": 1,
+  "min_walk": 8,
+  "block": [
+   [
+    7,
+    0,
+    7,
+    8
+   ],
+   [
+    18,
+    0,
+    2,
+    20
+   ],
+   [
+    6,
+    13,
+    3,
+    3
+   ],
+   [
+    0,
+    0,
+    7,
+    7
+   ],
+   [
+    0,
+    15,
+    2,
+    5
+   ],
+   [
+    9,
+    11,
+    5,
+    9
+   ],
+   [
+    16,
+    11,
+    2,
+    9
+   ]
+  ]
+ },
+ "start": [
+  3,
+  19
+ ],
+ "exit": {
+  "edge": "top"
+ },
+ "name": "Ashford",
+ "chapter": "V.   The Butcher's Steps",
+ "age": "thirteen",
+ "tint": "#7a8494",
+ "weather": "rain",
+ "start_facing": "up",
+ "derrick": {
+  "form": "youth",
+  "level": 3
+ },
+ "props": {
+  "2": {
+   "art": "prop/bread_cart",
+   "at": [
+    7,
+    8
+   ]
+  }
+ },
+ "lines": {
+  "a": {
+   "y": 15
+  },
+  "b": {
+   "y": 10
+  }
+ },
+ "triggers": {
+  "a": "market",
+  "b": "bread"
+ },
+ "cast": {
+  "K": {
+   "id": "baker",
+   "at": [
+    5,
+    9
+   ],
+   "facing": "left"
+  },
+  "C": {
+   "id": "carter",
+   "cast": "villager",
+   "at": [
+    4,
+    9
+   ],
+   "facing": "right"
+  },
+  "D": {
+   "id": "dog",
+   "at": [
+    16,
+    1
+   ],
+   "hidden": true,
+   "facing": "left"
+  }
+ },
+ "on_enter": "intro",
+ "scripts": {
+  "intro": [
+   {
+    "sound": "Rain on slate. Cartwheels. A market packing up."
+   }
+  ],
+  "market": [
+   {
+    "camera": [
+     9,
+     3
+    ],
+    "time": 1.4
+   },
+   {
+    "caption": "The Butcher's Steps. Three ropes on the scaffold, empty today. Tomorrow was a market day."
+   },
+   {
+    "camera": "player",
+    "time": 1.0
+   }
+  ],
+  "bread": [
+   {
+    "sound": "The baker, arguing with a carter about a horse."
+   },
+   {
+    "talk": [
+     [
+      "baker",
+      "Lame! You sold me a lame horse and you know it!"
+     ],
+     [
+      "carter",
+      "It weren't lame when it left me."
+     ]
+    ]
+   },
+   {
+    "walk": "player",
+    "to": [
+     8,
+     9
+    ],
+    "speed": 3
+   },
+   {
+    "face": "player",
+    "dir": "left"
+   },
+   {
+    "caption": "He took one. It was the easiest thing he had ever done."
+   },
+   {
+    "give": "bread",
+    "n": 1
+   },
+   {
+    "emote": "baker",
+    "text": "!"
+   },
+   {
+    "act": "baker",
+    "do": "attack"
+   },
+   {
+    "talk": [
+     [
+      "baker",
+      "Oi! THIEF! Stop him!"
+     ]
+    ]
+   },
+   {
+    "shake": 5
+   },
+   {
+    "walk": "player",
+    "path": [
+     [
+      12,
+      9
+     ],
+     [
+      14,
+      9
+     ],
+     [
+      14,
+      5
+     ]
+    ],
+    "speed": 7
+   },
+   {
+    "sound": "Rain on the hooks of the butchers' row. His own breathing."
+   },
+   {
+    "wait": 0.6
+   },
+   {
+    "sound": "A growl."
+   },
+   {
+    "face": "player",
+    "dir": "up"
+   },
+   {
+    "show": "dog"
+   },
+   {
+    "camera": [
+     15,
+     3
+    ],
+    "time": 0.7,
+    "wait": false
+   },
+   {
+    "zoom": 1.35,
+    "time": 0.7
+   },
+   {
+    "walk": "dog",
+    "to": [
+     15,
+     3
+    ],
+    "speed": 2
+   },
+   {
+    "caption": "It was thinner than he was. It wanted the bread more than he did. Neither of them was going to give it up."
+   },
+   {
+    "battle": "dog",
+    "win": [
+     {
+      "fall": "dog"
+     },
+     {
+      "caption": "He ate beside it, in the rain. He shared none of it."
+     }
+    ]
+   },
+   {
+    "hint": "The butchers' row runs north, out of the market."
+   }
+  ]
+ }
+}

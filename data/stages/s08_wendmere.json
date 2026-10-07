@@ -1,0 +1,530 @@
+{
+ "id": "s08_wendmere",
+ "level": {
+  "art": "forest_road",
+  "scale": 1.0
+ },
+ "sense": {
+  "road": [
+   [
+    2,
+    6
+   ],
+   [
+    8,
+    6
+   ],
+   [
+    12,
+    6
+   ],
+   [
+    16,
+    6
+   ],
+   [
+    16,
+    5
+   ],
+   [
+    20,
+    6
+   ],
+   [
+    26,
+    6
+   ],
+   [
+    32,
+    6
+   ],
+   [
+    40,
+    6
+   ],
+   [
+    48,
+    6
+   ],
+   [
+    56,
+    6
+   ],
+   [
+    64,
+    6
+   ]
+  ],
+  "ground": [
+   [
+    6,
+    4
+   ],
+   [
+    30,
+    4
+   ]
+  ],
+  "reach": 1.5,
+  "t_road": 3.0,
+  "min_walk": 8,
+  "band": [
+   3,
+   8
+  ]
+ },
+ "start": [
+  0,
+  6
+ ],
+ "exit": {
+  "edge": "right"
+ },
+ "name": "Wendmere",
+ "chapter": "VIII. Wendmere",
+ "age": "twenty",
+ "tint": "#9aa196",
+ "weather": "fog",
+ "start_facing": "right",
+ "derrick": {
+  "form": "man",
+  "level": 7
+ },
+ "mist": [
+  {
+   "y": 0,
+   "h": 240,
+   "speed": 0.6,
+   "alpha": 0.28,
+   "color": "#c8ccc4"
+  }
+ ],
+ "props": {
+  "1": {
+   "art": "prop/fallen",
+   "at": [
+    [
+     6,
+     8
+    ],
+    [
+     13,
+     4
+    ],
+    [
+     19,
+     8
+    ],
+    [
+     31,
+     8
+    ],
+    [
+     44,
+     4
+    ],
+    [
+     47,
+     8
+    ],
+    [
+     58,
+     8
+    ]
+   ]
+  },
+  "2": {
+   "art": "prop/spears",
+   "at": [
+    [
+     9,
+     4
+    ],
+    [
+     36,
+     8
+    ],
+    [
+     53,
+     4
+    ]
+   ]
+  },
+  "3": {
+   "art": "prop/lord_banner",
+   "at": [
+    [
+     42,
+     8
+    ]
+   ]
+  }
+ },
+ "lines": {
+  "a": {
+   "x": 10
+  },
+  "b": {
+   "x": 24
+  },
+  "c": {
+   "x": 37
+  },
+  "d": {
+   "x": 52
+  }
+ },
+ "triggers": {
+  "a": "field",
+  "b": "aldo",
+  "c": "gauntley",
+  "d": "looter"
+ },
+ "cast": {
+  "L": {
+   "id": "aldo",
+   "at": [
+    27,
+    4
+   ],
+   "down": true
+  },
+  "P": {
+   "id": "looter",
+   "at": [
+    57,
+    6
+   ],
+   "facing": "left",
+   "steps_aside": true
+  },
+  "C": {
+   "id": "crow1",
+   "cast": "crow",
+   "at": [
+    40,
+    4
+   ],
+   "solid": false
+  },
+  "D": {
+   "id": "crow2",
+   "cast": "crow",
+   "at": [
+    59,
+    7
+   ],
+   "solid": false,
+   "facing": "left"
+  },
+  "R": {
+   "id": "gauntley_rider",
+   "at": [
+    52,
+    5
+   ],
+   "hidden": true,
+   "facing": "left"
+  },
+  "Q": {
+   "id": "rider",
+   "at": [
+    52,
+    6
+   ],
+   "hidden": true,
+   "facing": "left"
+  }
+ },
+ "on_enter": "intro",
+ "scripts": {
+  "intro": [
+   {
+    "card": "Wendmere",
+    "sub": "The morning after.",
+    "hold": 2.4
+   },
+   {
+    "sound": "Nothing. Then a crow, and another, arguing over something."
+   }
+  ],
+  "field": [
+   {
+    "camera": [
+     16,
+     6
+    ],
+    "time": 1.6
+   },
+   {
+    "caption": "They had told him which side he was on. They had not told him what it was for."
+   },
+   {
+    "camera": "player",
+    "time": 1.0
+   }
+  ],
+  "aldo": [
+   {
+    "sound": "Someone breathing wrong."
+   },
+   {
+    "camera": "aldo",
+    "time": 1.0
+   },
+   {
+    "talk": [
+     [
+      "aldo",
+      "You. Are you— Harrowgate. It's you. I told you. Two's harder."
+     ]
+    ]
+   },
+   {
+    "prompt": [
+     "aldo",
+     "Sit with me. Just a bit. I don't— I don't want to go by myself."
+    ],
+    "choice": [
+     {
+      "text": "Sit with him.",
+      "then": [
+       {
+        "add": "defiance",
+        "n": 1
+       },
+       {
+        "walk": "player",
+        "to": [
+         27,
+         5
+        ],
+        "speed": 2
+       },
+       {
+        "face": "player",
+        "dir": "up"
+       },
+       {
+        "fade": "out",
+        "time": 1.2
+       },
+       {
+        "caption": "He sat with him until he stopped talking. It did not take long.",
+        "center": true
+       },
+       {
+        "caption": "Aldo told him about his daughters again, and the miller, and the roof. He told it all as if Derrick could take it somewhere.",
+        "center": true
+       },
+       {
+        "fade": "in",
+        "time": 1.2
+       }
+      ]
+     },
+     {
+      "text": "Keep walking.",
+      "then": [
+       {
+        "add": "complicity",
+        "n": 1
+       },
+       {
+        "talk": [
+         [
+          "aldo",
+          "Please—"
+         ]
+        ]
+       },
+       {
+        "caption": "He didn't look back. He was getting good at it."
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "gauntley": [
+   {
+    "sound": "Horses. A lot of them. Victors don't hurry."
+   },
+   {
+    "walk": "player",
+    "to": [
+     37,
+     7
+    ],
+    "speed": 5
+   },
+   {
+    "face": "player",
+    "dir": "right"
+   },
+   {
+    "show": "gauntley_rider",
+    "wait": false
+   },
+   {
+    "show": "rider"
+   },
+   {
+    "camera": [
+     41,
+     6
+    ],
+    "time": 1.0,
+    "wait": false
+   },
+   {
+    "walk": "rider",
+    "to": [
+     41,
+     6
+    ],
+    "speed": 3,
+    "wait": false,
+    "direct": true
+   },
+   {
+    "walk": "gauntley_rider",
+    "to": [
+     40,
+     5
+    ],
+    "speed": 3,
+    "direct": true
+   },
+   {
+    "hide": "crow1",
+    "wait": false
+   },
+   {
+    "zoom": 1.2,
+    "time": 0.6
+   },
+   {
+    "talk": [
+     [
+      "gauntley_rider",
+      "Clear the road there, friend! Wounded coming through."
+     ],
+     [
+      "derrick",
+      "Ser Gauntley."
+     ],
+     [
+      "gauntley_rider",
+      "Aye, that's me. God keep you, son."
+     ]
+    ]
+   },
+   {
+    "walk": "gauntley_rider",
+    "path": [
+     [
+      40,
+      5
+     ],
+     [
+      0,
+      5
+     ]
+    ],
+    "speed": 3,
+    "wait": false,
+    "direct": true
+   },
+   {
+    "walk": "rider",
+    "path": [
+     [
+      41,
+      6
+     ],
+     [
+      0,
+      6
+     ]
+    ],
+    "speed": 3,
+    "wait": false,
+    "direct": true
+   },
+   {
+    "camera": "gauntley_rider",
+    "time": 0.8
+   },
+   {
+    "wait": 3.0
+   },
+   {
+    "hide": "gauntley_rider",
+    "wait": false
+   },
+   {
+    "hide": "rider"
+   },
+   {
+    "camera": "player",
+    "time": 1.2
+   },
+   {
+    "zoom": 1.0,
+    "time": 0.6
+   },
+   {
+    "caption": "He had been nine. He had been small. It was a long time ago, and there had been a great many villages."
+   },
+   {
+    "caption": "Shield up. Chin down.",
+    "hold": 2.4
+   }
+  ],
+  "looter": [
+   {
+    "camera": "looter",
+    "time": 0.8
+   },
+   {
+    "talk": [
+     [
+      "looter",
+      "These are mine. Find your own dead."
+     ],
+     [
+      "derrick",
+      "I don't want anything."
+     ],
+     [
+      "looter",
+      "Everybody wants something. You want those boots to stay on your feet, for one."
+     ],
+     [
+      "looter",
+      "They're good boots."
+     ]
+    ]
+   },
+   {
+    "battle": "looter",
+    "win": [
+     {
+      "fall": "looter"
+     },
+     {
+      "hide": "crow2"
+     },
+     {
+      "caption": "The man had eleven pairs of boots in his sack. None of them fit."
+     },
+     {
+      "caption": "He took the knife instead.",
+      "hold": 2.2
+     }
+    ]
+   }
+  ]
+ }
+}

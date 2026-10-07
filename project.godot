@@ -1,0 +1,24 @@
+; Engine configuration file.
+config_version=5
+
+[application]
+config/name="The Sons of St. Jack - Act One (prototype)"
+config/description="Linear, cinematic vertical slice of Act One: childhood, the lost years, the Sons."
+run/main_scene="res://scenes/title/title.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.086, 0.071, 0.055, 1)
+
+[autoload]
+Data="*res://autoload/data.gd"
+Game="*res://autoload/game.gd"
+Router="*res://autoload/router.gd"
