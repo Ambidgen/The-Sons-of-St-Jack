@@ -80,8 +80,14 @@ func _check_rigs() -> void:
 		for part in d["cells"]:
 			if not seen.has(part):
 				failures.append("rig %s: part %s has no bone" % [name, part])
-		if d["kind"] == "biped" and not (d["cells"].has("arm_l") and d["cells"].has("arm_r") and d["cells"].has("head")):
+		# drawn figures that sit, or keep their hands folded, carry their arms in the torso
+		var arms_free: bool = d.get("sprite", false) and (d.get("sit", false) or d["cells"].has("skirt"))
+		if d["kind"] == "biped" and not (d["cells"].has("head") and (arms_free or (d["cells"].has("arm_l") and d["cells"].has("arm_r")))):
 			failures.append("rig %s: a person without arms or a head" % name)
+		if d["kind"] == "frontdog" and not (d["cells"].has("head") and d["cells"].has("leg_l") and d["cells"].has("leg_r")):
+			failures.append("rig %s: a dog without a head or front legs" % name)
+		if d.get("sprite", false) and not Data.is_sprite(d["sheet"]):
+			failures.append("rig %s: sprite rig whose sheet %s is not a drawn sprite" % [name, d["sheet"]])
 	if Rig.db().size() < 80:
 		failures.append("only %d rigs in rigs.json" % Rig.db().size())
 

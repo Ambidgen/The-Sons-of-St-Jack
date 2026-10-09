@@ -100,7 +100,7 @@ func _show_line(line: Dictionary) -> void:
 	_name.text = line.get("who", "")
 	_name.visible = _name.text != ""
 	_name.add_theme_color_override("font_color", Color(line.get("color", UIStyle.ATB.to_html())))
-	_portrait.texture = Data.tex(line.get("portrait", ""))
+	UIStyle.set_art(_portrait, line.get("portrait", ""))
 	_portrait.visible = _portrait.texture != null
 	var text: String = line.get("text", "")
 	_text.text = text if _name.visible else "[i]%s[/i]" % text

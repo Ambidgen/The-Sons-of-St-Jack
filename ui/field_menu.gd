@@ -76,7 +76,7 @@ func _refresh() -> void:
 	var row := HBoxContainer.new()
 	row.add_theme_constant_override("separation", 16)
 	_card.add_child(row)
-	row.add_child(UIStyle.icon_rect(Data.tex(Game.actor_art(m, "portrait")), 120))
+	row.add_child(UIStyle.art_rect(Game.actor_art(m, "portrait"), 120))
 	var col := VBoxContainer.new()
 	col.add_theme_constant_override("separation", 4)
 	row.add_child(col)

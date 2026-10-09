@@ -4,6 +4,9 @@ extends Node
 ## res://data/stages/. Access: Data.skills["gouge"], Data.cfg("heal_mult", 0.5).
 
 const ART_ROOT := "res://assets/placeholder/"
+## Drawn character art (assets/sprites/README.md). A sprite here replaces the placeholder
+## figure of the same name; map ("_field") and battle figures share one drawing.
+const SPRITE_ROOT := "res://assets/sprites/"
 const TABLES := ["config", "actors", "enemies", "skills", "items", "statuses", "encounters", "cast"]
 
 ## Every director command the stage understands, with the field that names it.
@@ -58,16 +61,36 @@ func next_stage(id: String) -> String:
 	return order[i + 1]
 
 
-## "char/gauntley" -> Texture2D for res://assets/placeholder/char/gauntley.svg
+## "char/gauntley" -> Texture2D: the drawn sprite res://assets/sprites/char/gauntley.png
+## when there is one, else the placeholder res://assets/placeholder/char/gauntley.svg.
+## "sprites/rig/jack" -> res://assets/sprites/rig/jack.png (a sprite rig sheet).
 func tex(key: String) -> Texture2D:
 	if key == "":
 		return null
 	if not _tex_cache.has(key):
-		var path := ART_ROOT + key + ".svg"
+		var path := art_path(key)
 		_tex_cache[key] = load(path) if ResourceLoader.exists(path) else null
 		if _tex_cache[key] == null:
 			push_warning("Missing art: " + path)
 	return _tex_cache[key]
+
+
+## Where the art for a key lives (see tex()).
+func art_path(key: String) -> String:
+	if key.begins_with("sprites/"):
+		return "res://assets/" + key + ".png"
+	var folder := key.get_base_dir()
+	if folder == "char" or folder == "portrait":
+		var sprite := SPRITE_ROOT + folder + "/" + key.get_file().trim_suffix("_field") + ".png"
+		if ResourceLoader.exists(sprite):
+			return sprite
+	return ART_ROOT + key + ".svg"
+
+
+## True when the key's art is a drawn sprite (mipmapped: draw it with
+## CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS so it stays smooth when scaled down).
+func is_sprite(key: String) -> bool:
+	return key != "" and art_path(key).begins_with(SPRITE_ROOT)
 
 
 func icon(name: String) -> Texture2D:
@@ -80,7 +103,7 @@ func action_def(kind: String, id: String) -> Dictionary:
 
 
 func _has_art(key: String) -> bool:
-	return key != "" and ResourceLoader.exists(ART_ROOT + key + ".svg")
+	return key != "" and ResourceLoader.exists(art_path(key))
 
 
 ## Cross-checks every reference between tables. Returns a list of problems.

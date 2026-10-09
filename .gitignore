@@ -5,3 +5,7 @@
 # OS clutter
 .DS_Store
 Thumbs.db
+
+# Sprite pipeline scratch (rebuilt by tools/sprites/extract_sprites.py and rig_sprites.py)
+tools/sprites/work/
+__pycache__/
