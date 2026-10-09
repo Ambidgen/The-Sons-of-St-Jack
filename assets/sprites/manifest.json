@@ -1,0 +1,461 @@
+{
+  "description": "AI-generated sprite sheets to replace the 40 base character models (assets/placeholder/char/*.svg, not the _field variants). Four characters per sheet, each facing the viewer, on a #FF00FF key background.",
+  "created": "2026-10-09",
+  "generator": "Arena Agent Mode image generation (text-to-image, no reference images), one call per sheet",
+  "format": {
+    "file_type": "PNG, RGB, no alpha",
+    "sheet_size_px": [
+      1254,
+      1254
+    ],
+    "layout": "2 x 2 grid; slots top_left, top_right, bottom_left, bottom_right; one full-body character per slot",
+    "background": "#FF00FF (255, 0, 255)",
+    "background_cleanup": "The generator's background was about (249, 3, 246). Pixels within 40 of pure magenta were set to exact #FF00FF. No figure pixels were changed.",
+    "shadows": "none (the game's rig draws its own shadow)"
+  },
+  "style": "Woodcut ink on parchment with hatched shading, colour only for blood, fire and gold, matching the placeholder art direction. Ser Gauntley (sheet 05) is the only fully coloured figure, as in the README.",
+  "sheets": [
+    {
+      "id": "sheet_01",
+      "file": "assets/sprites/sheets/sheet_01_derrick_forms.png",
+      "status": "generated",
+      "theme": "Derrick through the years (the four Derrick forms)",
+      "sprites": [
+        {
+          "slot": "top_left",
+          "key": "derrick_child",
+          "game_key": "char/derrick_child",
+          "replaces": "assets/placeholder/char/derrick_child.svg",
+          "role": "Derrick, child form (ages 5-9)"
+        },
+        {
+          "slot": "top_right",
+          "key": "derrick_youth",
+          "game_key": "char/derrick_youth",
+          "replaces": "assets/placeholder/char/derrick_youth.svg",
+          "role": "Derrick, youth form (about 13)"
+        },
+        {
+          "slot": "bottom_left",
+          "key": "derrick_lad",
+          "game_key": "char/derrick_lad",
+          "replaces": "assets/placeholder/char/derrick_lad.svg",
+          "role": "Derrick, lad form (about 16-20)"
+        },
+        {
+          "slot": "bottom_right",
+          "key": "derrick_man",
+          "game_key": "char/derrick_man",
+          "replaces": "assets/placeholder/char/derrick_man.svg",
+          "role": "Derrick, man form (21)"
+        }
+      ],
+      "prompt": "A sprite sheet of four separate full-body game characters, one per quadrant of a 2 by 2 grid. Chunky proportions like a placeholder game sprite: large head, compact torso, short legs. Characters, left to right, top to bottom:\n- Derrick as a small boy of about seven: shaggy dark hair, plain pale tunic, a short wooden sword held in his right hand.\n- Derrick as a thin youth of about thirteen: shaggy hair, ragged dark clothes, a wooden sword tucked in his belt, a sad face.\n- Derrick as a slight young man of about sixteen: shaggy hair, plain tunic with darker sleeves, a stick in his right hand, a wooden sword in his belt, a stern face.\n- Derrick as an adult of twenty-one: padded gambeson with a few small red blood spots, stubble, shaggy hair, a knife in his right hand, a wooden sword in his belt, a stern face.\nStyle: woodcut and wood-engraving illustration, bold black ink outlines, parallel hatching and cross-hatching for shading, parchment-cream and brown tones, grim medieval folk-art feel. Colour only for blood, fire and gold accents. Front view only: every figure faces the viewer straight on, body, face and both shoulders square to the viewer, both eyes visible, arms relaxed. No profile, no back view, no three-quarter turn. All figures stand on a common ground line. Background: one flat, uniform, pure magenta (#FF00FF) everywhere outside the figures, with no gradient, texture, vignette, floor or cast shadow. Leave a wide empty magenta margin around each figure so no two figures touch or overlap and no figure is cropped. No text, numbers, labels, frames or borders.",
+      "checks": {
+        "size": [
+          1254,
+          1254
+        ],
+        "magenta_pct": 78.2,
+        "figures": 4,
+        "touching_edge": 0
+      }
+    },
+    {
+      "id": "sheet_02",
+      "file": "assets/sprites/sheets/sheet_02_derrick_rest_and_parents.png",
+      "status": "generated",
+      "theme": "Derrick at rest, and his parents",
+      "sprites": [
+        {
+          "slot": "top_left",
+          "key": "derrick_child_sit",
+          "game_key": "char/derrick_child_sit",
+          "replaces": "assets/placeholder/char/derrick_child_sit.svg",
+          "role": "Derrick, seated child form (about 9)"
+        },
+        {
+          "slot": "top_right",
+          "key": "derrick_man_sit",
+          "game_key": "char/derrick_man_sit",
+          "replaces": "assets/placeholder/char/derrick_man_sit.svg",
+          "role": "Derrick, seated man form (21)"
+        },
+        {
+          "slot": "bottom_left",
+          "key": "mother",
+          "game_key": "char/mother",
+          "replaces": "assets/placeholder/char/mother.svg",
+          "role": "Maren, Derrick's mother"
+        },
+        {
+          "slot": "bottom_right",
+          "key": "father",
+          "game_key": "char/father",
+          "replaces": "assets/placeholder/char/father.svg",
+          "role": "Hob, Derrick's father"
+        }
+      ],
+      "prompt": "A sprite sheet of four separate full-body game characters, one per quadrant of a 2 by 2 grid. Chunky proportions like a placeholder game sprite: large head, compact torso, short legs. Characters, left to right, top to bottom:\n- Derrick as a small boy of about nine, sitting on the ground with his legs folded in front of him and his hands resting on his knees: shaggy dark hair, plain pale tunic, a sad, quiet face.\n- Derrick as an adult of twenty-one, sitting on the ground with his knees drawn up and his arms resting on them: stubble, shaggy hair, a padded gambeson with several red blood spots, a bowed, sad face.\n- Maren, a slight woman in a plain long dress with an apron over it and a kerchief tied over her hair, hands folded at her waist, a kind, tired face.\n- Hob, a broad adult man in a plain brown tunic with short hair and a short beard, holding an axe in his right hand, a stern face.\nStyle: woodcut and wood-engraving illustration, bold black ink outlines, parallel hatching and cross-hatching for shading, parchment-cream and brown tones, grim medieval folk-art feel. Colour only for blood, fire and gold accents. Front view only: every figure faces the viewer straight on, body, face and both shoulders square to the viewer, both eyes visible, arms relaxed. No profile, no back view, no three-quarter turn. All figures stand on a common ground line. Background: one flat, uniform, pure magenta (#FF00FF) everywhere outside the figures, with no gradient, texture, vignette, floor or cast shadow. Leave a wide empty magenta margin around each figure so no two figures touch or overlap and no figure is cropped. No text, numbers, labels, frames or borders.",
+      "checks": {
+        "size": [
+          1254,
+          1254
+        ],
+        "magenta_pct": 76.1,
+        "figures": 4,
+        "touching_edge": 0
+      }
+    },
+    {
+      "id": "sheet_03",
+      "file": "assets/sprites/sheets/sheet_03_harrowgate_children.png",
+      "status": "generated",
+      "theme": "Harrowgate children, a neighbour and the dog",
+      "sprites": [
+        {
+          "slot": "top_left",
+          "key": "kid_a",
+          "game_key": "char/kid_a",
+          "replaces": "assets/placeholder/char/kid_a.svg",
+          "role": "Elsbet, village girl"
+        },
+        {
+          "slot": "top_right",
+          "key": "kid_b",
+          "game_key": "char/kid_b",
+          "replaces": "assets/placeholder/char/kid_b.svg",
+          "role": "Tam, village boy"
+        },
+        {
+          "slot": "bottom_left",
+          "key": "villager",
+          "game_key": "char/villager",
+          "replaces": "assets/placeholder/char/villager.svg",
+          "role": "village man"
+        },
+        {
+          "slot": "bottom_right",
+          "key": "dog",
+          "game_key": "char/dog",
+          "replaces": "assets/placeholder/char/dog.svg",
+          "role": "Starving Dog enemy (char/dog); the same dog as Patch"
+        }
+      ],
+      "prompt": "A sprite sheet of four separate full-body game characters, one per quadrant of a 2 by 2 grid. Chunky proportions like a placeholder game sprite: large head, compact torso, short legs. Characters, left to right, top to bottom:\n- Elsbet, a small girl of about seven with long dark hair, a plain pale long dress, hands clasped in front of her, a kind face.\n- Tam, a small boy of about seven in a plain brown tunic and a flat cap, holding a stick in his right hand, a plain face.\n- a village man in a plain grey-brown tunic with short hair and a short beard, arms at his sides, a plain, weary face.\n- Patch, a lean grey-brown dog with a rough coat and ribs faintly showing, head up, tail down, four legs visible.\nStyle: woodcut and wood-engraving illustration, bold black ink outlines, parallel hatching and cross-hatching for shading, parchment-cream and brown tones, grim medieval folk-art feel. Colour only for blood, fire and gold accents. Front view only: every figure faces the viewer straight on, body, face and both shoulders square to the viewer, both eyes visible, arms relaxed. The dog is also seen from the front, with head and chest facing the viewer, not in profile. No profile, no back view, no three-quarter turn. All figures stand on a common ground line. Background: one flat, uniform, pure magenta (#FF00FF) everywhere outside the figures, with no gradient, texture, vignette, floor or cast shadow. Leave a wide empty magenta margin around each figure so no two figures touch or overlap and no figure is cropped. No text, numbers, labels, frames or borders.",
+      "checks": {
+        "size": [
+          1254,
+          1254
+        ],
+        "magenta_pct": 78.9,
+        "figures": 4,
+        "touching_edge": 0
+      }
+    },
+    {
+      "id": "sheet_04",
+      "file": "assets/sprites/sheets/sheet_04_village_and_market.png",
+      "status": "generated",
+      "theme": "The village and the market",
+      "sprites": [
+        {
+          "slot": "top_left",
+          "key": "villager_f",
+          "game_key": "char/villager_f",
+          "replaces": "assets/placeholder/char/villager_f.svg",
+          "role": "village woman"
+        },
+        {
+          "slot": "top_right",
+          "key": "baker",
+          "game_key": "char/baker",
+          "replaces": "assets/placeholder/char/baker.svg",
+          "role": "the baker"
+        },
+        {
+          "slot": "bottom_left",
+          "key": "monk",
+          "game_key": "char/monk",
+          "replaces": "assets/placeholder/char/monk.svg",
+          "role": "Brother Aldous, the monk"
+        },
+        {
+          "slot": "bottom_right",
+          "key": "wat",
+          "game_key": "char/wat",
+          "replaces": "assets/placeholder/char/wat.svg",
+          "role": "Wat"
+        }
+      ],
+      "prompt": "A sprite sheet of four separate full-body game characters, one per quadrant of a 2 by 2 grid. Chunky proportions like a placeholder game sprite: large head, compact torso, short legs. Characters, left to right, top to bottom:\n- a village woman in a dark long dress with a pale kerchief tied over her head, a plain face, arms at her sides.\n- a baker, a big, broad bald man in a pale tunic with a cream-coloured apron, a stick held in his right hand, a stern face.\n- Brother Aldous, a monk in a long dark robe with a shaved crown, a wooden bowl held in his left hand, a stern face.\n- Wat, a thin, sly young man of about eighteen in a plain pale tunic with shaggy hair and a sly half-smile, arms at his sides.\nStyle: woodcut and wood-engraving illustration, bold black ink outlines, parallel hatching and cross-hatching for shading, parchment-cream and brown tones, grim medieval folk-art feel. Colour only for blood, fire and gold accents. Front view only: every figure faces the viewer straight on, body, face and both shoulders square to the viewer, both eyes visible, arms relaxed. No profile, no back view, no three-quarter turn. All figures stand on a common ground line. Background: one flat, uniform, pure magenta (#FF00FF) everywhere outside the figures, with no gradient, texture, vignette, floor or cast shadow. Leave a wide empty magenta margin around each figure so no two figures touch or overlap and no figure is cropped. No text, numbers, labels, frames or borders.",
+      "checks": {
+        "size": [
+          1254,
+          1254
+        ],
+        "magenta_pct": 72.3,
+        "figures": 4,
+        "touching_edge": 0
+      }
+    },
+    {
+      "id": "sheet_05",
+      "file": "assets/sprites/sheets/sheet_05_gauntley_and_levy.png",
+      "status": "generated",
+      "theme": "Ser Gauntley and the levy",
+      "sprites": [
+        {
+          "slot": "top_left",
+          "key": "gauntley",
+          "game_key": "char/gauntley",
+          "replaces": "assets/placeholder/char/gauntley.svg",
+          "role": "Ser Gauntley (fully coloured)"
+        },
+        {
+          "slot": "top_right",
+          "key": "gauntley_helm",
+          "game_key": "char/gauntley_helm",
+          "replaces": "assets/placeholder/char/gauntley_helm.svg",
+          "role": "Ser Gauntley, helmed (fully coloured)"
+        },
+        {
+          "slot": "bottom_left",
+          "key": "man_at_arms",
+          "game_key": "char/man_at_arms",
+          "replaces": "assets/placeholder/char/man_at_arms.svg",
+          "role": "Man-at-arms (also Sergeant Pike)"
+        },
+        {
+          "slot": "bottom_right",
+          "key": "edric",
+          "game_key": "char/edric",
+          "replaces": "assets/placeholder/char/edric.svg",
+          "role": "Edric, levyman"
+        }
+      ],
+      "prompt": "A sprite sheet of four separate full-body game characters, one per quadrant of a 2 by 2 grid. Chunky proportions like a placeholder game sprite: large head, compact torso, short legs. Characters, left to right, top to bottom:\n- Ser Gauntley, a knight in polished steel mail with steel sleeves, a blue tabard with a gold sun on the chest, a red cloak over his shoulders, short brown hair and a short brown beard, a sword in his right hand and a blue shield with a gold sun on his left arm, a kind, steady face.\n- Ser Gauntley again, in a steel helm with a red plume, steel mail, a blue tabard with a gold sun, a red cloak, a sword in his right hand and a blue shield with a gold sun on his left arm, a stern face.\n- a man-at-arms in mail with a mail coif and a pale tabard, holding a long spear upright in his right hand, a stern face.\n- Edric, an adult levyman in a plain tunic with pale sleeves and short hair, holding a stick in his right hand, a stern face.\nStyle: woodcut and wood-engraving illustration, bold black ink outlines, parallel hatching and cross-hatching for shading, parchment-cream and brown tones, grim medieval folk-art feel. Colour: the two Ser Gauntley figures are fully coloured (steel, blue, red and gold); the other two figures are monochrome ink and parchment with no colour at all. Front view only: every figure faces the viewer straight on, body, face and both shoulders square to the viewer, both eyes visible, arms relaxed. No profile, no back view, no three-quarter turn. All figures stand on a common ground line. Background: one flat, uniform, pure magenta (#FF00FF) everywhere outside the figures, with no gradient, texture, vignette, floor or cast shadow. Leave a wide empty magenta margin around each figure so no two figures touch or overlap and no figure is cropped. No text, numbers, labels, frames or borders.",
+      "checks": {
+        "size": [
+          1254,
+          1254
+        ],
+        "magenta_pct": 71.6,
+        "figures": 4,
+        "touching_edge": 0
+      }
+    },
+    {
+      "id": "sheet_06",
+      "file": "assets/sprites/sheets/sheet_06_farm_and_roadside.png",
+      "status": "generated",
+      "theme": "The Ostry farm and the roadside",
+      "sprites": [
+        {
+          "slot": "top_left",
+          "key": "ostry",
+          "game_key": "char/ostry",
+          "replaces": "assets/placeholder/char/ostry.svg",
+          "role": "Ostry, farmhand"
+        },
+        {
+          "slot": "top_right",
+          "key": "hild",
+          "game_key": "char/hild",
+          "replaces": "assets/placeholder/char/hild.svg",
+          "role": "Hild Ostry"
+        },
+        {
+          "slot": "bottom_left",
+          "key": "levy",
+          "game_key": "char/levy",
+          "replaces": "assets/placeholder/char/levy.svg",
+          "role": "Aldo, levyman"
+        },
+        {
+          "slot": "bottom_right",
+          "key": "looter",
+          "game_key": "char/looter",
+          "replaces": "assets/placeholder/char/looter.svg",
+          "role": "Corpse-picker"
+        }
+      ],
+      "prompt": "A sprite sheet of four separate full-body game characters, one per quadrant of a 2 by 2 grid. Chunky proportions like a placeholder game sprite: large head, compact torso, short legs. Characters, left to right, top to bottom:\n- Ostry, a big, broad farmhand with a flat cap and a short grey-brown beard, a plain tunic, holding a pitchfork upright in his right hand, a stern face.\n- Hild Ostry, a slight woman in a dark dress with a white kerchief over her hair and a white apron, carrying a wooden bowl in her left hand, a kind face.\n- Aldo, a levyman: an adult in a padded gambeson with a mail coif, several dark red blood spots on the padding, a sad face.\n- a corpse-picker, a hooded figure in ragged dark clothes with blood spots on the rags, a knife in his right hand, a sly face with stubble.\nStyle: woodcut and wood-engraving illustration, bold black ink outlines, parallel hatching and cross-hatching for shading, parchment-cream and brown tones, grim medieval folk-art feel. Colour only for blood, fire and gold accents. Front view only: every figure faces the viewer straight on, body, face and both shoulders square to the viewer, both eyes visible, arms relaxed. No profile, no back view, no three-quarter turn. All figures stand on a common ground line. Background: one flat, uniform, pure magenta (#FF00FF) everywhere outside the figures, with no gradient, texture, vignette, floor or cast shadow. Leave a wide empty magenta margin around each figure so no two figures touch or overlap and no figure is cropped. No text, numbers, labels, frames or borders.",
+      "checks": {
+        "size": [
+          1254,
+          1254
+        ],
+        "magenta_pct": 72.4,
+        "figures": 4,
+        "touching_edge": 0
+      }
+    },
+    {
+      "id": "sheet_07",
+      "file": "assets/sprites/sheets/sheet_07_saint_jack_and_lieutenants.png",
+      "status": "generated",
+      "theme": "Saint Jack and his lieutenants",
+      "sprites": [
+        {
+          "slot": "top_left",
+          "key": "jack",
+          "game_key": "char/jack",
+          "replaces": "assets/placeholder/char/jack.svg",
+          "role": "Saint Jack, the Tall Man (standing)"
+        },
+        {
+          "slot": "top_right",
+          "key": "jack_kneel",
+          "game_key": "char/jack_kneel",
+          "replaces": "assets/placeholder/char/jack_kneel.svg",
+          "role": "Saint Jack, the Tall Man (seated)"
+        },
+        {
+          "slot": "bottom_left",
+          "key": "jacob",
+          "game_key": "char/jacob",
+          "replaces": "assets/placeholder/char/jacob.svg",
+          "role": "Sir Jacob"
+        },
+        {
+          "slot": "bottom_right",
+          "key": "wick",
+          "game_key": "char/wick",
+          "replaces": "assets/placeholder/char/wick.svg",
+          "role": "Wick"
+        }
+      ],
+      "prompt": "A sprite sheet of four separate full-body game characters, one per quadrant of a 2 by 2 grid. Chunky proportions like a placeholder game sprite: large head, compact torso, short legs. Characters, left to right, top to bottom:\n- Saint Jack, the Tall Man: a very tall, lean man in a long black coat with dark sleeves, slicked-back hair and a short dark beard, a gold chain across his chest with a gold coin pierced by a nail, a thin ledger book in his left hand, a calm, unreadable face.\n- the same Tall Man in the same black coat and gold chain, sitting on the ground with his legs folded in front of him and his hands resting on his knees, a calm face.\n- Sir Jacob, a big, bald man in mail with a black tabard over it, a grey beard, a gold coin pierced by a nail on his chest, holding a huge straight sword point-down in his right hand, a stern face.\n- Wick, a slight, sly young man with shaggy hair in a dark padded gambeson with a gold coin pierced by a nail on his chest, a sword in his right hand, a sly half-grin.\nStyle: woodcut and wood-engraving illustration, bold black ink outlines, parallel hatching and cross-hatching for shading, parchment-cream and brown tones, grim medieval folk-art feel. Colour only for blood, fire and gold accents. Front view only: every figure faces the viewer straight on, body, face and both shoulders square to the viewer, both eyes visible, arms relaxed. No profile, no back view, no three-quarter turn. All figures stand on a common ground line. Background: one flat, uniform, pure magenta (#FF00FF) everywhere outside the figures, with no gradient, texture, vignette, floor or cast shadow. Leave a wide empty magenta margin around each figure so no two figures touch or overlap and no figure is cropped. No text, numbers, labels, frames or borders.",
+      "checks": {
+        "size": [
+          1254,
+          1254
+        ],
+        "magenta_pct": 78.1,
+        "figures": 4,
+        "touching_edge": 0
+      }
+    },
+    {
+      "id": "sheet_08",
+      "file": "assets/sprites/sheets/sheet_08_the_sons.png",
+      "status": "generated",
+      "theme": "The Sons of St. Jack",
+      "sprites": [
+        {
+          "slot": "top_left",
+          "key": "son_a",
+          "game_key": "char/son_a",
+          "replaces": "assets/placeholder/char/son_a.svg",
+          "role": "One of the Men (kettle helm)"
+        },
+        {
+          "slot": "top_right",
+          "key": "son_b",
+          "game_key": "char/son_b",
+          "replaces": "assets/placeholder/char/son_b.svg",
+          "role": "One of the Men; also the Forager"
+        },
+        {
+          "slot": "bottom_left",
+          "key": "son_c",
+          "game_key": "char/son_c",
+          "replaces": "assets/placeholder/char/son_c.svg",
+          "role": "One of the Men; also the Clerk"
+        },
+        {
+          "slot": "bottom_right",
+          "key": "simon",
+          "game_key": "char/simon",
+          "replaces": "assets/placeholder/char/simon.svg",
+          "role": "Simon"
+        }
+      ],
+      "prompt": "A sprite sheet of four separate full-body game characters, one per quadrant of a 2 by 2 grid. Chunky proportions like a placeholder game sprite: large head, compact torso, short legs. Characters, left to right, top to bottom:\n- a man in mail with a kettle helmet and a dark tabard, a gold coin pierced by a nail on his chest, a sword in his right hand, a plain face.\n- a big, bald, bearded man in a dark padded gambeson with a gold coin pierced by a nail on his chest, holding an axe in his right hand, a stern face.\n- a slight man in a plain brown tunic with a mail coif, a gold coin pierced by a nail on his chest, holding a long spear in his right hand, a plain face.\n- a man with short dark hair in a dark padded gambeson with a gold coin pierced by a nail on his chest, holding a lit lantern in his left hand, a plain face.\nStyle: woodcut and wood-engraving illustration, bold black ink outlines, parallel hatching and cross-hatching for shading, parchment-cream and brown tones, grim medieval folk-art feel. Colour only for blood, fire and gold accents. Front view only: every figure faces the viewer straight on, body, face and both shoulders square to the viewer, both eyes visible, arms relaxed. No profile, no back view, no three-quarter turn. All figures stand on a common ground line. Background: one flat, uniform, pure magenta (#FF00FF) everywhere outside the figures, with no gradient, texture, vignette, floor or cast shadow. Leave a wide empty magenta margin around each figure so no two figures touch or overlap and no figure is cropped. No text, numbers, labels, frames or borders.",
+      "checks": {
+        "size": [
+          1254,
+          1254
+        ],
+        "magenta_pct": 72.5,
+        "figures": 4,
+        "touching_edge": 0
+      }
+    },
+    {
+      "id": "sheet_09",
+      "file": "assets/sprites/sheets/sheet_09_sons_in_the_field.png",
+      "status": "pending",
+      "theme": "The Sons in the field, and the winter wolf",
+      "sprites": [
+        {
+          "slot": "top_left",
+          "key": "osric",
+          "game_key": "char/osric",
+          "replaces": "assets/placeholder/char/osric.svg",
+          "role": "Osric"
+        },
+        {
+          "slot": "top_right",
+          "key": "nora",
+          "game_key": "char/nora",
+          "replaces": "assets/placeholder/char/nora.svg",
+          "role": "Nora"
+        },
+        {
+          "slot": "bottom_left",
+          "key": "daryl",
+          "game_key": "char/daryl",
+          "replaces": "assets/placeholder/char/daryl.svg",
+          "role": "Daryl"
+        },
+        {
+          "slot": "bottom_right",
+          "key": "wolf",
+          "game_key": "char/wolf",
+          "replaces": "assets/placeholder/char/wolf.svg",
+          "role": "Winter Wolf enemy (char/wolf)"
+        }
+      ],
+      "prompt": "A sprite sheet of four separate full-body game characters, one per quadrant of a 2 by 2 grid. Chunky proportions like a placeholder game sprite: large head, compact torso, short legs. Characters, left to right, top to bottom:\n- a big man in mail with a kettle helmet and a dark tabard, a gold coin pierced by a nail on his chest, holding a long spear in his right hand, a stern face.\n- Nora, a slight young woman in a plain tunic and a dark hood, a gold coin pierced by a nail on her chest, holding a bow in her left hand, a plain face.\n- Daryl, a middle-aged man with short greying hair and a grey beard, a dark padded gambeson with a gold coin pierced by a nail on his chest, holding an axe in his right hand, a sad face.\n- a grey wolf, head up and facing the viewer with both yellow eyes visible, thick grey-brown fur with a bristled ridge along the back, four legs visible, tail down.\nStyle: woodcut and wood-engraving illustration, bold black ink outlines, parallel hatching and cross-hatching for shading, parchment-cream and brown tones, grim medieval folk-art feel. Colour only for blood, fire and gold accents. Front view only: every figure faces the viewer straight on, body, face and both shoulders square to the viewer, both eyes visible, arms relaxed. The wolf is also seen from the front, with head and chest facing the viewer, not in profile. No profile, no back view, no three-quarter turn. All figures stand on a common ground line. Background: one flat, uniform, pure magenta (#FF00FF) everywhere outside the figures, with no gradient, texture, vignette, floor or cast shadow. Leave a wide empty magenta margin around each figure so no two figures touch or overlap and no figure is cropped. No text, numbers, labels, frames or borders."
+    },
+    {
+      "id": "sheet_10",
+      "file": "assets/sprites/sheets/sheet_10_coldharbour_alley.png",
+      "status": "pending",
+      "theme": "The alley in Coldharbour",
+      "sprites": [
+        {
+          "slot": "top_left",
+          "key": "bearded",
+          "game_key": "char/bearded",
+          "replaces": "assets/placeholder/char/bearded.svg",
+          "role": "The Bearded Man"
+        },
+        {
+          "slot": "top_right",
+          "key": "wiry",
+          "game_key": "char/wiry",
+          "replaces": "assets/placeholder/char/wiry.svg",
+          "role": "Wiry Man"
+        },
+        {
+          "slot": "bottom_left",
+          "key": "grabber",
+          "game_key": "char/grabber",
+          "replaces": "assets/placeholder/char/grabber.svg",
+          "role": "The Man at His Arm"
+        },
+        {
+          "slot": "bottom_right",
+          "key": "grabber_hurt",
+          "game_key": "char/grabber_hurt",
+          "replaces": "assets/placeholder/char/grabber_hurt.svg",
+          "role": "Bloody-Mouthed Man"
+        }
+      ],
+      "prompt": "A sprite sheet of four separate full-body game characters, one per quadrant of a 2 by 2 grid. Chunky proportions like a placeholder game sprite: large head, compact torso, short legs. Characters, left to right, top to bottom:\n- a big bearded man in a padded gambeson with dark sleeves and a gold coin pierced by a nail on his chest, a knife in his right hand, a grinning face.\n- a wiry, thin man in ragged dark rags with shaggy hair and stubble, a gold coin pierced by a nail on his chest, a knife held low in his right hand, a sly face.\n- a man in a grey padded gambeson with a dark hood over his head and a gold coin pierced by a nail on his chest, a stern face, hands at his sides.\n- the same hooded man, bloodied: red blood on his chest and mouth, a bloody rag in his left hand, a gold coin pierced by a nail on his chest, a pained, sad face.\nStyle: woodcut and wood-engraving illustration, bold black ink outlines, parallel hatching and cross-hatching for shading, parchment-cream and brown tones, grim medieval folk-art feel. Colour only for blood, fire and gold accents. Front view only: every figure faces the viewer straight on, body, face and both shoulders square to the viewer, both eyes visible, arms relaxed. No profile, no back view, no three-quarter turn. All figures stand on a common ground line. Background: one flat, uniform, pure magenta (#FF00FF) everywhere outside the figures, with no gradient, texture, vignette, floor or cast shadow. Leave a wide empty magenta margin around each figure so no two figures touch or overlap and no figure is cropped. No text, numbers, labels, frames or borders."
+    }
+  ]
+}
