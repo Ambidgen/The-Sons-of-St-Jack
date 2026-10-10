@@ -93,7 +93,7 @@ func _build_party_panel() -> void:
 		var row := HBoxContainer.new()
 		row.add_theme_constant_override("separation", 14)
 		row_panel.add_child(row)
-		row.add_child(UIStyle.icon_rect(Data.tex(Game.actor_art(b.member, "portrait")), 64))
+		row.add_child(UIStyle.art_rect(Game.actor_art(b.member, "portrait"), 64))
 		var name_label := UIStyle.label(b.display_name, 24, UIStyle.ATB)
 		name_label.custom_minimum_size.x = 110
 		row.add_child(name_label)
@@ -242,7 +242,7 @@ func show_order(preview_actor: Battler = null, delay := 1.0) -> void:
 		if preview_actor and b == preview_actor and i > 0:
 			sb.bg_color = Color(UIStyle.ATB, 0.45)   # where your next turn lands
 		box.add_theme_stylebox_override("panel", sb)
-		box.add_child(UIStyle.icon_rect(Data.tex(b.sprite), 56 if i == 0 else 42))
+		box.add_child(UIStyle.art_rect(b.sprite, 56 if i == 0 else 42))
 		_order_row.add_child(box)
 
 
@@ -266,7 +266,7 @@ func bark(who: String, text: String) -> void:
 	_bark_portrait.visible = who != ""
 	_bark_name.text = c.get("name", who)
 	_bark_name.add_theme_color_override("font_color", Color(c.get("color", UIStyle.ATB.to_html())))
-	_bark_portrait.texture = Data.tex(c.get("portrait", ""))
+	UIStyle.set_art(_bark_portrait, c.get("portrait", ""))
 	_bark_text.text = text
 	_bark_text.visible_ratio = 0.0
 	_bark_panel.show()

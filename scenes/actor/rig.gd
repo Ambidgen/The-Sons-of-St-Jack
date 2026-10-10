@@ -2,9 +2,13 @@ class_name Rig
 extends Node2D
 ## An articulated body. Each part of a character (legs, skirt, cloak, torso, arms,
 ## head; a hound's four legs, tail and head; a horse and its rider) is a textured
-## mesh (Polygon2D) cut from a rig sheet -- assets/placeholder/rig/<name>.svg, laid
-## out by tools/make_placeholders.py and described in rigs.json -- and hung on a
-## bone at its joint. The rig animates itself: idle breathing, a walk cycle with
+## mesh (Polygon2D) cut from a rig sheet and hung on a bone at its joint. Sheets
+## come from the drawn sprites (assets/sprites/rig/<name>.png, cut into parts by
+## tools/sprites/rig_sprites.py, described in assets/sprites/rigs.json) or, for
+## figures not drawn yet, the placeholders (assets/placeholder/rig/<name>.svg, laid
+## out by tools/make_placeholders.py, described in assets/placeholder/rigs.json).
+## Sprite rigs face the viewer ("view": "front") and move like it: weight shifting
+## foot to foot, feet lifting and foreshortening, arms swinging out from the side. The rig animates itself: idle breathing, a walk cycle with
 ## swinging limbs, bending knees and swaying hems, plus one-shot actions (attack,
 ## hurt, cast, nod, yield). Art without a rig (props) falls back to a flat sprite
 ## with the same API. Position = feet. Stage actors keep it as their "Sprite" child.
@@ -26,7 +30,7 @@ static var _db: Dictionary = {}                 # sheet name -> description (rig
 static var _rects: Dictionary = {}              # sheet name -> Array of Rect2 (used area per cell)
 
 var art_key := ""
-var kind := ""              # biped | hound | horse | bird | "" (flat sprite)
+var kind := ""              # biped | hound | horse | bird | frontdog | "" (flat sprite)
 var flip_h := false: set = set_flip_h
 var tint := Color.WHITE: set = set_tint
 var height := 64.0          # frame height in px: the top of the drawing is at y = -height
@@ -36,6 +40,10 @@ var animate := true
 
 var _desc: Dictionary = {}
 var _s := 1.0               # px per art unit
+var _origin := Vector2.ZERO # the feet, in art units of the frame
+var _front := false         # drawn facing the viewer (sprite rigs)
+var _weapon := "arm_r"      # the arm that strikes (front view)
+var _faces := 1.0           # -1: the drawing's own "front" is its left side
 var _flip: Node2D
 var _bones: Dictionary = {}       # name -> Node2D
 var _rest: Dictionary = {}        # name -> Vector2 rest position
@@ -65,11 +73,12 @@ static func make(key: String) -> Rig:
 
 static func db() -> Dictionary:
 	if _db.is_empty():
-		var path := Data.ART_ROOT + "rigs.json"
-		if FileAccess.file_exists(path):
-			var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(path))
-			if parsed is Dictionary:
-				_db = parsed.get("rigs", {})
+		# the drawn sprites' rigs replace the placeholder rigs of the same name
+		for path in [Data.ART_ROOT + "rigs.json", Data.SPRITE_ROOT + "rigs.json"]:
+			if FileAccess.file_exists(path):
+				var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(path))
+				if parsed is Dictionary:
+					_db.merge(parsed.get("rigs", {}), true)
 	return _db
 
 
@@ -105,10 +114,15 @@ func set_art(key: String) -> void:
 	add_child(_flip)
 	_desc = find(key)
 	var sheet: Texture2D = Data.tex(_desc.get("sheet", "")) if not _desc.is_empty() else null
+	_front = false
+	_faces = 1.0
 	if sheet == null:
 		_build_flat(key)
 	else:
 		_build_rig(sheet)
+	# drawn sprites are mipmapped: smooth at map scale, crisp in battle
+	var drawn := Data.is_sprite(_desc.get("sheet", "")) if sheet != null else Data.is_sprite(key)
+	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS if drawn else CanvasItem.TEXTURE_FILTER_PARENT_NODE
 	set_flip_h(flip_h)
 	set_tint(tint)
 	_apply_pose(0.0)
@@ -128,9 +142,16 @@ func _build_rig(sheet: Texture2D) -> void:
 	kind = _desc.get("kind", "biped")
 	sit = _desc.get("sit", false)
 	_s = float(_desc["s"])
+	_front = _desc.get("view", "") == "front"
+	_weapon = _desc.get("weapon", "arm_r")
+	if _weapon == "":
+		_weapon = "arm_r"
+	_faces = float(_desc.get("faces", 1))
 	var frame: Array = _desc["frame"]
+	var o: Array = _desc.get("origin", [float(frame[0]) / 2.0, float(frame[1])])
+	_origin = Vector2(float(o[0]), float(o[1]))
 	width = float(frame[0]) * _s
-	height = float(frame[1]) * _s
+	height = _origin.y * _s
 	var rects := _used_rects(sheet)
 	var cells: Dictionary = _desc.get("cells", {})
 	var mesh_div: Dictionary = _desc.get("mesh", {})
@@ -158,8 +179,7 @@ func _build_rig(sheet: Texture2D) -> void:
 
 ## Art units -> rig-local px (feet at the origin, frame centred on x).
 func _px(u: Array) -> Vector2:
-	var frame: Array = _desc["frame"]
-	return (Vector2(float(u[0]), float(u[1])) - Vector2(float(frame[0]) / 2.0, float(frame[1]))) * _s
+	return (Vector2(float(u[0]), float(u[1])) - _origin) * _s
 
 
 func _bone_at(bname: String) -> Vector2:
@@ -172,7 +192,8 @@ func _bone_at(bname: String) -> Vector2:
 func _sheet_to_local(p: Vector2, i: int) -> Vector2:
 	var cell: Array = _desc["cell"]
 	var pad := float(_desc["pad"])
-	var u := (p - Vector2(i * float(cell[0]), 0.0)) / _s - Vector2(pad, pad)
+	var k := float(_desc.get("k", _s))       # sheet px per art unit
+	var u := (p - Vector2(i * float(cell[0]), 0.0)) / k - Vector2(pad, pad)
 	return _px([u.x, u.y])
 
 
@@ -239,7 +260,8 @@ func _used_rects(sheet: Texture2D) -> Array:
 func set_flip_h(v: bool) -> void:
 	flip_h = v
 	if _flip:
-		_flip.scale.x = -1.0 if v else 1.0
+		# a front-facing drawing "faces" the side its weapon hand is on
+		_flip.scale.x = (-1.0 if v else 1.0) * _faces
 
 
 func set_tint(c: Color) -> void:
@@ -348,7 +370,12 @@ func _apply_pose(_delta: float) -> void:
 	var sway := 0.0
 	match kind:
 		"biped":
-			sway = _pose_biped(rot, off, scl, bend)
+			if _front:
+				sway = _pose_front(rot, off, scl)
+			else:
+				sway = _pose_biped(rot, off, scl, bend)
+		"frontdog":
+			_pose_frontdog(rot, off, scl)
 		"hound":
 			_pose_hound(rot, off, scl)
 		"horse":
@@ -490,6 +517,196 @@ func _pose_biped(rot: Dictionary, off: Dictionary, scl: Dictionary, bend: Dictio
 		if not rot.has("held_" + side):
 			rot["held_" + side] = -0.45 * float(rot.get("arm_" + side, 0.0))
 	return sway
+
+
+## A figure drawn facing the viewer. Walking, the weight goes from foot to foot: the
+## body shifts over the standing foot while the free one lifts and, coming towards
+## us, shortens; arms swing a little out from the sides; a robe sways. Strikes come
+## from the weapon hand, which the flip keeps on the side the figure faces.
+func _pose_front(rot: Dictionary, off: Dictionary, scl: Dictionary) -> float:
+	var w := _walk if not sit else 0.0
+	var idle := 1.0 - w
+	var sw := sin(_phase)
+	var breath := sin(_t * 2.1 + _seed)
+	var s := _s
+	var robed := _meshes.has("skirt")
+	var lift_l := maxf(0.0, sw) * w
+	var lift_r := maxf(0.0, -sw) * w
+	var bob := absf(sw) * 0.9 * s * w
+	# the standing foot stays on the ground while the body rises over it
+	off["leg_l"] = Vector2(0, bob - lift_l * 3.0 * s)
+	off["leg_r"] = Vector2(0, bob - lift_r * 3.0 * s)
+	if not robed:
+		scl["leg_l"] = Vector2(1.0, 1.0 - 0.08 * lift_l)
+		scl["leg_r"] = Vector2(1.0, 1.0 - 0.08 * lift_r)
+		rot["leg_l"] = 0.05 * lift_l
+		rot["leg_r"] = -0.05 * lift_r
+	off["body"] = Vector2(0.8 * s * sw * w, -bob)
+	rot["upper"] = -0.025 * sw * w
+	scl["upper"] = Vector2(1.0, 1.0 + 0.012 * breath * idle)
+	# arm_l swings out with a positive turn, arm_r with a negative one
+	rot["arm_l"] = 0.07 * sw * w + 0.03 * breath * idle + 0.03 * absf(sw) * w
+	rot["arm_r"] = 0.07 * sw * w - 0.03 * breath * idle - 0.03 * absf(sw) * w
+	scl["arm_l"] = Vector2(1.0, 1.0 - 0.04 * maxf(0.0, -sw) * w)
+	scl["arm_r"] = Vector2(1.0, 1.0 - 0.04 * maxf(0.0, sw) * w)
+	rot["head"] = 0.03 * sin(_t * 0.8 + _seed) * idle + 0.02 * sw * w
+	off["head"] = Vector2(0, -0.3 * s * breath * idle)
+	scl["shadow"] = Vector2(1.0 - 0.05 * absf(sw) * w, 1.0)
+	var sway := (1.1 * sw * w + 0.5 * sin(_t * 1.6 + _seed) * idle) * s
+	var wpn := _weapon
+	var other := "arm_l" if wpn == "arm_r" else "arm_r"
+	var out_w := 1.0 if wpn == "arm_l" else -1.0     # turning the weapon arm outwards
+	var out_o := -out_w
+	var side := -out_w                                # +1: the weapon side is +x
+	match _action:
+		"attack":
+			var e := _action_t / _action_len
+			if _desc.get("strike", "chop") == "thrust":
+				# a pole: draw back, then drive the arm out with the point leaning in
+				var k := 0.0
+				var back := 0.0
+				if e < 0.32:
+					back = smoothstep(0.0, 0.32, e)
+				elif e < 0.48:
+					back = 1.0 - smoothstep(0.32, 0.42, e)
+					k = smoothstep(0.32, 0.46, e)
+				else:
+					k = 1.0 - smoothstep(0.55, 1.0, e)
+				off[wpn] = Vector2(side * s * (5.0 * k - 1.5 * back), -1.0 * s * k + 0.5 * s * back)
+				rot[wpn] = float(rot[wpn]) - out_w * 0.5 * k + out_w * 0.12 * back
+				rot["upper"] = float(rot["upper"]) + side * (0.12 * k - 0.05 * back)
+				rot[other] = float(rot[other]) + out_o * 0.25 * k
+				sway += side * 1.5 * s * k
+			else:
+				# up and out over the shoulder, down across, recover
+				var arm := 0.0
+				var lean := 0.0
+				if e < 0.36:
+					var k := smoothstep(0.0, 0.36, e)
+					arm = lerpf(0.0, 2.4, k)
+					lean = -0.06 * k
+				elif e < 0.5:
+					var k := smoothstep(0.36, 0.5, e)
+					arm = lerpf(2.4, 0.5, k)
+					lean = lerpf(-0.06, 0.16, k)
+				else:
+					var k := smoothstep(0.5, 1.0, e)
+					arm = lerpf(0.5, 0.0, k)
+					lean = lerpf(0.16, 0.0, k)
+				rot[wpn] = out_w * arm
+				rot["upper"] = float(rot["upper"]) + side * lean
+				rot[other] = float(rot[other]) + out_o * 0.3 * clampf(lean * 6.0, 0.0, 1.0)
+				sway += side * 2.0 * s * clampf(lean * 6.0, 0.0, 1.0)
+		"hurt":
+			var k := _env(0.18, 0.4)
+			rot["upper"] = float(rot["upper"]) - side * 0.13 * k
+			rot["head"] = float(rot["head"]) - side * 0.2 * k
+			rot["arm_l"] = float(rot["arm_l"]) + 0.4 * k
+			rot["arm_r"] = float(rot["arm_r"]) - 0.4 * k
+			off["body"] = off["body"] + Vector2(-side * 1.0 * s * k, 0.6 * s * k)
+			sway -= side * 2.0 * s * k
+		"cast":
+			var k := _env(0.3, 0.65)
+			rot["arm_l"] = float(rot["arm_l"]) + 1.45 * k
+			rot["arm_r"] = float(rot["arm_r"]) - 1.6 * k
+			off["head"] = off["head"] + Vector2(0, -0.6 * s * k)
+			scl["upper"] = Vector2(1.0, 1.0 + 0.02 * k)
+		"nod":
+			var k := sin(PI * clampf(_action_t / _action_len, 0.0, 1.0))
+			off["head"] = off["head"] + Vector2(0, 1.4 * s * k)
+			scl["head"] = Vector2(1.0, 1.0 - 0.05 * k)
+		"shake":   # no
+			var e := clampf(_action_t / _action_len, 0.0, 1.0)
+			var q := sin(e * TAU * 3.0) * (1.0 - e)
+			rot["head"] = float(rot["head"]) + 0.1 * q
+			off["head"] = off["head"] + Vector2(1.1 * s * q, 0)
+		"point":   # at him
+			var k := _env(0.18, 0.75)
+			rot[wpn] = lerpf(float(rot[wpn]), out_w * 1.45, k)
+			rot["upper"] = float(rot["upper"]) + side * 0.06 * k
+	if _held_k > 0.0:
+		var k := _held_k
+		match _held:
+			"yield":      # sinks, hands up and open
+				off["body"] = off["body"] + Vector2(0, 1.2 * s * k)
+				if not robed:
+					scl["leg_l"] = Vector2(1.0, float(scl["leg_l"].y) - 0.07 * k)
+					scl["leg_r"] = Vector2(1.0, float(scl["leg_r"].y) - 0.07 * k)
+				rot["leg_l"] = float(rot.get("leg_l", 0.0)) + 0.07 * k
+				rot["leg_r"] = float(rot.get("leg_r", 0.0)) - 0.07 * k
+				rot["arm_l"] = lerpf(float(rot["arm_l"]), 2.5, k)
+				rot["arm_r"] = lerpf(float(rot["arm_r"]), -2.5, k)
+				off["head"] = off["head"] + Vector2(0, 0.9 * s * k)
+			"cower":      # hunched, arms up before the face
+				off["body"] = off["body"] + Vector2(0, 1.4 * s * k)
+				if not robed:
+					scl["leg_l"] = Vector2(1.0, float(scl["leg_l"].y) - 0.08 * k)
+					scl["leg_r"] = Vector2(1.0, float(scl["leg_r"].y) - 0.08 * k)
+				scl["upper"] = Vector2(1.0, 0.96)
+				rot["arm_l"] = lerpf(float(rot["arm_l"]), -2.0, k)
+				rot["arm_r"] = lerpf(float(rot["arm_r"]), 2.0, k)
+				off["head"] = off["head"] + Vector2(0, 1.6 * s * k)
+			"guard":      # backed up, weapon out, shaking at no one in particular
+				var shiver := sin(_t * 31.0) * 0.045 + sin(_t * 17.0) * 0.03
+				off["body"] = off["body"] + Vector2(-side * 0.8 * s * k, 0.7 * s * k)
+				rot[wpn] = lerpf(float(rot[wpn]), out_w * (0.85 + shiver), k)
+				rot[other] = lerpf(float(rot[other]), out_o * (-0.35 + shiver), k)
+				rot["upper"] = float(rot["upper"]) - side * 0.06 * k
+				rot["head"] = float(rot["head"]) + shiver * 0.5 * k
+			"raise":      # arms out: a showman's welcome
+				rot["arm_l"] = lerpf(float(rot["arm_l"]), 1.25, k)
+				rot["arm_r"] = lerpf(float(rot["arm_r"]), -1.25, k)
+				off["head"] = off["head"] + Vector2(0, -0.5 * s * k)
+	return sway
+
+
+## A dog drawn facing the viewer, its head on its own left (local -x is "forward").
+## Trotting, diagonal pairs lift together; the tail never stops.
+func _pose_frontdog(rot: Dictionary, off: Dictionary, scl: Dictionary) -> void:
+	var w := _walk
+	var idle := 1.0 - w
+	var sw := sin(_phase)
+	var breath := sin(_t * 3.2 + _seed)
+	var s := _s
+	var a := maxf(0.0, sw) * w
+	var b := maxf(0.0, -sw) * w
+	var bob := absf(sw) * 0.7 * s * w
+	off["leg_l"] = Vector2(0, bob - a * 2.2 * s)
+	off["hind_r"] = Vector2(0, bob - a * 1.8 * s)
+	off["leg_r"] = Vector2(0, bob - b * 2.2 * s)
+	off["hind_l"] = Vector2(0, bob - b * 1.8 * s)
+	scl["leg_l"] = Vector2(1.0, 1.0 - 0.08 * a)
+	scl["leg_r"] = Vector2(1.0, 1.0 - 0.08 * b)
+	off["body"] = Vector2(0.4 * s * sw * w, -bob)
+	scl["upper"] = Vector2(1.0, 1.0 + 0.02 * breath * idle)
+	rot["head"] = 0.05 * sin(2.0 * _phase) * w + 0.05 * sin(_t * 0.7 + _seed) * idle
+	off["head"] = Vector2(0, 0.5 * s * absf(sw) * w - 0.3 * s * breath * idle)
+	rot["tail"] = 0.3 * sin(_t * (9.0 if w > 0.1 else 2.5) + _seed)
+	scl["shadow"] = Vector2(1.0 - 0.04 * absf(sw) * w, 1.0)
+	match _action:
+		"attack":   # a lunge and a snap
+			var e := _action_t / _action_len
+			var k := smoothstep(0.0, 0.4, e) * (1.0 - smoothstep(0.55, 1.0, e))
+			off["body"] = off["body"] + Vector2(-3.5 * s * k, 0.8 * s * k)
+			off["head"] = off["head"] + Vector2(-3.0 * s * k, 1.5 * s * k)
+			scl["head"] = Vector2(1.0 + 0.2 * k, 1.0 + 0.2 * k)
+			rot["head"] = float(rot["head"]) - 0.18 * k
+			off["leg_l"] = off["leg_l"] + Vector2(-2.0 * s * k, -2.5 * s * k)
+			off["leg_r"] = off["leg_r"] + Vector2(-1.0 * s * k, -1.0 * s * k)
+			scl["hind_l"] = Vector2(1.0, 1.0 + 0.08 * k)
+			scl["hind_r"] = Vector2(1.0, 1.0 + 0.08 * k)
+			rot["tail"] = float(rot["tail"]) - 0.4 * k
+		"hurt":
+			var k := _env(0.2, 0.4)
+			off["body"] = off["body"] + Vector2(1.5 * s * k, 0.5 * s * k)
+			off["head"] = off["head"] + Vector2(1.5 * s * k, -0.6 * s * k)
+			rot["head"] = float(rot["head"]) + 0.25 * k
+			rot["tail"] = float(rot["tail"]) + 0.7 * k
+		"cast":   # a howl
+			var k := _env(0.3, 0.7)
+			off["head"] = off["head"] + Vector2(0, -2.0 * s * k)
+			rot["head"] = float(rot["head"]) + 0.15 * k
+			scl["head"] = Vector2(1.0, 0.96 + 0.04 * (1.0 - k))
 
 
 func _pose_hound(rot: Dictionary, off: Dictionary, scl: Dictionary) -> void:

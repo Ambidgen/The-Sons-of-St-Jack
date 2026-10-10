@@ -132,6 +132,21 @@ static func icon_rect(tex: Texture2D, px := 24.0) -> TextureRect:
 	return r
 
 
+## icon_rect() for an art key (a portrait, a figure).
+static func art_rect(key: String, px := 24.0) -> TextureRect:
+	var r := icon_rect(null, px)
+	set_art(r, key)
+	return r
+
+
+## Show the art for `key` in `r`; drawn sprites are mipmapped, so they get the
+## matching filter and stay smooth at thumbnail size.
+static func set_art(r: TextureRect, key: String) -> void:
+	r.texture = Data.tex(key)
+	r.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS if Data.is_sprite(key) \
+			else CanvasItem.TEXTURE_FILTER_PARENT_NODE
+
+
 ## A left-aligned menu button with an optional icon and right-hand detail text.
 static func menu_button(text: String, icon: Texture2D = null, detail := "") -> Button:
 	var b := Button.new()

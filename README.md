@@ -20,7 +20,7 @@ Three smaller questions sit underneath it:
 2. In the Project Manager, click **Import**, pick this folder's `project.godot`, then **Import & Edit**.
 3. Press **F5**. On the title screen, choose **Begin Act One**, or use **Chapter Select** to jump to any stage.
 
-The first import takes a little while: Godot imports the level paintings and rasterises the SVG placeholders.
+The first import takes a little while: Godot imports the level paintings and the character sprites, and rasterises the remaining SVG placeholders.
 
 ## Act One at a glance
 
@@ -234,21 +234,29 @@ project.godot
 autoload/   data.gd · game.gd (Derrick, forms, wounds, Complicity/Defiance, checkpoints, input) · router.gd
 ui/         ui_style.gd · menu_cursor.gd · dialogue_box.gd · field_menu.gd · cinema.gd
 battle/     battler.gd · turn_queue.gd · battle_rules.gd · battle_sim.gd · battler_view.gd · battle_hud.gd
-scenes/     actor/rig.gd (articulated bodies) · title/ (title, Chapter Select, Battle Lab) · battle/
+scenes/     actor/rig.gd (articulated mesh bodies) · title/ (title, Chapter Select, Battle Lab) · battle/
             stage/ stage.gd · stage_map.gd (walkable shape, lines, gates, road routing)
                    terrain_sense.gd (pixel detection) · director.gd · pacing.gd · tile_cursor.gd
 data/       config · actors · cast · enemies · skills · items · statuses · encounters · stages/*.json
 assets/levels/        the level paintings (imported as Images), village_burned + village_embers, fore/ silhouettes
-assets/placeholder/   generated SVG art: char/ · rig/ (part sheets) · rigs.json · portraits · battle backdrops
-tools/      make_placeholders.py · levels/ (the level packs' notes, stitch script, burn_village.py, build_levels.py)
+assets/sprites/       the drawn characters: sheets/ (sources) · rig/ (part sheets) · rigs.json · char/ · portrait/
+assets/placeholder/   generated SVG art: char/ · rig/ (part sheets) · rigs.json · portraits · props · battle backdrops
+tools/      make_placeholders.py · sprites/ (extract_sprites.py, rig_sprites.py, rig_overrides.json)
+            levels/ (the level packs' notes, stitch script, burn_village.py, build_levels.py)
 tests/      smoke · tour (keyboard or --mouse) · edge · level_dump · stage_shots · rig_gallery · gallery
 ```
 
 The earlier painted stages (`assets/stages/`) and their art guide files are gone from this build; the new paintings replace them. They are still in the older builds in your `_old` folder.
 
-## Placeholder art
+## Character art
 
-The characters, portraits, props and battle backdrops are still the generated woodcut placeholders from `tools/make_placeholders.py`: ink on parchment with hatched shading, colour kept for fire, blood, water and gold, and Ser Gauntley the only fully coloured person in the act. Every body is an articulated rig (legs that bend at the knee, swinging arms, swaying hems, hounds and horses with four legs), animated by `scenes/actor/rig.gd`. To regenerate, run `python3 tools/make_placeholders.py`; to review, run `tests/gallery.tscn` and `tests/rig_gallery.tscn`.
+The people of Act One are drawn sprites (`assets/sprites/`, sheets 01–08). Each one is cut into body parts (head, torso, arms with whatever they hold, legs or a robe with the shoes beneath it) and rebuilt as textured 2D meshes hung on bones, so the same drawing walks, strikes, flinches and kneels in battle, on the map and in cutscenes. The cut is made by `tools/sprites/rig_sprites.py` from hand-drawn arm outlines in `tools/sprites/rig_overrides.json`; `assets/sprites/README.md` has the steps. The dialogue and HUD portraits come from the same drawings.
+
+The sprites face the viewer, so they move like it: the weight goes from foot to foot while the free foot lifts, arms swing out from the sides, robes sway, and strikes come from the weapon hand (swords and axes chop, spears and pitchforks thrust). A figure turned to face left or right is mirrored so its weapon is towards the enemy.
+
+Still placeholders from `tools/make_placeholders.py` (woodcut SVG rigs, drawn side-on): Osric, Nora, Daryl and the wolf (sheet 09), the bearded man, the wiry man and the grabber (sheet 10), the horses, mounted riders and the crow, plus the props and battle backdrops. When those sheets arrive, the same two scripts rig them and they replace their placeholders automatically.
+
+To review, run `tests/rig_gallery.tscn` (`-- --only=sprite` or `--only=svg`, `--mode=walk|attack|hurt|cast|yield…`) and `tests/gallery.tscn`.
 
 ## Defaults you may want to change
 

@@ -2,8 +2,9 @@ extends Node2D
 ## Every articulated rig next to its flat drawing, to check the parts line up, and
 ## then walking / acting. Needs a real renderer:
 ##   xvfb-run -a godot --path . --rendering-driver opengl3 res://tests/rig_gallery.tscn -- \
-##       --shot=/tmp/rigs.png [--filter=_field] [--mode=rest|walk|attack|hurt|cast|yield] [--at=0.3] [--zoom=1]
+##       --shot=/tmp/rigs.png [--filter=_field or a,b,c] [--mode=rest|walk|attack|hurt|cast|yield] [--at=0.3] [--zoom=1]
 ## rest: flat sprite (left) vs rig at rest (right), which should look the same.
+## --only=sprite|svg limits the gallery to the drawn sprites' rigs or the placeholders.
 
 func _ready() -> void:
 	RenderingServer.set_default_clear_color(Color("#5a5048"))
@@ -12,6 +13,7 @@ func _ready() -> void:
 	var at := 0.4
 	var shot := ""
 	var zoom := 1.0
+	var only := ""
 	for a in OS.get_cmdline_user_args():
 		if a.begins_with("--filter="):
 			filter = a.trim_prefix("--filter=")
@@ -21,6 +23,8 @@ func _ready() -> void:
 			at = float(a.trim_prefix("--at="))
 		elif a.begins_with("--shot="):
 			shot = a.trim_prefix("--shot=")
+		elif a.begins_with("--only="):
+			only = a.trim_prefix("--only=")
 		elif a.begins_with("--zoom="):
 			zoom = float(a.trim_prefix("--zoom="))
 	scale = Vector2(zoom, zoom)
@@ -28,12 +32,17 @@ func _ready() -> void:
 	names.sort()
 	var x := 10.0
 	var y := 10.0
+	var skip_field := filter != "" and not filter.contains("_field")
 	var row_h := 0.0
 	var rigs: Array[Rig] = []
 	for n: String in names:
-		if filter != "" and not n.contains(filter):
+		if filter != "" and not Array(filter.split(",")).any(func(f: String) -> bool: return n.contains(f)):
+			continue
+		if skip_field and n.ends_with("_field"):
 			continue
 		var d: Dictionary = Rig.db()[n]
+		if (only == "sprite" and not d.get("sprite", false)) or (only == "svg" and d.get("sprite", false)):
+			continue
 		var flat_key := ("prop/" if n in ["horse", "crow"] else "char/") + n
 		var r := Rig.make(flat_key)
 		var w := r.width
@@ -48,6 +57,12 @@ func _ready() -> void:
 			flat.texture = Data.tex(flat_key)
 			flat.centered = false
 			flat.position = Vector2(x, y)
+			if d.get("sprite", false):
+				# a drawn sprite: the flat drawing is the whole canvas at k px per unit
+				var f := float(d["s"]) / float(d["k"])
+				flat.scale = Vector2(f, f)
+				flat.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
+				flat.position = Vector2(x, y + h - float(d["frame"][1]) * float(d["s"]) + (float(d["frame"][1]) - float(d["origin"][1])) * float(d["s"]))
 			add_child(flat)
 			r.position = Vector2(x + w * 1.5, y + h)
 			r.animate = false
@@ -67,9 +82,9 @@ func _ready() -> void:
 		match mode:
 			"walk":
 				r.set_process(true)
-			"attack", "hurt", "cast", "nod":
+			"attack", "hurt", "cast", "nod", "shake", "point":
 				r.play(mode)
-			"yield", "cower", "raise":
+			"yield", "cower", "raise", "guard":
 				r.play(mode)
 	if mode == "walk":
 		var t := 0.0

@@ -1,0 +1,8163 @@
+{
+ "note": "sprite rigs (tools/sprites/rig_sprites.py); override rigs of the same name in assets/placeholder/rigs.json",
+ "rigs": {
+  "baker": {
+   "sheet": "sprites/rig/baker",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    181,
+    246
+   ],
+   "frame": [
+    45.25,
+    61.5
+   ],
+   "origin": [
+    22.0,
+    58.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      22.0,
+      58.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      22.0,
+      32.8
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      15.0,
+      52.25
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      30.75,
+      52.25
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      22.0,
+      32.8
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      22.0,
+      32.8
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      10.0,
+      18.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      36.5,
+      18.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      23.0,
+      14.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 2.25
+  },
+  "baker_field": {
+   "sheet": "sprites/rig/baker",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    181,
+    246
+   ],
+   "frame": [
+    45.25,
+    61.5
+   ],
+   "origin": [
+    22.0,
+    58.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      22.0,
+      58.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      22.0,
+      32.8
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      15.0,
+      52.25
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      30.75,
+      52.25
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      22.0,
+      32.8
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      22.0,
+      32.8
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      10.0,
+      18.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      36.5,
+      18.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      23.0,
+      14.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "derrick_child": {
+   "sheet": "sprites/rig/derrick_child",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    127,
+    195
+   ],
+   "frame": [
+    31.75,
+    48.75
+   ],
+   "origin": [
+    19.0,
+    46.0
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      19.0,
+      46.0
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      19.0,
+      29.04
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      15.88,
+      38.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      22.75,
+      38.0
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      19.0,
+      29.04
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      19.0,
+      29.04
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      12.5,
+      21.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      24.0,
+      21.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      19.12,
+      16.75
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "derrick_child_field": {
+   "sheet": "sprites/rig/derrick_child",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    127,
+    195
+   ],
+   "frame": [
+    31.75,
+    48.75
+   ],
+   "origin": [
+    19.0,
+    46.0
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      19.0,
+      46.0
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      19.0,
+      29.04
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      15.88,
+      38.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      22.75,
+      38.0
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      19.0,
+      29.04
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      19.0,
+      29.04
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      12.5,
+      21.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      24.0,
+      21.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      19.12,
+      16.75
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "derrick_child_sit": {
+   "sheet": "sprites/rig/derrick_child_sit",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    122,
+    168
+   ],
+   "frame": [
+    30.5,
+    42.0
+   ],
+   "origin": [
+    15.0,
+    39.25
+   ],
+   "cells": {
+    "shadow": 0,
+    "torso": 1,
+    "head": 2
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      15.0,
+      39.25
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      15.0,
+      32.1
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      15.0,
+      32.1
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      15.0,
+      32.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      27.75,
+      15.0
+     ]
+    ]
+   ],
+   "sit": true,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "derrick_child_sit_field": {
+   "sheet": "sprites/rig/derrick_child_sit",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    122,
+    168
+   ],
+   "frame": [
+    30.5,
+    42.0
+   ],
+   "origin": [
+    15.0,
+    39.25
+   ],
+   "cells": {
+    "shadow": 0,
+    "torso": 1,
+    "head": 2
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      15.0,
+      39.25
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      15.0,
+      32.1
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      15.0,
+      32.1
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      15.0,
+      32.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      27.75,
+      15.0
+     ]
+    ]
+   ],
+   "sit": true,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "derrick_lad": {
+   "sheet": "sprites/rig/derrick_lad",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    131,
+    230
+   ],
+   "frame": [
+    32.75,
+    57.5
+   ],
+   "origin": [
+    17.0,
+    54.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      17.0,
+      54.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      17.0,
+      31.7
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      12.75,
+      42.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      22.5,
+      42.0
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      17.0,
+      31.7
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      17.0,
+      31.7
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      8.0,
+      19.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      25.0,
+      19.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      17.25,
+      15.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "derrick_lad_field": {
+   "sheet": "sprites/rig/derrick_lad",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    131,
+    230
+   ],
+   "frame": [
+    32.75,
+    57.5
+   ],
+   "origin": [
+    17.0,
+    54.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      17.0,
+      54.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      17.0,
+      31.7
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      12.75,
+      42.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      22.5,
+      42.0
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      17.0,
+      31.7
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      17.0,
+      31.7
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      8.0,
+      19.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      25.0,
+      19.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      17.25,
+      15.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "derrick_man": {
+   "sheet": "sprites/rig/derrick_man",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    141,
+    234
+   ],
+   "frame": [
+    35.25,
+    58.5
+   ],
+   "origin": [
+    18.25,
+    55.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      18.25,
+      55.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      18.25,
+      31.68
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      13.75,
+      43.75
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      24.25,
+      43.75
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      18.25,
+      31.68
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      18.25,
+      31.68
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      9.0,
+      19.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      26.0,
+      19.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      18.5,
+      14.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "derrick_man_field": {
+   "sheet": "sprites/rig/derrick_man",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    141,
+    234
+   ],
+   "frame": [
+    35.25,
+    58.5
+   ],
+   "origin": [
+    18.25,
+    55.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      18.25,
+      55.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      18.25,
+      31.68
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      13.75,
+      43.75
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      24.25,
+      43.75
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      18.25,
+      31.68
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      18.25,
+      31.68
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      9.0,
+      19.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      26.0,
+      19.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      18.5,
+      14.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "derrick_man_sit": {
+   "sheet": "sprites/rig/derrick_man_sit",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    148,
+    182
+   ],
+   "frame": [
+    37.0,
+    45.5
+   ],
+   "origin": [
+    17.5,
+    42.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "torso": 1,
+    "head": 2
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      17.5,
+      42.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      17.5,
+      34.75
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      17.5,
+      34.75
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      17.5,
+      34.75
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      19.0,
+      17.0
+     ]
+    ]
+   ],
+   "sit": true,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "derrick_man_sit_field": {
+   "sheet": "sprites/rig/derrick_man_sit",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    148,
+    182
+   ],
+   "frame": [
+    37.0,
+    45.5
+   ],
+   "origin": [
+    17.5,
+    42.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "torso": 1,
+    "head": 2
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      17.5,
+      42.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      17.5,
+      34.75
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      17.5,
+      34.75
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      17.5,
+      34.75
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      19.0,
+      17.0
+     ]
+    ]
+   ],
+   "sit": true,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "derrick_youth": {
+   "sheet": "sprites/rig/derrick_youth",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    106,
+    213
+   ],
+   "frame": [
+    26.5,
+    53.25
+   ],
+   "origin": [
+    13.0,
+    50.5
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      13.0,
+      50.5
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      13.0,
+      30.63
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      9.0,
+      40.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      17.38,
+      40.0
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      13.0,
+      30.63
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      13.0,
+      30.63
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      6.5,
+      21.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      20.0,
+      21.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      13.25,
+      16.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_r",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "derrick_youth_field": {
+   "sheet": "sprites/rig/derrick_youth",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    106,
+    213
+   ],
+   "frame": [
+    26.5,
+    53.25
+   ],
+   "origin": [
+    13.0,
+    50.5
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      13.0,
+      50.5
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      13.0,
+      30.63
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      9.0,
+      40.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      17.38,
+      40.0
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      13.0,
+      30.63
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      13.0,
+      30.63
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      6.5,
+      21.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      20.0,
+      21.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      13.25,
+      16.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_r",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "dog": {
+   "sheet": "sprites/rig/dog",
+   "kind": "frontdog",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    114,
+    143
+   ],
+   "frame": [
+    28.5,
+    35.75
+   ],
+   "origin": [
+    14.25,
+    33.0
+   ],
+   "cells": {
+    "shadow": 0,
+    "hind_l": 1,
+    "hind_r": 2,
+    "tail": 3,
+    "leg_l": 4,
+    "leg_r": 5,
+    "torso": 6,
+    "head": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      14.25,
+      33.0
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      14.25,
+      21.1
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      7.75,
+      23.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      12.75,
+      23.5
+     ]
+    ],
+    [
+     "hind_l",
+     "body",
+     [
+      16.75,
+      25.0
+     ]
+    ],
+    [
+     "hind_r",
+     "body",
+     [
+      21.25,
+      24.5
+     ]
+    ],
+    [
+     "tail",
+     "body",
+     [
+      21.0,
+      20.0
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      14.25,
+      21.1
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      14.25,
+      21.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      10.25,
+      13.5
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 2.0
+  },
+  "dog_field": {
+   "sheet": "sprites/rig/dog",
+   "kind": "frontdog",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    114,
+    143
+   ],
+   "frame": [
+    28.5,
+    35.75
+   ],
+   "origin": [
+    14.25,
+    33.0
+   ],
+   "cells": {
+    "shadow": 0,
+    "hind_l": 1,
+    "hind_r": 2,
+    "tail": 3,
+    "leg_l": 4,
+    "leg_r": 5,
+    "torso": 6,
+    "head": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      14.25,
+      33.0
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      14.25,
+      21.1
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      7.75,
+      23.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      12.75,
+      23.5
+     ]
+    ],
+    [
+     "hind_l",
+     "body",
+     [
+      16.75,
+      25.0
+     ]
+    ],
+    [
+     "hind_r",
+     "body",
+     [
+      21.25,
+      24.5
+     ]
+    ],
+    [
+     "tail",
+     "body",
+     [
+      21.0,
+      20.0
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      14.25,
+      21.1
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      14.25,
+      21.1
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      10.25,
+      13.5
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "edric": {
+   "sheet": "sprites/rig/edric",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    135,
+    226
+   ],
+   "frame": [
+    33.75,
+    56.5
+   ],
+   "origin": [
+    17.5,
+    53.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      17.5,
+      53.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      17.5,
+      31.42
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      12.75,
+      42.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      22.0,
+      42.0
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      17.5,
+      31.42
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      17.5,
+      31.42
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      9.5,
+      19.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      25.5,
+      19.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      17.5,
+      15.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "thrust",
+   "sprite": true,
+   "s": 1.75
+  },
+  "edric_field": {
+   "sheet": "sprites/rig/edric",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    135,
+    226
+   ],
+   "frame": [
+    33.75,
+    56.5
+   ],
+   "origin": [
+    17.5,
+    53.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      17.5,
+      53.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      17.5,
+      31.42
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      12.75,
+      42.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      22.0,
+      42.0
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      17.5,
+      31.42
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      17.5,
+      31.42
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      9.5,
+      19.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      25.5,
+      19.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      17.5,
+      15.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "thrust",
+   "sprite": true,
+   "s": 1.0
+  },
+  "father": {
+   "sheet": "sprites/rig/father",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    173,
+    236
+   ],
+   "frame": [
+    43.25,
+    59.0
+   ],
+   "origin": [
+    24.5,
+    56.25
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      24.5,
+      56.25
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      24.5,
+      31.45
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      11.75,
+      39.75
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      30.5,
+      41.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      24.5,
+      31.45
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      24.5,
+      31.45
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      14.5,
+      17.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      35.5,
+      17.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      25.25,
+      13.5
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "father_field": {
+   "sheet": "sprites/rig/father",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    173,
+    236
+   ],
+   "frame": [
+    43.25,
+    59.0
+   ],
+   "origin": [
+    24.5,
+    56.25
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      24.5,
+      56.25
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      24.5,
+      31.45
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      11.75,
+      39.75
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      30.5,
+      41.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      24.5,
+      31.45
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      24.5,
+      31.45
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      14.5,
+      17.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      35.5,
+      17.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      25.25,
+      13.5
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "gauntley": {
+   "sheet": "sprites/rig/gauntley",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    171,
+    242
+   ],
+   "frame": [
+    42.75,
+    60.5
+   ],
+   "origin": [
+    20.25,
+    57.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      20.25,
+      57.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      20.25,
+      34.7
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      15.75,
+      45.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      23.75,
+      45.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      20.25,
+      34.7
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      20.25,
+      34.7
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      11.0,
+      22.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      26.5,
+      22.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      20.0,
+      18.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "gauntley_field": {
+   "sheet": "sprites/rig/gauntley",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    171,
+    242
+   ],
+   "frame": [
+    42.75,
+    60.5
+   ],
+   "origin": [
+    20.25,
+    57.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      20.25,
+      57.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      20.25,
+      34.7
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      15.75,
+      45.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      23.75,
+      45.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      20.25,
+      34.7
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      20.25,
+      34.7
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      11.0,
+      22.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      26.5,
+      22.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      20.0,
+      18.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "gauntley_helm": {
+   "sheet": "sprites/rig/gauntley_helm",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    165,
+    253
+   ],
+   "frame": [
+    41.25,
+    63.25
+   ],
+   "origin": [
+    19.25,
+    60.5
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      19.25,
+      60.5
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      19.25,
+      38.17
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      15.0,
+      49.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      23.5,
+      49.0
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      19.25,
+      38.17
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      19.25,
+      38.17
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      10.0,
+      26.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      25.0,
+      26.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      19.5,
+      22.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "gauntley_helm_field": {
+   "sheet": "sprites/rig/gauntley_helm",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    165,
+    253
+   ],
+   "frame": [
+    41.25,
+    63.25
+   ],
+   "origin": [
+    19.25,
+    60.5
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      19.25,
+      60.5
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      19.25,
+      38.17
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      15.0,
+      49.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      23.5,
+      49.0
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      19.25,
+      38.17
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      19.25,
+      38.17
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      10.0,
+      26.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      25.0,
+      26.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      19.5,
+      22.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "hild": {
+   "sheet": "sprites/rig/hild",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    132,
+    221
+   ],
+   "frame": [
+    33.0,
+    55.25
+   ],
+   "origin": [
+    15.25,
+    52.5
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      15.25,
+      52.5
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      15.25,
+      29.59
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      10.5,
+      50.75
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      19.75,
+      50.75
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      15.25,
+      29.59
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      15.25,
+      29.59
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      15.25,
+      29.59
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      6.0,
+      18.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      26.0,
+      18.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      15.5,
+      13.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_r",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "hild_field": {
+   "sheet": "sprites/rig/hild",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    132,
+    221
+   ],
+   "frame": [
+    33.0,
+    55.25
+   ],
+   "origin": [
+    15.25,
+    52.5
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      15.25,
+      52.5
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      15.25,
+      29.59
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      10.5,
+      50.75
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      19.75,
+      50.75
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      15.25,
+      29.59
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      15.25,
+      29.59
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      15.25,
+      29.59
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      6.0,
+      18.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      26.0,
+      18.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      15.5,
+      13.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_r",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "jack": {
+   "sheet": "sprites/rig/jack",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    108,
+    260
+   ],
+   "frame": [
+    27.0,
+    65.0
+   ],
+   "origin": [
+    13.5,
+    62.25
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      13.5,
+      62.25
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      13.5,
+      34.27
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      9.25,
+      58.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      17.5,
+      58.0
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      13.5,
+      34.27
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      13.5,
+      34.27
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      13.5,
+      34.27
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      5.5,
+      16.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      21.5,
+      16.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      13.5,
+      14.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "jack_field": {
+   "sheet": "sprites/rig/jack",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    108,
+    260
+   ],
+   "frame": [
+    27.0,
+    65.0
+   ],
+   "origin": [
+    13.5,
+    62.25
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      13.5,
+      62.25
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      13.5,
+      34.27
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      9.25,
+      58.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      17.5,
+      58.0
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      13.5,
+      34.27
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      13.5,
+      34.27
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      13.5,
+      34.27
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      5.5,
+      16.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      21.5,
+      16.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      13.5,
+      14.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "jack_kneel": {
+   "sheet": "sprites/rig/jack_kneel",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    160,
+    191
+   ],
+   "frame": [
+    40.0,
+    47.75
+   ],
+   "origin": [
+    20.0,
+    45.0
+   ],
+   "cells": {
+    "shadow": 0,
+    "torso": 1,
+    "head": 2
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      20.0,
+      45.0
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      20.0,
+      36.6
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      20.0,
+      36.6
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      20.0,
+      36.6
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      20.25,
+      13.5
+     ]
+    ]
+   ],
+   "sit": true,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "jack_kneel_field": {
+   "sheet": "sprites/rig/jack_kneel",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    160,
+    191
+   ],
+   "frame": [
+    40.0,
+    47.75
+   ],
+   "origin": [
+    20.0,
+    45.0
+   ],
+   "cells": {
+    "shadow": 0,
+    "torso": 1,
+    "head": 2
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      20.0,
+      45.0
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      20.0,
+      36.6
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      20.0,
+      36.6
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      20.0,
+      36.6
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      20.25,
+      13.5
+     ]
+    ]
+   ],
+   "sit": true,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "jacob": {
+   "sheet": "sprites/rig/jacob",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    172,
+    250
+   ],
+   "frame": [
+    43.0,
+    62.5
+   ],
+   "origin": [
+    22.0,
+    59.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      22.0,
+      59.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      22.0,
+      33.22
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      17.5,
+      47.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      31.0,
+      47.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      22.0,
+      33.22
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      22.0,
+      33.22
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      12.0,
+      14.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      33.0,
+      15.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      24.5,
+      14.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 2.25
+  },
+  "jacob_field": {
+   "sheet": "sprites/rig/jacob",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    172,
+    250
+   ],
+   "frame": [
+    43.0,
+    62.5
+   ],
+   "origin": [
+    22.0,
+    59.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      22.0,
+      59.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      22.0,
+      33.22
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      17.5,
+      47.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      31.0,
+      47.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      22.0,
+      33.22
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      22.0,
+      33.22
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      12.0,
+      14.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      33.0,
+      15.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      24.5,
+      14.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "kid_a": {
+   "sheet": "sprites/rig/kid_a",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    91,
+    185
+   ],
+   "frame": [
+    22.75,
+    46.25
+   ],
+   "origin": [
+    11.0,
+    43.5
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "head": 5
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      11.0,
+      43.5
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      11.0,
+      26.68
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      8.5,
+      43.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      14.0,
+      43.0
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      11.0,
+      26.68
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      11.0,
+      26.68
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      11.0,
+      26.68
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      11.0,
+      14.5
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "kid_a_field": {
+   "sheet": "sprites/rig/kid_a",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    91,
+    185
+   ],
+   "frame": [
+    22.75,
+    46.25
+   ],
+   "origin": [
+    11.0,
+    43.5
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "head": 5
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      11.0,
+      43.5
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      11.0,
+      26.68
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      8.5,
+      43.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      14.0,
+      43.0
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      11.0,
+      26.68
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      11.0,
+      26.68
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      11.0,
+      26.68
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      11.0,
+      14.5
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "kid_b": {
+   "sheet": "sprites/rig/kid_b",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    104,
+    185
+   ],
+   "frame": [
+    26.0,
+    46.25
+   ],
+   "origin": [
+    13.0,
+    43.5
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      13.0,
+      43.5
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      13.0,
+      27.26
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      14.25,
+      33.75
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      19.25,
+      36.75
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      13.0,
+      27.26
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      13.0,
+      27.26
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      8.0,
+      17.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      19.5,
+      17.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      14.25,
+      15.5
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "thrust",
+   "sprite": true,
+   "s": 1.75
+  },
+  "kid_b_field": {
+   "sheet": "sprites/rig/kid_b",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    104,
+    185
+   ],
+   "frame": [
+    26.0,
+    46.25
+   ],
+   "origin": [
+    13.0,
+    43.5
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      13.0,
+      43.5
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      13.0,
+      27.26
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      14.25,
+      33.75
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      19.25,
+      36.75
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      13.0,
+      27.26
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      13.0,
+      27.26
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      8.0,
+      17.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      19.5,
+      17.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      14.25,
+      15.5
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "thrust",
+   "sprite": true,
+   "s": 1.0
+  },
+  "levy": {
+   "sheet": "sprites/rig/levy",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    148,
+    234
+   ],
+   "frame": [
+    37.0,
+    58.5
+   ],
+   "origin": [
+    18.0,
+    55.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      18.0,
+      55.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      18.0,
+      31.1
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      13.0,
+      43.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      23.75,
+      43.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      18.0,
+      31.1
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      18.0,
+      31.1
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      7.0,
+      18.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      29.0,
+      18.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      18.5,
+      13.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_r",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "levy_field": {
+   "sheet": "sprites/rig/levy",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    148,
+    234
+   ],
+   "frame": [
+    37.0,
+    58.5
+   ],
+   "origin": [
+    18.0,
+    55.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      18.0,
+      55.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      18.0,
+      31.1
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      13.0,
+      43.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      23.75,
+      43.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      18.0,
+      31.1
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      18.0,
+      31.1
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      7.0,
+      18.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      29.0,
+      18.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      18.5,
+      13.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_r",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "looter": {
+   "sheet": "sprites/rig/looter",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    156,
+    235
+   ],
+   "frame": [
+    39.0,
+    58.75
+   ],
+   "origin": [
+    21.5,
+    56.0
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      21.5,
+      56.0
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      21.5,
+      31.79
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      16.25,
+      48.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      27.25,
+      48.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      21.5,
+      31.79
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      21.5,
+      31.79
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      11.0,
+      20.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      31.0,
+      20.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      21.75,
+      14.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "looter_field": {
+   "sheet": "sprites/rig/looter",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    156,
+    235
+   ],
+   "frame": [
+    39.0,
+    58.75
+   ],
+   "origin": [
+    21.5,
+    56.0
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      21.5,
+      56.0
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      21.5,
+      31.79
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      16.25,
+      48.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      27.25,
+      48.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      21.5,
+      31.79
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      21.5,
+      31.79
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      11.0,
+      20.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      31.0,
+      20.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      21.75,
+      14.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "man_at_arms": {
+   "sheet": "sprites/rig/man_at_arms",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    139,
+    264
+   ],
+   "frame": [
+    34.75,
+    66.0
+   ],
+   "origin": [
+    17.25,
+    63.25
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      17.25,
+      63.25
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      17.25,
+      38.31
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      12.75,
+      52.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      22.75,
+      52.0
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      17.25,
+      38.31
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      17.25,
+      38.31
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      8.5,
+      28.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      28.0,
+      28.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      17.5,
+      20.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "thrust",
+   "sprite": true,
+   "s": 1.75
+  },
+  "man_at_arms_field": {
+   "sheet": "sprites/rig/man_at_arms",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    139,
+    264
+   ],
+   "frame": [
+    34.75,
+    66.0
+   ],
+   "origin": [
+    17.25,
+    63.25
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      17.25,
+      63.25
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      17.25,
+      38.31
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      12.75,
+      52.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      22.75,
+      52.0
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      17.25,
+      38.31
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      17.25,
+      38.31
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      8.5,
+      28.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      28.0,
+      28.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      17.5,
+      20.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "thrust",
+   "sprite": true,
+   "s": 1.0
+  },
+  "monk": {
+   "sheet": "sprites/rig/monk",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    138,
+    232
+   ],
+   "frame": [
+    34.5,
+    58.0
+   ],
+   "origin": [
+    17.25,
+    55.25
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      17.25,
+      55.25
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      17.25,
+      30.89
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      12.0,
+      53.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      22.25,
+      53.0
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      17.25,
+      30.89
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      17.25,
+      30.89
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      17.25,
+      30.89
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      6.0,
+      21.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      26.5,
+      21.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      17.25,
+      13.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "monk_field": {
+   "sheet": "sprites/rig/monk",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    138,
+    232
+   ],
+   "frame": [
+    34.5,
+    58.0
+   ],
+   "origin": [
+    17.25,
+    55.25
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      17.25,
+      55.25
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      17.25,
+      30.89
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      12.0,
+      53.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      22.25,
+      53.0
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      17.25,
+      30.89
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      17.25,
+      30.89
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      17.25,
+      30.89
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      6.0,
+      21.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      26.5,
+      21.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      17.25,
+      13.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "mother": {
+   "sheet": "sprites/rig/mother",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    107,
+    225
+   ],
+   "frame": [
+    26.75,
+    56.25
+   ],
+   "origin": [
+    13.0,
+    53.5
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "head": 5
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      13.0,
+      53.5
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      13.0,
+      30.01
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      8.88,
+      51.75
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      17.0,
+      51.75
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      13.0,
+      30.01
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      13.0,
+      30.01
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      13.0,
+      30.01
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      12.75,
+      13.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "mother_field": {
+   "sheet": "sprites/rig/mother",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    107,
+    225
+   ],
+   "frame": [
+    26.75,
+    56.25
+   ],
+   "origin": [
+    13.0,
+    53.5
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "head": 5
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      13.0,
+      53.5
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      13.0,
+      30.01
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      8.88,
+      51.75
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      17.0,
+      51.75
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      13.0,
+      30.01
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      13.0,
+      30.01
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      13.0,
+      30.01
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      12.75,
+      13.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "ostry": {
+   "sheet": "sprites/rig/ostry",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    185,
+    256
+   ],
+   "frame": [
+    46.25,
+    64.0
+   ],
+   "origin": [
+    24.0,
+    61.25
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      24.0,
+      61.25
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      24.0,
+      35.73
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      19.0,
+      51.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      31.5,
+      51.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      24.0,
+      35.73
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      24.0,
+      35.73
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      13.5,
+      23.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      37.0,
+      23.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      25.25,
+      17.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "thrust",
+   "sprite": true,
+   "s": 2.25
+  },
+  "ostry_field": {
+   "sheet": "sprites/rig/ostry",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    185,
+    256
+   ],
+   "frame": [
+    46.25,
+    64.0
+   ],
+   "origin": [
+    24.0,
+    61.25
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      24.0,
+      61.25
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      24.0,
+      35.73
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      19.0,
+      51.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      31.5,
+      51.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      24.0,
+      35.73
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      24.0,
+      35.73
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      13.5,
+      23.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      37.0,
+      23.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      25.25,
+      17.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "thrust",
+   "sprite": true,
+   "s": 1.0
+  },
+  "simon": {
+   "sheet": "sprites/rig/simon",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    160,
+    230
+   ],
+   "frame": [
+    40.0,
+    57.5
+   ],
+   "origin": [
+    17.0,
+    54.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      17.0,
+      54.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      17.0,
+      31.11
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      11.5,
+      48.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      16.5,
+      43.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      17.0,
+      31.11
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      17.0,
+      31.11
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      8.5,
+      19.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      26.5,
+      18.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      17.25,
+      14.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_r",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "simon_field": {
+   "sheet": "sprites/rig/simon",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    160,
+    230
+   ],
+   "frame": [
+    40.0,
+    57.5
+   ],
+   "origin": [
+    17.0,
+    54.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      17.0,
+      54.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      17.0,
+      31.11
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      11.5,
+      48.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      16.5,
+      43.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      17.0,
+      31.11
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      17.0,
+      31.11
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      8.5,
+      19.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      26.5,
+      18.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      17.25,
+      14.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_r",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "son_a": {
+   "sheet": "sprites/rig/son_a",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    150,
+    233
+   ],
+   "frame": [
+    37.5,
+    58.25
+   ],
+   "origin": [
+    19.5,
+    55.5
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      19.5,
+      55.5
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      19.5,
+      33.17
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      14.75,
+      46.75
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      25.5,
+      46.75
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      19.5,
+      33.17
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      19.5,
+      33.17
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      10.0,
+      20.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      26.5,
+      20.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      19.5,
+      17.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "son_a_field": {
+   "sheet": "sprites/rig/son_a",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    150,
+    233
+   ],
+   "frame": [
+    37.5,
+    58.25
+   ],
+   "origin": [
+    19.5,
+    55.5
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      19.5,
+      55.5
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      19.5,
+      33.17
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      14.75,
+      46.75
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      25.5,
+      46.75
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      19.5,
+      33.17
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      19.5,
+      33.17
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      10.0,
+      20.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      26.5,
+      20.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      19.5,
+      17.0
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "son_b": {
+   "sheet": "sprites/rig/son_b",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    200,
+    247
+   ],
+   "frame": [
+    50.0,
+    61.75
+   ],
+   "origin": [
+    21.5,
+    59.0
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      21.5,
+      59.0
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      21.5,
+      37.25
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      15.75,
+      47.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      27.75,
+      47.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      21.5,
+      37.25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      21.5,
+      37.25
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      11.0,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      35.5,
+      22.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      23.0,
+      21.5
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_r",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 2.25
+  },
+  "son_b_field": {
+   "sheet": "sprites/rig/son_b",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    200,
+    247
+   ],
+   "frame": [
+    50.0,
+    61.75
+   ],
+   "origin": [
+    21.5,
+    59.0
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      21.5,
+      59.0
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      21.5,
+      37.25
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      15.75,
+      47.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      27.75,
+      47.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      21.5,
+      37.25
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      21.5,
+      37.25
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      11.0,
+      22.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      35.5,
+      22.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      23.0,
+      21.5
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_r",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "son_c": {
+   "sheet": "sprites/rig/son_c",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    139,
+    262
+   ],
+   "frame": [
+    34.75,
+    65.5
+   ],
+   "origin": [
+    17.75,
+    62.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      17.75,
+      62.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      17.75,
+      40.56
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      13.25,
+      53.75
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      24.25,
+      53.75
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      17.75,
+      40.56
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      17.75,
+      40.56
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      11.0,
+      27.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      26.0,
+      27.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      18.75,
+      24.5
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "thrust",
+   "sprite": true,
+   "s": 1.75
+  },
+  "son_c_field": {
+   "sheet": "sprites/rig/son_c",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    139,
+    262
+   ],
+   "frame": [
+    34.75,
+    65.5
+   ],
+   "origin": [
+    17.75,
+    62.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      17.75,
+      62.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      17.75,
+      40.56
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      13.25,
+      53.75
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      24.25,
+      53.75
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      17.75,
+      40.56
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      17.75,
+      40.56
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      11.0,
+      27.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      26.0,
+      27.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      18.75,
+      24.5
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "thrust",
+   "sprite": true,
+   "s": 1.0
+  },
+  "villager": {
+   "sheet": "sprites/rig/villager",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    130,
+    233
+   ],
+   "frame": [
+    32.5,
+    58.25
+   ],
+   "origin": [
+    16.0,
+    55.5
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      16.0,
+      55.5
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      16.0,
+      32.3
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      11.25,
+      47.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      16.75,
+      43.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      16.0,
+      32.3
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      16.0,
+      32.3
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      9.0,
+      19.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      23.5,
+      19.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      16.0,
+      15.5
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_r",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "villager_f": {
+   "sheet": "sprites/rig/villager_f",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    118,
+    223
+   ],
+   "frame": [
+    29.5,
+    55.75
+   ],
+   "origin": [
+    14.5,
+    53.0
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      14.5,
+      53.0
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      14.5,
+      29.66
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      10.0,
+      50.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      19.25,
+      50.5
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      14.5,
+      29.66
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      14.5,
+      29.66
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      14.5,
+      29.66
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      6.0,
+      17.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      23.5,
+      17.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      14.75,
+      12.75
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_r",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "villager_f_field": {
+   "sheet": "sprites/rig/villager_f",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    118,
+    223
+   ],
+   "frame": [
+    29.5,
+    55.75
+   ],
+   "origin": [
+    14.5,
+    53.0
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "skirt": 3,
+    "torso": 4,
+    "arm_l": 5,
+    "head": 6,
+    "arm_r": 7
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      14.5,
+      53.0
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      14.5,
+      29.66
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      10.0,
+      50.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      19.25,
+      50.5
+     ]
+    ],
+    [
+     "skirt",
+     "body",
+     [
+      14.5,
+      29.66
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      14.5,
+      29.66
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      14.5,
+      29.66
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      6.0,
+      17.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      23.5,
+      17.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      14.75,
+      12.75
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_r",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "villager_field": {
+   "sheet": "sprites/rig/villager",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    130,
+    233
+   ],
+   "frame": [
+    32.5,
+    58.25
+   ],
+   "origin": [
+    16.0,
+    55.5
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      16.0,
+      55.5
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      16.0,
+      32.3
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      11.25,
+      47.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      16.75,
+      43.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      16.0,
+      32.3
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      16.0,
+      32.3
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      9.0,
+      19.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      23.5,
+      19.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      16.0,
+      15.5
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_r",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "wat": {
+   "sheet": "sprites/rig/wat",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    101,
+    214
+   ],
+   "frame": [
+    25.25,
+    53.5
+   ],
+   "origin": [
+    12.5,
+    50.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      12.5,
+      50.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      12.5,
+      29.0
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      8.75,
+      42.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      16.25,
+      42.0
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      12.5,
+      29.0
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      12.5,
+      29.0
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      6.5,
+      18.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      19.0,
+      18.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      12.5,
+      13.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_r",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "wat_field": {
+   "sheet": "sprites/rig/wat",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    101,
+    214
+   ],
+   "frame": [
+    25.25,
+    53.5
+   ],
+   "origin": [
+    12.5,
+    50.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      12.5,
+      50.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      12.5,
+      29.0
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      8.75,
+      42.0
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      16.25,
+      42.0
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      12.5,
+      29.0
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      12.5,
+      29.0
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      6.5,
+      18.0
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      19.0,
+      18.0
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      12.5,
+      13.25
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_r",
+   "faces": 1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  },
+  "wick": {
+   "sheet": "sprites/rig/wick",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    111,
+    222
+   ],
+   "frame": [
+    27.75,
+    55.5
+   ],
+   "origin": [
+    14.5,
+    52.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      14.5,
+      52.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      14.5,
+      29.55
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      5.75,
+      35.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      17.75,
+      35.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      14.5,
+      29.55
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      14.5,
+      29.55
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      6.5,
+      16.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      21.0,
+      16.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      14.5,
+      12.75
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.75
+  },
+  "wick_field": {
+   "sheet": "sprites/rig/wick",
+   "kind": "biped",
+   "view": "front",
+   "k": 4.0,
+   "pad": 0,
+   "cell": [
+    111,
+    222
+   ],
+   "frame": [
+    27.75,
+    55.5
+   ],
+   "origin": [
+    14.5,
+    52.75
+   ],
+   "cells": {
+    "shadow": 0,
+    "leg_l": 1,
+    "leg_r": 2,
+    "torso": 3,
+    "arm_l": 4,
+    "head": 5,
+    "arm_r": 6
+   },
+   "bones": [
+    [
+     "shadow",
+     "",
+     [
+      14.5,
+      52.75
+     ]
+    ],
+    [
+     "body",
+     "",
+     [
+      14.5,
+      29.55
+     ]
+    ],
+    [
+     "leg_l",
+     "body",
+     [
+      5.75,
+      35.5
+     ]
+    ],
+    [
+     "leg_r",
+     "body",
+     [
+      17.75,
+      35.5
+     ]
+    ],
+    [
+     "upper",
+     "body",
+     [
+      14.5,
+      29.55
+     ]
+    ],
+    [
+     "torso",
+     "upper",
+     [
+      14.5,
+      29.55
+     ]
+    ],
+    [
+     "arm_l",
+     "upper",
+     [
+      6.5,
+      16.5
+     ]
+    ],
+    [
+     "arm_r",
+     "upper",
+     [
+      21.0,
+      16.5
+     ]
+    ],
+    [
+     "head",
+     "upper",
+     [
+      14.5,
+      12.75
+     ]
+    ]
+   ],
+   "sit": false,
+   "mesh": {
+    "skirt": [
+     2,
+     4
+    ],
+    "leg_l": [
+     1,
+     2
+    ],
+    "leg_r": [
+     1,
+     2
+    ],
+    "torso": [
+     2,
+     2
+    ],
+    "tail": [
+     2,
+     1
+    ]
+   },
+   "weapon": "arm_l",
+   "faces": -1,
+   "strike": "chop",
+   "sprite": true,
+   "s": 1.0
+  }
+ }
+}
